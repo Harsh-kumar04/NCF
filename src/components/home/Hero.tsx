@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{
             backgroundImage: `url(${groupImg})`,
           }}

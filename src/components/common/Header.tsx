@@ -95,13 +95,19 @@ const Header: React.FC = () => {
             Donate Now
           </Link>
         </nav>
+      </div>
+      {/* Mobile Navigation */}
+      {isMenuOpen && (
+        <div className="fixed top-0 left-0 w-full h-screen bg-white z-[9999] transition-transform duration-300 ease-in-out lg:hidden">
+          {/* Close button inside the menu */}
+          <button
+            onClick={toggleMenu}
+            className="absolute top-4 right-4 z-[10000] text-gray-800"
+            aria-label="Close menu"
+          >
+            <X className="h-6 w-6" />
+          </button>
 
-        {/* Mobile Navigation */}
-        <div
-          className={`fixed inset-0 z-40 bg-white transform transition-transform duration-300 ease-in-out lg:hidden ${
-            isMenuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
           <div className="flex flex-col h-full pt-20 px-6">
             <nav className="flex flex-col space-y-6 mt-8">
               {navLinks.map((link) => (
@@ -124,7 +130,7 @@ const Header: React.FC = () => {
             </nav>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 };
