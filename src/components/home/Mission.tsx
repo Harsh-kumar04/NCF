@@ -41,7 +41,7 @@ const Mission: React.FC = () => {
     },
     {
       icon: <Heart className="h-10 w-10 text-primary-600" />,
-      title: "Women's Health",
+      title: "Health",
       description:
         "Ensuring access to healthcare and promoting women's health and wellness.",
     },
