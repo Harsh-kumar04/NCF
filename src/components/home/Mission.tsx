@@ -69,19 +69,27 @@ const Mission: React.FC = () => {
     <section className="section bg-white">
       <div className="container-custom">
         <div className="text-center max-w-4xl mx-auto mb-16">
+          <div className="py-10 px-10 mx-0 rounded-2xl bg-red-50" style={{width:"100%"}}>
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="inline-block w-8 h-8 mb-8" style={{color:"#ac6b6b"}}viewBox="0 0 975.036 975.036">
+        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+      </svg>
+          </div>
           <h2 className="mb-6">Our Focus Areas</h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-xl text-gray-600">
             The Noble Citizen Foundation is steadfast in its mission to create a
             society that is empowered, healthy, and future-ready. We focus on
-            pivotal areas including education, youth development, environment,
+            pivotal areas including <span className="font-bold" style={{color:"#7f1d1d"}}>education,youth development, environment,
             livelihood enhancement, women’s health, creating a safe cyber world,
-            promoting global volunteerism, and offering disaster relief. Our
+            promoting global volunteerism, and offering disaster relief</span>. Our
             comprehensive approach addresses critical social issues, fostering
             personal and community growth. Committed to impacting 5 million
             lives by 2030, we strive to make a lasting, positive difference in
             the world, ensuring that every individual has the opportunity to
             thrive in a resilient and sustainable community.
           </p>
+        </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -103,16 +111,16 @@ const Mission: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-20 bg-gray-50 rounded-2xl p-8 md:p-12">
+        <div className="mt-20 bg-red-50 rounded-2xl p-8 md:p-12">
           <div className="text-center max-w-4xl mx-auto">
             <h2
-              className="mb-6 text-3xl  font-semibold text-gray-800 tracking-tight"
+              className="mb-6 text-4xl  font-semibold text-gray-800 tracking-tight"
               style={{ color: "#7F1D1D" }}
             >
               Featured Posts
             </h2>
-            <p className="text-gray-600 text-sm md:text-base">
-              Stay updated with the latest from Noble Citizen Foundation.
+            <p className="text-gray-600 text-xl font-semibold m-0 p-0">
+              Stay updated with the latest from Noble Citizen Foundation
             </p>
           </div>
 
@@ -190,7 +198,7 @@ const Mission: React.FC = () => {
         </div>
 
         {/* Mission Statement Section */}
-        <div className="mt-20 bg-gray-50 rounded-2xl p-8 md:p-12">
+        <div className="mt-20 bg-red-50 rounded-2xl p-8 md:p-12">
           <div className="text-center max-w-4xl mx-auto">
             <div className="mb-8">
               <h2 className="mb-6">Our Mission & Vision</h2>
@@ -223,13 +231,13 @@ const Mission: React.FC = () => {
               </div>
             </div>
 
-            <div className="mt-12 p-6 bg-primary-600 rounded-xl text-white">
-              <h3 className="text-xl font-semibold mb-3">
+            <div className="mt-12 p-6 bg-white rounded-xl text-gray shadow-lg">
+              <h3 className="text-2xl font-semibold mb-3">
                 Our 2030 Commitment
               </h3>
-              <p className="text-lg">
+              <p className="text-xl">
                 We are committed to impacting{" "}
-                <strong>5 million lives by 2030</strong>, creating lasting
+                <strong className="font-bold">5 million lives by 2030</strong>, creating lasting
                 positive change and ensuring sustainable development for
                 communities worldwide.
               </p>

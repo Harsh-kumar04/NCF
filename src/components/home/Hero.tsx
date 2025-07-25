@@ -38,12 +38,12 @@ const Hero: React.FC = () => {
 
           {/* Call to Action Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/get-involved" className="btn-primary">
+            <Link to="/get-involved" className="btn-primary font-bold hover:scale-105">
               Donate Now
             </Link>
             <Link
               to="/projects"
-              className="btn-outline border-white text-white hover:bg-white/10"
+              className="btn-outline border-white text-white font-bold hover:bg-white/10 hover:scale-105"
             >
               Explore Our Work
             </Link>

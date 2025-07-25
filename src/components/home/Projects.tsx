@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
   const featuredProjects = projects.slice(0, 3);
 
   return (
-    <section className="section bg-gray-50">
+    <section className="section bg-red-50">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
           <div className="mb-6 md:mb-0">
