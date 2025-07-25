@@ -67,7 +67,7 @@ const AboutPage: React.FC = () => {
       <section className="relative pt-32 pb-20 bg-primary-700 text-white">
         <div className="container-custom">
           <div className="max-w-3xl">
-            <h1 className="mb-6 text-white">About Noble Citizen Foundation</h1>
+            <h1 className="mb-6 text-white">hello Noble Citizen Foundation</h1>
             <p className="text-xl text-primary-100 mb-6">
               For over 15 years, we've been working with communities around the world to create lasting, positive change through education, health initiatives, and sustainable development.
             </p>
