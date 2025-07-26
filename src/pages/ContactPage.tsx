@@ -66,8 +66,8 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium mb-1">Phone</h3>
-                    <p className="text-gray-600 mb-1">Main Office: +1 (555) 123-4567</p>
-                    <p className="text-gray-600">Donations: +1 (555) 987-6543</p>
+                    <p className="text-gray-600 mb-1">Main Office: +91 9990821680</p>
+                    
                   </div>
                 </div>
                 
@@ -77,9 +77,8 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium mb-1">Email</h3>
-                    <p className="text-gray-600 mb-1">General Inquiries: info@noblecitizen.org</p>
-                    <p className="text-gray-600 mb-1">Volunteer: volunteer@noblecitizen.org</p>
-                    <p className="text-gray-600">Donations: donate@noblecitizen.org</p>
+                    <p className="text-gray-600 mb-1">Inquiries: admin@noblecitizenfoundation.org</p>
+                  
                   </div>
                 </div>
                 
@@ -90,9 +89,8 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-medium mb-1">Address</h3>
                     <p className="text-gray-600">
-                      123 NGO Street<br />
-                      Charity City, NY 10001<br />
-                      United States
+                       364 First Floor, Prakash Mohalla, East of Kailash<br />
+                      New Delhi, Delhi <br/>110065, India 🇮🇳
                     </p>
                   </div>
                 </div>
@@ -114,7 +112,7 @@ const ContactPage: React.FC = () => {
               {/* Map */}
               <div className="rounded-lg overflow-hidden shadow-md h-80 bg-gray-200">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48371.87152846879!2d-74.02507554257953!3d40.74873562429618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590099a54f31%3A0xb43489c75487250e!2sNew%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1688414105722!5m2!1sen!2sus" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4193.381693091135!2d77.24688707604375!3d28.558613887432664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce174baf30245%3A0x43dbb57fcde1c4c3!2sNoble%20Citizen%20Foundation!5e1!3m2!1sen!2sin!4v1753554430830!5m2!1sen!2sin" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
@@ -242,11 +240,11 @@ const ContactPage: React.FC = () => {
               <div className="mt-8 bg-primary-50 rounded-lg p-6 border border-primary-100">
                 <h3 className="text-lg font-semibold mb-3">We're Here to Help</h3>
                 <p className="text-gray-700 mb-4">
-                  Have an urgent inquiry? Our support team is available by phone during business hours for immediate assistance.
+                  Have an urgent inquiry? Our support team is available by phone during working hours for immediate assistance.
                 </p>
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 text-primary-600 mr-2" />
-                  <span className="font-medium">+1 (555) 123-4567</span>
+                  <span className="font-medium">+91 9990821680</span>
                 </div>
               </div>
             </div>
@@ -255,7 +253,7 @@ const ContactPage: React.FC = () => {
       </section>
 
       {/* Global Offices */}
-      <section className="section bg-gray-50">
+      {/* <section className="section bg-gray-50">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="mb-6">Our Global Offices</h2>
@@ -332,7 +330,7 @@ const ContactPage: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="bg-primary-700 py-16 text-white">
