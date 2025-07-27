@@ -19,16 +19,16 @@ const Footer: React.FC = () => {
               Empowering communities through education, social development, and sustainable initiatives.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="https://www.facebook.com/noblecitizenfoundation/" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="https://x.com/Noblecitizenf/" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="https://www.instagram.com/noblecitizenfoundation/" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="https://www.linkedin.com/company/noble-citizen-foundation/" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -51,15 +51,15 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={20} className="text-primary-500 mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-400">123 NGO Street, Charity City, 10001</span>
+                <span className="text-gray-400">364 First Floor, Prakash Mohalla, East of Kailash, New Delhi, 110065</span>
               </li>
               <li className="flex items-center">
                 <Phone size={20} className="text-primary-500 mr-2 flex-shrink-0" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+91 9990821680</span>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="text-primary-500 mr-2 flex-shrink-0" />
-                <span className="text-gray-400">info@noblecitizen.org</span>
+                <span className="text-gray-400">admin@noblecitizenfoundation.org</span>
               </li>
             </ul>
           </div>
