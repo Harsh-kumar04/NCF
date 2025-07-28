@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import mainLogo from "/src/assets/main_logo.webp";
+
+import mainLogo from "../../assets/main_logo.webp";
 import {
   Facebook,
   Twitter,
