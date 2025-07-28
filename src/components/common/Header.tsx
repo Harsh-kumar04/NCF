@@ -54,7 +54,7 @@ const Header: React.FC = () => {
       <div className="container-custom flex justify-between items-center h-full">
         <Link to="/" className="flex items-center">
           <img
-            src="https://mlosrx4qi7ys.i.optimole.com/cb:kUnT.1c293/w:auto/h:auto/q:mauto/ig:avif/https://noblecitizenfoundation.org/wp-content/uploads/2024/04/cropped-ncf-new-icon.png"
+            src="src\assets\main_logo.webp"
             alt="NCF Logo"
             className="w-20 h-20 object-contain"
           />

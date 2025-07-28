@@ -69,7 +69,7 @@ const AboutPage: React.FC = () => {
           <div className="max-w-3xl">
             <h1 className="mb-6 text-white">About Noble Citizen Foundation</h1>
             <p className="text-xl text-primary-100 mb-6">
-              For over 15 years, we've been working with communities around the world to create lasting, positive change through education, health initiatives, and sustainable development.
+              For over 5 years, we've been working with communities to create lasting, positive change through education, health initiatives, and sustainable development.
             </p>
           </div>
         </div>
