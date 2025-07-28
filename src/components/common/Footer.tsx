@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import mainLogo from "/src/assets/main_logo.webp";
 import {
   Facebook,
   Twitter,
@@ -20,7 +21,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-4 ">
               <img
-                src="src\assets\main_logo.webp"
+                src={mainLogo}
                 alt="logo"
                 className="w-50 h-20 object-contain"
               />
