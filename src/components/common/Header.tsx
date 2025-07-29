@@ -32,8 +32,11 @@ const Header: React.FC = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
+<<<<<<< HEAD
     { name: "Annual Reports", path: "/annual-reports" },
     { name: "Get Involved", path: "/get-involved" },
+=======
+>>>>>>> 2351cfb (Updated Navbar dropdown and combined About sections)
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
