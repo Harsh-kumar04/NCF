@@ -68,7 +68,7 @@ const AnnualReportsPage: React.FC = () => {
         {reports.map((report) => (
           <div
             key={report.year}
-            className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition duration-300 hover:scale-105 transition-transform duration-300"
+            className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition duration-300 hover:scale-105"
           >
             <img
               src={report.coverUrl}
