@@ -183,5 +183,35 @@ export const projects: Project[] = [
       { label: 'Continued Education Rate', value: '78%' }
     ],
     status: 'ongoing'
+  },
+
+  {
+    id: 'harsh',
+    title: 'lopolua',
+    category: 'dasaa',
+    location: 'South a',
+    summary: 'Developing the next generation of community leaders in South Africa through leadership training, mentorship, and community service projects.',
+    description: 'The Youth Leadership Academy invests in the future by identifying and nurturing promising young people from disadvantaged communities in South Africa. Participants engage in a comprehensive program that develops leadershits they design and implement themselves, applying their learning to address real challenges in their communities. Our mentorship component pairs participants with successful professionals who provide guidance and serve as role models. Graduates of the program form an alumni network that continues to support their development and community engagement.',
+    image: 'project\src\assets\logo.png',
+    gallery: [
+      'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1600'
+    ],
+    goals: [
+      'Train 100 youth leaders annually',
+      'Implement 25 youth-led community projects',
+      'Establish 50 professional mentorship relationships',
+      'Achieve 90% program completion rate',
+      'Connect graduates with higher education and employment opportunities'
+    ],
+    impact: [
+      { label: 'Youth Trained', value: '87' },
+      { label: 'Projects Completed', value: '21' },
+      { label: 'Community Beneficiaries', value: '15,000+' },
+      { label: 'Continued Education Rate', value: '78%' }
+    ],
+    status: 'ongoing'
   }
+
 ];

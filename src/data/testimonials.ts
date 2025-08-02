@@ -9,7 +9,7 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: 'Maria Rodriguez',
+    name: 'Krishna kumar',
     role: 'Community Member, Clean Water Initiative',
     avatar: 'https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=800',
     text: 'Before the Noble Citizen Foundation came to our village, we had to walk 5 kilometers every day to fetch water that wasn\'t even clean. Now, we have a well right in our community, and my children no longer suffer from waterborne illnesses. This has transformed our daily lives in ways I cannot fully express.',
