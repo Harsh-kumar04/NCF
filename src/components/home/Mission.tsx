@@ -193,7 +193,7 @@ const Mission: React.FC = () => {
         <div className="mt-20 bg-gray-50 rounded-2xl p-8 md:p-12">
           <div className="text-center max-w-4xl mx-auto">
             <div className="mb-8">
-              <h2 className="mb-6">Our Mission & Vision</h2>
+              <h2 className="mb-15">Our Mission & Vision</h2>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -223,17 +223,43 @@ const Mission: React.FC = () => {
               </div>
             </div>
 
-            <div className="mt-12 p-6 bg-primary-600 rounded-xl text-white">
-              <h3 className="text-xl font-semibold mb-3">
-                Our 2030 Commitment
-              </h3>
-              <p className="text-lg">
-                We are committed to impacting{" "}
-                <strong>5 million lives by 2030</strong>, creating lasting
-                positive change and ensuring sustainable development for
-                communities worldwide.
-              </p>
-            </div>
+            <section>
+              {/* Progress bars section */}
+              <div className="mt-10 bg-white rounded-xl shadow p-8">
+                <h3 className="text-2xl font-semibold text-center mb-6 text-primary-600">
+                  Our 2030 Commitment
+                </h3>
+                {/* Funds Raised */}
+                <div className="w-full bg-gray-200 rounded-full overflow-hidden h-5 mb-4">
+                  <div
+                    className="h-full animate-shine bg-gradient-to-r from-green-500 via-green-400 to-green-500"
+                    style={{ width: "40%" }} // You can make this dynamic using props
+                  ></div>
+                </div>
+                <p className="text-base text-center mt-2 mb-10 font-medium text-black">
+                  <strong className="text-green-800  font-semibold">
+                    1,800 KG of 5,000 KG garbage{" "}
+                  </strong>{" "}
+                  collected towards our clean-up goal
+                </p>
+
+                {/* People Reached */}
+                <div className="w-full bg-gray-200 rounded-full overflow-hidden h-5 mb-4">
+                  <div
+                    className="h-full animate-shine bg-gradient-to-r from-red-500 via-red-400 to-red-500"
+                    style={{ width: "30%" }} // You can make this dynamic using props
+                  ></div>
+                </div>
+                <p className="text-base text-center mt-4 font-medium text-gray-800">
+                  We are committed to impacting{" "}
+                  <strong className="text-primary-600 font-semibold">
+                    5 million lives by 2030
+                  </strong>
+                  , creating lasting positive change and ensuring sustainable
+                  development for communities worldwide.
+                </p>
+              </div>
+            </section>
           </div>
         </div>
       </div>

@@ -17,13 +17,9 @@ const partnerLogos = Object.entries(rawImages).map(([path, src]) => ({
 
 const PartnerCarousel: React.FC = () => {
   return (
-    <section className="bg-white py-10">
+    <section className="bg-white py-7">
       <div className="container-custom text-center">
-        <h2 className="text-4xl font-semibold mb-5">Our Partners</h2>
-        <p className="text-gray-600 mb-2">
-          Thanks to our partners and supporters, we're turning dreams into
-          reality. Join us in shaping a brighter future!
-        </p>
+        
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
