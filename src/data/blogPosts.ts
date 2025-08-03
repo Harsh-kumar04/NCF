@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
     author: {
       name: 'Noble Citizen Foundation',
       role: 'Admin',
-      avatar: './src/assets/logo.png',
+      avatar: '/blog-posts/logo.png',
     },
     date: 'March 14, 2024',
     place: 'Sochi, Russia',
@@ -64,7 +64,7 @@ export const blogPosts: BlogPost[] = [
     author: {
       name: 'Noble Citizen Foundation',
       role: 'Admin',
-      avatar: '/src/assets/logo.png',
+      avatar: '/blog-posts/logo.png',
     },
     date: 'June, 2025',
     place: 'Gurugram, India',
@@ -115,7 +115,7 @@ At Noble Citizen Foundation, we remain deeply committed to our mission of impact
     author: {
       name: 'Noble Citizen Foundation',
       role: 'Admin',
-      avatar: '/src/assets/logo.png',
+      avatar: '/blog-posts/logo.png',
     },
     date: 'May 4, 2025',
     place: 'Haryana, India',
@@ -157,7 +157,7 @@ Together, we are building a Noble Society that is healthy, empowered, and future
     author: {
       name: 'Noble Citizen Foundation',
       role: 'Admin',
-      avatar: '/src/assets/logo.png',
+      avatar: '/blog-posts/logo.png',
     },
     date: 'February 7, 2025',
     place: 'Gurugram, India',
@@ -242,7 +242,7 @@ This Cleanliness Drive stands as a testament to the power of community collabora
     author: {
       name: 'Noble Citizen Foundation',
       role: 'Admin',
-      avatar: '/src/assets/logo.png',
+      avatar: '/blog-posts/logo.png',
     },
     date: 'February 3, 2025',
     place: 'Gurugram, India',
@@ -319,7 +319,7 @@ By combining SUEZ India’s commitment to sustainability with NCF’s expertise 
     author: {
       name: 'Noble Citizen Foundation',
       role: 'Admin',
-      avatar: '/src/assets/logo.png',
+      avatar: '/blog-posts/logo.png',
     },
     date: 'February 3, 2024',
     place: 'Gurugram, India',
@@ -389,7 +389,7 @@ This version highlights the partnership with Gurugram Cyber Police while maintai
     author: {
       name: 'Noble Citizen Foundation',
       role: 'Admin',
-      avatar: '/src/assets/logo.png',
+      avatar: '/blog-posts/logo.png',
     },
     date: 'March 21, 2024',
     place: 'India',
@@ -500,7 +500,7 @@ From building strong leadership to fostering personal growth and well-being, the
     author: {
       name: 'Noble Citizen Foundation',
       role: 'Admin',
-      avatar: '/src/assets/logo.png',
+      avatar: '/blog-posts/logo.png',
     },
     date: 'March 21, 2024',
     place: 'New Delhi, India',
@@ -571,7 +571,7 @@ This version highlights the partnership with Gurugram Cyber Police while maintai
     author: {
       name: 'Noble Citizen Foundation',
       role: 'Admin',
-      avatar: '/src/assets/logo.png',
+      avatar: '/blog-posts/logo.png',
     },
     date: 'March 14, 2024',
     place: 'New Delhi, India',
