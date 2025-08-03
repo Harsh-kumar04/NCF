@@ -23,11 +23,11 @@ export const blogPosts: BlogPost[] = [
     author: {
       name: 'Noble Citizen Foundation',
       role: 'Admin',
-      avatar: '/src/assets/logo.png',
+      avatar: './src/assets/logo.png',
     },
     date: 'March 14, 2024',
     place: 'Sochi, Russia',
-    image: '/src/assets/blog-posts/global-ncf.jpg',
+    image: './src/assets/blog-posts/global-ncf.jpg',
     summary: 'In an anticipated week-long extravaganza, the World Youth Festival 2024 is gearing up to take center stage from March 1 to 7 at the Sirius Federal Territory in Sochi, Russia. With a lofty goal of uniting 20,000 young minds from over 180 countries ...',
     content: `
       <p style="line-height: 1.8;">
