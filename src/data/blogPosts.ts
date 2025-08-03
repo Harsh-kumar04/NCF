@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: 'March 14, 2024',
     place: 'Sochi, Russia',
-    image: './src/assets/blog-posts/global-ncf.jpg',
+    image: '/blog-posts/global-ncf.jpg',
     summary: 'In an anticipated week-long extravaganza, the World Youth Festival 2024 is gearing up to take center stage from March 1 to 7 at the Sirius Federal Territory in Sochi, Russia. With a lofty goal of uniting 20,000 young minds from over 180 countries ...',
     content: `
       <p style="line-height: 1.8;">
@@ -68,7 +68,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: 'June, 2025',
     place: 'Gurugram, India',
-    image: '/src/assets/blog-posts/pariyavaran.jpg',
+    image: '/blog-posts/pariyavaran.jpg',
     summary: 'In a proud and inspiring moment, Noble Citizen Foundation (NCF) received a Certificate of Appreciation from Smt. Rajrani Malhotra, Hon’ble Mayor of Gurugram, during an official event held in celebration of World Environment Week...',
     content: `
       <p>
@@ -119,7 +119,7 @@ At Noble Citizen Foundation, we remain deeply committed to our mission of impact
     },
     date: 'May 4, 2025',
     place: 'Haryana, India',
-    image: '/src/assets/blog-posts/ncf-mou-su.jpg',
+    image: '/blog-posts/ncf-mou-su.jpg',
     summary: 'We are proud to announce a transformative collaboration between Noble Citizen Foundation (NCF) and Sushant University, Gurugram, through the formal signing of a Memorandum of Understanding (MoU) on April 24, 2024. This partnership marks a significant step toward building a healthier, empowered, and future-ready society...',
     content: `
       <p>
@@ -161,7 +161,7 @@ Together, we are building a Noble Society that is healthy, empowered, and future
     },
     date: 'February 7, 2025',
     place: 'Gurugram, India',
-    image: '/src/assets/blog-posts/ncf-clean-drive.jpg',
+    image: '/blog-posts/ncf-clean-drive.jpg',
     summary: 'The Noble Citizen Foundation, in collaboration with the SUEZ India Foundation, Municipal Corporation Gurugram, Sushant University, EarthDay.Org, NSS Miranda House, and NSUT Dwarka, successfully organized a comprehensive Cleanliness Drive at Smriti Vatika...',
     content: `
       <p>
@@ -246,7 +246,7 @@ This Cleanliness Drive stands as a testament to the power of community collabora
     },
     date: 'February 3, 2025',
     place: 'Gurugram, India',
-    image: '/src/assets/blog-posts/mou-suez-india.png',
+    image: '/blog-posts/mou-suez-india.png',
     summary: 'In a significant step towards urban sustainability and environmental conservation, SUEZ India Foundation, under its CSR initiative, has partnered with Noble Citizen Foundation (NCF) to revitalize public parks in Gurugram. This project aims to create cleaner, greener, and more accessible urban spaces, ensuring a healthier environment and enhanced community well-being...',
     content: `
       <p>
@@ -323,7 +323,7 @@ By combining SUEZ India’s commitment to sustainability with NCF’s expertise 
     },
     date: 'February 3, 2024',
     place: 'Gurugram, India',
-    image: '/src/assets/blog-posts/mou-paytm-ncf.png',
+    image: '/blog-posts/mou-paytm-ncf.png',
     summary: 'With the rapid rise in digital transactions and online activity, cyber scams and threats have become a growing challenge, impacting individuals and businesses alike. To address this urgent issue, Paytm Foundation, under its CSR initiative, has partnered with Noble Citizen Foundation (NCF) to launch the ‘Cyber Awareness Campaign’...',
     content: `
       <p>
@@ -393,7 +393,7 @@ This version highlights the partnership with Gurugram Cyber Police while maintai
     },
     date: 'March 21, 2024',
     place: 'India',
-    image: '/src/assets/blog-posts/mastering-emotional-intelligence.jpg',
+    image: '/blog-posts/mastering-emotional-intelligence.jpg',
     summary: 'Emotional Intelligence is not just a buzzword; it’s a set of skills that empowers individuals to recognize, understand, manage, and harness emotions—both within themselves and in others...',
     content: `
       <p>
@@ -504,7 +504,7 @@ From building strong leadership to fostering personal growth and well-being, the
     },
     date: 'March 21, 2024',
     place: 'New Delhi, India',
-    image: '/src/assets/blog-posts/ncf-ceo-beauty-award.jpg',
+    image: '/blog-posts/ncf-ceo-beauty-award.jpg',
     summary: 'Noble Citizen Foundation proudly announces that its CEO, Mr. Sahil Kaushar, has been awarded the esteemed Beautiful Indians Award 2024 for his exemplary contribution to providing education to underprivileged students. This recognition not only acknowledges Mr. Kaushar’s dedication...',
     content: `
       <p>
@@ -575,7 +575,7 @@ This version highlights the partnership with Gurugram Cyber Police while maintai
     },
     date: 'March 14, 2024',
     place: 'New Delhi, India',
-    image: '/src/assets/blog-posts/ncf-hansraj-college-mou.jpg',
+    image: '/blog-posts/ncf-hansraj-college-mou.jpg',
     summary: 'In a significant stride towards fostering skill development, capacity building, knowledge enhancement, and youth development programs, Hansraj College, University of Delhi, and The Noble Citizen Foundation (NCF) have recently formalized their collaboration through a Memorandum of Understanding (MOU)...',
     content: `
       <p>
