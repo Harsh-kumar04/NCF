@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Calendar, User, ArrowLeft, Share2, MessageCircle } from 'lucide-react';
+import { Calendar, User, ArrowLeft, Share2, MessageCircle, Mountain, Pin } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 
 const BlogPostPage: React.FC = () => {
@@ -98,6 +98,10 @@ const BlogPostPage: React.FC = () => {
               <span className="text-primary-100 text-sm flex items-center">
                 <Calendar className="h-4 w-4 mr-1" />
                 {post.date}
+              </span>
+              <span className="text-primary-100 text-sm flex items-center">
+                <Pin className="h-4 w-4 mr-1" />
+                {post.place}
               </span>
             </div>
             <h1 className="mb-6 text-white">{post.title}</h1>
