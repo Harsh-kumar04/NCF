@@ -5,6 +5,7 @@ const ContactPage: React.FC = () => {
   // Set page title
   useEffect(() => {
     document.title = 'Contact Us | Noble Citizen Foundation';
+    window.scrollTo(0, 0); 
   }, []);
   
   // State for form

@@ -7,6 +7,7 @@ const RefundPolicy: React.FC = () => {
   // Set page title
   useEffect(() => {
     document.title = 'Refund Policy | Noble Citizen Foundation';
+    window.scrollTo(0, 0); 
   }, []);
 
   return (

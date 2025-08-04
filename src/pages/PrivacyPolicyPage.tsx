@@ -5,6 +5,7 @@ const PrivacyPolicy: React.FC = () => {
 
   useEffect(() => {
     document.title = 'Privacy Policy | Noble Citizen Foundation';
+    window.scrollTo(0, 0); 
   }, []);
 
   const toggleSection = (section: string) => {
