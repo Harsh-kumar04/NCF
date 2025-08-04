@@ -10,6 +10,9 @@ import GetInvolvedPage from './pages/GetInvolvedPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 import ContactPage from './pages/ContactPage';
+import PrivacyPolicy from './pages/PrivacyPolicyPage';
+import RefundPolicy from './pages/RefundPolicyPage';
+import TermsOfUse from './pages/TermsOfUsePage';
 
 function App() {
   return (
@@ -25,6 +28,10 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:id" element={<BlogPostPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
+          <Route path="/terms-of-use" element={<TermsOfUse />} />
+          {/* Add more routes as needed */}
         </Routes>
       </Layout>
     </Router>
