@@ -5,6 +5,7 @@ const TermsOfUse: React.FC = () => {
 
   useEffect(() => {
     document.title = 'Terms of Use | Noble Citizen Foundation';
+    window.scrollTo(0, 0); 
   }, []);
 
   return (
