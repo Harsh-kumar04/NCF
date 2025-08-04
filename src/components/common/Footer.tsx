@@ -181,10 +181,16 @@ const Footer: React.FC = () => {
                 Privacy Policy
               </Link>
               <Link
-                to="/terms-of-service"
+                to="/refund-policy"
                 className="text-gray-500 hover:text-primary-500 text-sm transition-colors"
               >
-                Terms of Service
+                Refund Policy
+              </Link>
+              <Link
+                to="/terms-of-use"
+                className="text-gray-500 hover:text-primary-500 text-sm transition-colors"
+              >
+                Terms of Use
               </Link>
             </div>
           </div>

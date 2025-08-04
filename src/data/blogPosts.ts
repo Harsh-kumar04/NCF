@@ -17,18 +17,20 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: 'global-celebration-unity',
-    title: 'Global Celebration of Unity: Bharat 360 Delegation Set to Shine at World Youth Festival 2024',
-    category: 'Stories',
+    id: "global-celebration-unity",
+    title:
+      "Global Celebration of Unity: Bharat 360 Delegation Set to Shine at World Youth Festival 2024",
+    category: "Stories",
     author: {
-      name: 'Noble Citizen Foundation',
-      role: 'Admin',
-      avatar: '/blog-posts/logo.png',
+      name: "Noble Citizen Foundation",
+      role: "Admin",
+      avatar: "/blog-posts/logo.png",
     },
-    date: 'March 14, 2024',
-    place: 'Sochi, Russia',
-    image: '/blog-posts/global-ncf.jpg',
-    summary: 'In an anticipated week-long extravaganza, the World Youth Festival 2024 is gearing up to take center stage from March 1 to 7 at the Sirius Federal Territory in Sochi, Russia. With a lofty goal of uniting 20,000 young minds from over 180 countries ...',
+    date: "March 14, 2024",
+    place: "Sochi, Russia",
+    image: "/blog-posts/global-ncf.jpg",
+    summary:
+      "In an anticipated week-long extravaganza, the World Youth Festival 2024 is gearing up to take center stage from March 1 to 7 at the Sirius Federal Territory in Sochi, Russia. With a lofty goal of uniting 20,000 young minds from over 180 countries ...",
     content: `
       <p style="line-height: 1.8;">
   In an anticipated week-long extravaganza, the World Youth Festival 2024 is gearing up to take center stage from March 1 to 7 at the Sirius Federal Territory in Sochi, Russia. With a lofty goal of uniting 20,000 young minds from over 180 countries under the rallying cry, “Let’s start the future together,” the festival promises a jubilant celebration of diversity, collaboration, and shared aspirations.<br><br>
@@ -53,23 +55,30 @@ export const blogPosts: BlogPost[] = [
 </p>
 
     `,
-   tags: ['Clean Water Access', 'Kenya Initiatives', 'Public Health', 'Community Development', 'Women’s Empowerment']
+    tags: [
+      "Clean Water Access",
+      "Kenya Initiatives",
+      "Public Health",
+      "Community Development",
+      "Women’s Empowerment",
+    ],
   },
 
-
   {
-    id: 'Foundation-Honoured-by-Mayor',
-    title: 'Noble Citizen Foundation Honoured by Mayor of Gurugram for Transformative Work in City Development',
-    category: 'Environment',
+    id: "Foundation-Honoured-by-Mayor",
+    title:
+      "Noble Citizen Foundation Honoured by Mayor of Gurugram for Transformative Work in City Development",
+    category: "Environment",
     author: {
-      name: 'Noble Citizen Foundation',
-      role: 'Admin',
-      avatar: '/blog-posts/logo.png',
+      name: "Noble Citizen Foundation",
+      role: "Admin",
+      avatar: "/blog-posts/logo.png",
     },
-    date: 'June, 2025',
-    place: 'Gurugram, India',
-    image: '/blog-posts/pariyavaran.jpg',
-    summary: 'In a proud and inspiring moment, Noble Citizen Foundation (NCF) received a Certificate of Appreciation from Smt. Rajrani Malhotra, Hon’ble Mayor of Gurugram, during an official event held in celebration of World Environment Week...',
+    date: "June, 2025",
+    place: "Gurugram, India",
+    image: "/blog-posts/pariyavaran.jpg",
+    summary:
+      "In a proud and inspiring moment, Noble Citizen Foundation (NCF) received a Certificate of Appreciation from Smt. Rajrani Malhotra, Hon’ble Mayor of Gurugram, during an official event held in celebration of World Environment Week...",
     content: `
       <p>
 In a proud and inspiring moment, Noble Citizen Foundation (NCF) received a Certificate of Appreciation from Smt. Rajrani Malhotra, Hon’ble Mayor of Gurugram, during an official event held in celebration of World Environment Week.
@@ -104,23 +113,30 @@ Receiving this recognition from the Mayor is not just an honor—it’s a remind
 At Noble Citizen Foundation, we remain deeply committed to our mission of impacting 5 million lives by 2030, and building a healthier, safer, and more sustainable India—starting at the grassroots level, one city at a time.
 </p>
 `,
-    tags: ['education', 'india', 'urban development', 'scholarships', 'youth empowerment']
+    tags: [
+      "education",
+      "india",
+      "urban development",
+      "scholarships",
+      "youth empowerment",
+    ],
   },
 
-
   {
-    id: 'Foundation-Signs-MoU-with-Sushant-University',
-    title: 'Noble Citizen Foundation Signs MoU with Sushant University to Empower Youth and Drive Sustainability',
-    category: 'Stories',
+    id: "Foundation-Signs-MoU-with-Sushant-University",
+    title:
+      "Noble Citizen Foundation Signs MoU with Sushant University to Empower Youth and Drive Sustainability",
+    category: "Partnerships",
     author: {
-      name: 'Noble Citizen Foundation',
-      role: 'Admin',
-      avatar: '/blog-posts/logo.png',
+      name: "Noble Citizen Foundation",
+      role: "Admin",
+      avatar: "/blog-posts/logo.png",
     },
-    date: 'May 4, 2025',
-    place: 'Haryana, India',
-    image: '/blog-posts/ncf-mou-su.jpg',
-    summary: 'We are proud to announce a transformative collaboration between Noble Citizen Foundation (NCF) and Sushant University, Gurugram, through the formal signing of a Memorandum of Understanding (MoU) on April 24, 2024. This partnership marks a significant step toward building a healthier, empowered, and future-ready society...',
+    date: "May 4, 2025",
+    place: "Haryana, India",
+    image: "/blog-posts/ncf-mou-su.jpg",
+    summary:
+      "We are proud to announce a transformative collaboration between Noble Citizen Foundation (NCF) and Sushant University, Gurugram, through the formal signing of a Memorandum of Understanding (MoU) on April 24, 2024. This partnership marks a significant step toward building a healthier, empowered, and future-ready society...",
     content: `
       <p>
 We are proud to announce a transformative collaboration between Noble Citizen Foundation (NCF) and Sushant University, Gurugram, through the formal signing of a Memorandum of Understanding (MoU) on April 24, 2024. This partnership marks a significant step toward building a healthier, empowered, and future-ready society.
@@ -146,23 +162,30 @@ We thank the leadership of Sushant University for their trust and partnership, a
 Together, we are building a Noble Society that is healthy, empowered, and future-ready.
 </p>
     `,
-    tags: ['youth empowerment', 'sustainability', 'education partnership', 'community development', 'environmental initiatives']
+    tags: [
+      "youth empowerment",
+      "sustainability",
+      "education partnership",
+      "community development",
+      "environmental initiatives",
+    ],
   },
 
-
   {
-    id: 'ncf-clean-drive',
-    title: 'Noble Citizen Foundation and SUEZ India Foundation Successfully Conduct Cleanliness Drive at Smriti Vatika',
-    category: 'Social Development',
+    id: "ncf-clean-drive",
+    title:
+      "Noble Citizen Foundation and SUEZ India Foundation Successfully Conduct Cleanliness Drive at Smriti Vatika",
+    category: "Social Development",
     author: {
-      name: 'Noble Citizen Foundation',
-      role: 'Admin',
-      avatar: '/blog-posts/logo.png',
+      name: "Noble Citizen Foundation",
+      role: "Admin",
+      avatar: "/blog-posts/logo.png",
     },
-    date: 'February 7, 2025',
-    place: 'Gurugram, India',
-    image: '/blog-posts/ncf-clean-drive.jpg',
-    summary: 'The Noble Citizen Foundation, in collaboration with the SUEZ India Foundation, Municipal Corporation Gurugram, Sushant University, EarthDay.Org, NSS Miranda House, and NSUT Dwarka, successfully organized a comprehensive Cleanliness Drive at Smriti Vatika...',
+    date: "February 7, 2025",
+    place: "Gurugram, India",
+    image: "/blog-posts/ncf-clean-drive.jpg",
+    summary:
+      "The Noble Citizen Foundation, in collaboration with the SUEZ India Foundation, Municipal Corporation Gurugram, Sushant University, EarthDay.Org, NSS Miranda House, and NSUT Dwarka, successfully organized a comprehensive Cleanliness Drive at Smriti Vatika...",
     content: `
       <p>
 The Noble Citizen Foundation, in collaboration with the SUEZ India Foundation, Municipal Corporation Gurugram, Sushant University, EarthDay.Org, NSS Miranda House, and NSUT Dwarka, successfully organized a comprehensive Cleanliness Drive at Smriti Vatika, Sector-55, Gurugram. This impactful initiative, conducted under the SUEZ Arogyam Udhyan CSR project, aimed to promote environmental awareness, responsible waste management, and active community participation in sustainability efforts.
@@ -231,23 +254,30 @@ The event concluded on an optimistic note, with organizers and participants refl
 This Cleanliness Drive stands as a testament to the power of community collaboration and serves as an inspiration for future initiatives aimed at building a greener, more sustainable India. Through such dedicated efforts, we move closer to a future where responsible waste management and environmental consciousness become a way of life for all.
 </p>
     `,
-    tags: ['cleanliness drive', 'community participation', 'waste management', 'sustainability', 'CSR initiative']
+    tags: [
+      "cleanliness drive",
+      "community participation",
+      "waste management",
+      "sustainability",
+      "CSR initiative",
+    ],
   },
 
-  
   {
-    id: 'mou-SUEZ-India',
-    title: 'SUEZ India and Noble Citizen Foundation Join Hands to Make Gurugram Greener',
-    category: 'Partnerships',
+    id: "mou-SUEZ-India",
+    title:
+      "SUEZ India and Noble Citizen Foundation Join Hands to Make Gurugram Greener",
+    category: "Partnerships",
     author: {
-      name: 'Noble Citizen Foundation',
-      role: 'Admin',
-      avatar: '/blog-posts/logo.png',
+      name: "Noble Citizen Foundation",
+      role: "Admin",
+      avatar: "/blog-posts/logo.png",
     },
-    date: 'February 3, 2025',
-    place: 'Gurugram, India',
-    image: '/blog-posts/mou-suez-india.png',
-    summary: 'In a significant step towards urban sustainability and environmental conservation, SUEZ India Foundation, under its CSR initiative, has partnered with Noble Citizen Foundation (NCF) to revitalize public parks in Gurugram. This project aims to create cleaner, greener, and more accessible urban spaces, ensuring a healthier environment and enhanced community well-being...',
+    date: "February 3, 2025",
+    place: "Gurugram, India",
+    image: "/blog-posts/mou-suez-india.png",
+    summary:
+      "In a significant step towards urban sustainability and environmental conservation, SUEZ India Foundation, under its CSR initiative, has partnered with Noble Citizen Foundation (NCF) to revitalize public parks in Gurugram. This project aims to create cleaner, greener, and more accessible urban spaces, ensuring a healthier environment and enhanced community well-being...",
     content: `
       <p>
 <b>A CSR Initiative to Revitalize Urban Parks and Promote Sustainability</b><br>
@@ -308,23 +338,30 @@ As a leading organization in environmental conservation and social impact, Noble
 By combining SUEZ India’s commitment to sustainability with NCF’s expertise in environmental projects, this initiative is set to make a lasting impact on Gurugram’s urban landscape. The project not only enhances public spaces but also fosters a culture of environmental responsibility among citizens.
 </p>
     `,
-    tags: [ 'urban sustainability', 'green spaces',  'CSR initiative', 'environmental conservation', 'community engagement']
+    tags: [
+      "urban sustainability",
+      "green spaces",
+      "CSR initiative",
+      "environmental conservation",
+      "community engagement",
+    ],
   },
 
-
   {
-    id: 'mou-paytm-ncf',
-    title: 'Partnering with Gurugram Cyber Police to Combat Cyber Scams and Strengthen Digital Security',
-    category: 'Partnerships',
+    id: "mou-paytm-ncf",
+    title:
+      "Partnering with Gurugram Cyber Police to Combat Cyber Scams and Strengthen Digital Security",
+    category: "Partnerships",
     author: {
-      name: 'Noble Citizen Foundation',
-      role: 'Admin',
-      avatar: '/blog-posts/logo.png',
+      name: "Noble Citizen Foundation",
+      role: "Admin",
+      avatar: "/blog-posts/logo.png",
     },
-    date: 'February 3, 2024',
-    place: 'Gurugram, India',
-    image: '/blog-posts/mou-paytm-ncf.png',
-    summary: 'With the rapid rise in digital transactions and online activity, cyber scams and threats have become a growing challenge, impacting individuals and businesses alike. To address this urgent issue, Paytm Foundation, under its CSR initiative, has partnered with Noble Citizen Foundation (NCF) to launch the ‘Cyber Awareness Campaign’...',
+    date: "February 3, 2024",
+    place: "Gurugram, India",
+    image: "/blog-posts/mou-paytm-ncf.png",
+    summary:
+      "With the rapid rise in digital transactions and online activity, cyber scams and threats have become a growing challenge, impacting individuals and businesses alike. To address this urgent issue, Paytm Foundation, under its CSR initiative, has partnered with Noble Citizen Foundation (NCF) to launch the ‘Cyber Awareness Campaign’...",
     content: `
       <p>
 <strong>A Collaborative Initiative to Build a Safer Digital Future</strong><br><br>
@@ -378,23 +415,30 @@ By combining Paytm Foundation’s commitment to digital security, NCF’s expert
 This version highlights the partnership with Gurugram Cyber Police while maintaining Paytm Foundation’s CSR leadership and NCF’s awareness expertise. Let me know if you’d like any refinements!
 </p>
     `,
-    tags: ['cybersecurity', 'digital safety', 'Paytm Foundation', 'Gurugram Cyber Police', 'cyber awareness campaign']
-
+    tags: [
+      "cybersecurity",
+      "digital safety",
+      "Paytm Foundation",
+      "Gurugram Cyber Police",
+      "cyber awareness campaign",
+    ],
   },
 
   {
-    id: 'mastering-emotional-intelligence',
-    title: 'Mastering Emotional Intelligence: A Comprehensive Guide to Self-Discovery, Leadership, and Well-Being',
-    category: 'Stories',
+    id: "mastering-emotional-intelligence",
+    title:
+      "Mastering Emotional Intelligence: A Comprehensive Guide to Self-Discovery, Leadership, and Well-Being",
+    category: "Stories",
     author: {
-      name: 'Noble Citizen Foundation',
-      role: 'Admin',
-      avatar: '/blog-posts/logo.png',
+      name: "Noble Citizen Foundation",
+      role: "Admin",
+      avatar: "/blog-posts/logo.png",
     },
-    date: 'March 21, 2024',
-    place: 'India',
-    image: '/blog-posts/mastering-emotional-intelligence.jpg',
-    summary: 'Emotional Intelligence is not just a buzzword; it’s a set of skills that empowers individuals to recognize, understand, manage, and harness emotions—both within themselves and in others...',
+    date: "March 21, 2024",
+    place: "India",
+    image: "/blog-posts/mastering-emotional-intelligence.jpg",
+    summary:
+      "Emotional Intelligence is not just a buzzword; it’s a set of skills that empowers individuals to recognize, understand, manage, and harness emotions—both within themselves and in others...",
     content: `
       <p>
 In the realm of personal and professional development, Emotional Intelligence (EI) stands as a transformative force, influencing how we understand and navigate our emotions. From building strong leadership to fostering personal growth and well-being, the art of identifying and labeling emotions becomes the cornerstone of a fulfilling and impactful life.<br><br>
@@ -488,24 +532,32 @@ In the intricate tapestry of life, Emotional Intelligence emerges as a guiding f
 From building strong leadership to fostering personal growth and well-being, the journey of mastering Emotional Intelligence is a transformative odyssey—a continuous process of self-discovery, resilience, and thriving in the face of life’s challenges. As we embark on this journey, we unlock the full potential of Emotional Intelligence, creating a harmonious and purposeful tapestry of personal and professional fulfillment.
 </p>
     `,
-   tags: ['emotional intelligence', 'leadership', 'personal growth', 'stress management', 'self-awareness', 'empathy']
-
+    tags: [
+      "emotional intelligence",
+      "leadership",
+      "personal growth",
+      "stress management",
+      "self-awareness",
+      "empathy",
+    ],
   },
 
-// partially- completed blog post...
+  // partially- completed blog post...
   {
-    id: 'ncf-ceo-beauty-award-2024',
-    title: 'Noble Citizen Foundation CEO Sahil Kaushar Honored with Beautiful Indians Award 2024 by Femina and Mamaearth',
-    category: 'Stories',
+    id: "ncf-ceo-beauty-award-2024",
+    title:
+      "Noble Citizen Foundation CEO Sahil Kaushar Honored with Beautiful Indians Award 2024 by Femina and Mamaearth",
+    category: "Stories",
     author: {
-      name: 'Noble Citizen Foundation',
-      role: 'Admin',
-      avatar: '/blog-posts/logo.png',
+      name: "Noble Citizen Foundation",
+      role: "Admin",
+      avatar: "/blog-posts/logo.png",
     },
-    date: 'March 21, 2024',
-    place: 'New Delhi, India',
-    image: '/blog-posts/ncf-ceo-beauty-award.jpg',
-    summary: 'Noble Citizen Foundation proudly announces that its CEO, Mr. Sahil Kaushar, has been awarded the esteemed Beautiful Indians Award 2024 for his exemplary contribution to providing education to underprivileged students. This recognition not only acknowledges Mr. Kaushar’s dedication...',
+    date: "March 21, 2024",
+    place: "New Delhi, India",
+    image: "/blog-posts/ncf-ceo-beauty-award.jpg",
+    summary:
+      "Noble Citizen Foundation proudly announces that its CEO, Mr. Sahil Kaushar, has been awarded the esteemed Beautiful Indians Award 2024 for his exemplary contribution to providing education to underprivileged students. This recognition not only acknowledges Mr. Kaushar’s dedication...",
     content: `
       <p>
 <strong>A Collaborative Initiative to Build a Safer Digital Future</strong><br><br>
@@ -559,24 +611,30 @@ By combining Paytm Foundation’s commitment to digital security, NCF’s expert
 This version highlights the partnership with Gurugram Cyber Police while maintaining Paytm Foundation’s CSR leadership and NCF’s awareness expertise. Let me know if you’d like any refinements!
 </p>
     `,
-    tags: ['cybersecurity', 'digital safety', 'Paytm Foundation', 'Gurugram Cyber Police', 'cyber awareness campaign']
-
+    tags: [
+      "cybersecurity",
+      "digital safety",
+      "Paytm Foundation",
+      "Gurugram Cyber Police",
+      "cyber awareness campaign",
+    ],
   },
 
-
   {
-    id: 'Foundation-and-Hansraj-College-Sign-MOU',
-    title: 'Fostering Collaborations for a Sustainable Future: Noble Citizen Foundation and Hansraj College Sign MOU',
-    category: 'Partnerships',
+    id: "Foundation-and-Hansraj-College-Sign-MOU",
+    title:
+      "Fostering Collaborations for a Sustainable Future: Noble Citizen Foundation and Hansraj College Sign MOU",
+    category: "Partnerships",
     author: {
-      name: 'Noble Citizen Foundation',
-      role: 'Admin',
-      avatar: '/blog-posts/logo.png',
+      name: "Noble Citizen Foundation",
+      role: "Admin",
+      avatar: "/blog-posts/logo.png",
     },
-    date: 'March 14, 2024',
-    place: 'New Delhi, India',
-    image: '/blog-posts/ncf-hansraj-college-mou.jpg',
-    summary: 'In a significant stride towards fostering skill development, capacity building, knowledge enhancement, and youth development programs, Hansraj College, University of Delhi, and The Noble Citizen Foundation (NCF) have recently formalized their collaboration through a Memorandum of Understanding (MOU)...',
+    date: "March 14, 2024",
+    place: "New Delhi, India",
+    image: "/blog-posts/ncf-hansraj-college-mou.jpg",
+    summary:
+      "In a significant stride towards fostering skill development, capacity building, knowledge enhancement, and youth development programs, Hansraj College, University of Delhi, and The Noble Citizen Foundation (NCF) have recently formalized their collaboration through a Memorandum of Understanding (MOU)...",
     content: `
       <p>
 In a significant stride towards fostering skill development, capacity building, knowledge enhancement, and youth development programs, Hansraj College, University of Delhi, and The Noble Citizen Foundation (NCF) have recently formalized their collaboration through a Memorandum of Understanding (MOU). This strategic partnership, inked on February 3, 2024, underscores a joint commitment to initiatives that aim to make meaningful contributions to education, environmental sustainability and corporate collaboration to strategically address the challenges India and its youth is facing.<br><br>
@@ -602,6 +660,12 @@ Roles and responsibilities for each party are clearly defined within the MOU. Ha
 In conclusion, the MOU between Hansraj College and The Noble Citizen Foundation signifies a pivotal step towards holistic development and sustainable initiatives. By leveraging their respective strengths, these institutions aim to create a positive impact on education, environmental sustainability, and youth development. The outlined projects reflect a commitment to inclusivity, diversity, and cooperation, paving the way for a better, more sustainable future. As they embark on this collaborative journey, the institutions are poised to make meaningful contributions to society, both locally and globally.
 </p>
     `,
-    tags: ['education partnership', 'youth development','skill building','environmental sustainability','rural education',]
-  }
+    tags: [
+      "education partnership",
+      "youth development",
+      "skill building",
+      "environmental sustainability",
+      "rural education",
+    ],
+  },
 ];
