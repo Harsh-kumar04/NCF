@@ -28,8 +28,8 @@ const Footer: React.FC = () => {
               />
             </div>
             <p className="text-gray-400 mb-4">
-              Empowering communities through education, social development, and
-              sustainable initiatives.
+              Empowering communities through education, social development, and sustainable initiatives. <br /><br />
+              License No. – 120163<br />CIN – U85300DL2020NPL368668<br />12A,80G, NITI Aayog & CSR-1 certificates are available.
             </p>
             <div className="flex space-x-4">
               <a
@@ -170,8 +170,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Noble Citizen Foundation. All
-              rights reserved.
+              Noble Citizen Foundation is a Non profit organization registered Section 8 company under the Companies Act, 2013. <br /> &copy;{new Date().getFullYear()} Noble Citizen Foundation. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link
