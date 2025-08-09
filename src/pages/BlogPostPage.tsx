@@ -21,21 +21,6 @@ const handleShare = () => {
 const BlogPostPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [post, setPost] = useState(blogPosts.find(p => p.id === id));
-  const [comment, setComment] = useState('');
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [comments, setComments] = useState<Array<{ name: string, date: string, text: string }>>([
-    {
-      name: 'John Doe',
-      date: 'June 5, 2025',
-      text: 'This is really insightful. I appreciate the detailed explanation of how clean water access impacts so many aspects of community life beyond just health.'
-    },
-    {
-      name: 'Sarah Williams',
-      date: 'June 3, 2025',
-      text: 'I volunteered with a similar project and saw firsthand how transformative clean water access can be. Thank you for sharing these stories and highlighting the ripple effects!'
-    }
-  ]);
 
   useEffect(() => {
     // Find the post based on the id
@@ -53,22 +38,7 @@ const BlogPostPage: React.FC = () => {
     window.scrollTo(0, 0);
   }, [id]);
 
-  const handleSubmitComment = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (comment && email && name) {
-      setComments([
-        {
-          name,
-          date: new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
-          text: comment
-        },
-        ...comments
-      ]);
-      setComment('');
-      setName('');
-      setEmail('');
-    }
-  };
+  
 
   if (!post) {
     return (
