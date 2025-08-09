@@ -5,6 +5,7 @@ import Projects from "../components/home/Projects";
 import Statistics from "../components/home/Statistics";
 import Testimonials from "../components/home/Testimonials";
 import PartnerCarousel from "../components/home/partner";
+import Awards from "../components/home/Awards";
 
 const HomePage: React.FC = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const HomePage: React.FC = () => {
     <div>
       <Hero />
       <Mission />
+      <Awards />
       <Projects />
       <Statistics />
       <Testimonials />

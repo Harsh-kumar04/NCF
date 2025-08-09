@@ -66,7 +66,7 @@ const Mission: React.FC = () => {
   ];
 
   return (
-    <section className="section bg-white">
+    <section className="section bg-white py-0">
       <div className="container-custom">
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="mb-6">Our Focus Areas</h2>
