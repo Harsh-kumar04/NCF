@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Calendar, User, ArrowLeft, Share2, MessageCircle, Mountain, Pin } from 'lucide-react';
+import { Calendar, ArrowLeft, Share2, Pin } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 
 
