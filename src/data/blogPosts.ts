@@ -1,6 +1,7 @@
 export interface BlogPost {
   id: string;
   title: string;
+  url?: string; // Optional URL for the blog post
   category: string;
   author: {
     name: string;
@@ -18,8 +19,8 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: "global-celebration-unity",
-    title:
-      "Global Celebration of Unity: Bharat 360 Delegation Set to Shine at World Youth Festival 2024",
+    title: "Global Celebration of Unity: Bharat 360 Delegation Set to Shine at World Youth Festival 2024.",
+    url: (window.location.href),
     category: "Stories",
     author: {
       name: "Noble Citizen Foundation",
@@ -65,9 +66,9 @@ export const blogPosts: BlogPost[] = [
   },
 
   {
-    id: "Foundation-Honoured-by-Mayor",
-    title:
-      "Noble Citizen Foundation Honoured by Mayor of Gurugram for Transformative Work in City Development",
+    id: "foundation-honoured-by-mayor",
+    title:"Noble Citizen Foundation Honoured by Mayor of Gurugram for Transformative Work in City Development.",
+    url: (window.location.href),
     category: "Environment",
     author: {
       name: "Noble Citizen Foundation",
@@ -123,9 +124,9 @@ At Noble Citizen Foundation, we remain deeply committed to our mission of impact
   },
 
   {
-    id: "Foundation-Signs-MoU-with-Sushant-University",
-    title:
-      "Noble Citizen Foundation Signs MoU with Sushant University to Empower Youth and Drive Sustainability",
+    id: "foundation-signs-mou-with-sushant-university",
+    title: "Noble Citizen Foundation Signs MoU with Sushant University to Empower Youth and Drive Sustainability.",
+    url: (window.location.href),
     category: "Partnerships",
     author: {
       name: "Noble Citizen Foundation",
@@ -173,8 +174,8 @@ Together, we are building a Noble Society that is healthy, empowered, and future
 
   {
     id: "ncf-clean-drive",
-    title:
-      "Noble Citizen Foundation and SUEZ India Foundation Successfully Conduct Cleanliness Drive at Smriti Vatika",
+    title: "Noble Citizen Foundation and SUEZ India Foundation Successfully Conduct Cleanliness Drive at Smriti Vatika.",
+    url: (window.location.href),
     category: "Social Development",
     author: {
       name: "Noble Citizen Foundation",
@@ -264,9 +265,9 @@ This Cleanliness Drive stands as a testament to the power of community collabora
   },
 
   {
-    id: "mou-SUEZ-India",
-    title:
-      "SUEZ India and Noble Citizen Foundation Join Hands to Make Gurugram Greener",
+    id: "mou-suez-india",
+    title: "SUEZ India and Noble Citizen Foundation Join Hands to Make Gurugram Greener.",
+    url: (window.location.href),
     category: "Partnerships",
     author: {
       name: "Noble Citizen Foundation",
@@ -349,8 +350,8 @@ By combining SUEZ India’s commitment to sustainability with NCF’s expertise 
 
   {
     id: "mou-paytm-ncf",
-    title:
-      "Partnering with Gurugram Cyber Police to Combat Cyber Scams and Strengthen Digital Security",
+    title: "Partnering with Gurugram Cyber Police to Combat Cyber Scams and Strengthen Digital Security.",
+    url: (window.location.href),
     category: "Partnerships",
     author: {
       name: "Noble Citizen Foundation",
@@ -426,8 +427,8 @@ This version highlights the partnership with Gurugram Cyber Police while maintai
 
   {
     id: "mastering-emotional-intelligence",
-    title:
-      "Mastering Emotional Intelligence: A Comprehensive Guide to Self-Discovery, Leadership, and Well-Being",
+    title: "Mastering Emotional Intelligence: A Comprehensive Guide to Self-Discovery, Leadership, and Well-Being...",
+    url: (window.location.href),
     category: "Stories",
     author: {
       name: "Noble Citizen Foundation",
@@ -545,8 +546,8 @@ From building strong leadership to fostering personal growth and well-being, the
   // partially- completed blog post...
   {
     id: "ncf-ceo-beauty-award-2024",
-    title:
-      "Noble Citizen Foundation CEO Sahil Kaushar Honored with Beautiful Indians Award 2024 by Femina and Mamaearth",
+    title: "Noble Citizen Foundation CEO Sahil Kaushar Honored with Beautiful Indians Award 2024 by Femina and Mamaearth.",
+    url: (window.location.href),
     category: "Stories",
     author: {
       name: "Noble Citizen Foundation",
@@ -621,9 +622,9 @@ This version highlights the partnership with Gurugram Cyber Police while maintai
   },
 
   {
-    id: "Foundation-and-Hansraj-College-Sign-MOU",
-    title:
-      "Fostering Collaborations for a Sustainable Future: Noble Citizen Foundation and Hansraj College Sign MOU",
+    id: "foundation-and-hansraj-college-sign-mou",
+    title: "Fostering Collaborations for a Sustainable Future: Noble Citizen Foundation and Hansraj College Sign MOU.",
+    url: (window.location.href),
     category: "Partnerships",
     author: {
       name: "Noble Citizen Foundation",
