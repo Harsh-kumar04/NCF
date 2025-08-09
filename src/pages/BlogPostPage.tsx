@@ -3,6 +3,21 @@ import { useParams, Link } from 'react-router-dom';
 import { Calendar, User, ArrowLeft, Share2, MessageCircle, Mountain, Pin } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 
+
+// copy to clipboard link ----
+const handleShare = () => {
+  const postUrl = window.location.href; // current page URL
+  navigator.clipboard.writeText(postUrl)
+    .then(() => {
+      alert("Link copied to clipboard!");
+    })
+    .catch(() => {
+      alert("Failed to copy link.");
+    });
+};
+
+
+
 const BlogPostPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [post, setPost] = useState(blogPosts.find(p => p.id === id));
@@ -193,8 +208,8 @@ const BlogPostPage: React.FC = () => {
                     </svg>
                 </button>
 
-                <button className="text-gray-600 hover:text-primary-600 transition-colors">
-                  <Share2 className="h-5 w-5" />
+                <button onClick={handleShare} className="flex items-center gap-1"> <Share2 size={16} />
+                 Share
                 </button>
 
               </div>
