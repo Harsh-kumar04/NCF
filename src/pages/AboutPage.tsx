@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { Award, Heart, Clock, Target } from "lucide-react";
 import { teamMembers } from "../data/team";
 import Partner from "../components/home/partner";
+import VolunteersSlider from "../components/home/volunteers";
+
+
 const AboutPage: React.FC = () => {
   // Set page title
   useEffect(() => {
@@ -37,34 +40,7 @@ const AboutPage: React.FC = () => {
     },
   ];
 
-  // Partner logos data
-  const partners = [
-    {
-      name: "Global Health Initiative",
-      logo: "https://placehold.co/200x80/e4e4e7/a1a1aa?text=Global+Health",
-    },
-    {
-      name: "EduWorld Foundation",
-      logo: "https://placehold.co/200x80/e4e4e7/a1a1aa?text=EduWorld",
-    },
-    {
-      name: "GreenPlanet",
-      logo: "https://placehold.co/200x80/e4e4e7/a1a1aa?text=GreenPlanet",
-    },
-    {
-      name: "TechForGood",
-      logo: "https://placehold.co/200x80/e4e4e7/a1a1aa?text=TechForGood",
-    },
-    {
-      name: "United Development Fund",
-      logo: "https://placehold.co/200x80/e4e4e7/a1a1aa?text=United+Development",
-    },
-    {
-      name: "Community Builders Association",
-      logo: "https://placehold.co/200x80/e4e4e7/a1a1aa?text=Community+Builders",
-    },
-  ];
-
+ 
   return (
     <div>
       {/* Hero Section */}
@@ -394,6 +370,9 @@ const AboutPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Volunteers Section */}
+      <VolunteersSlider />
 
       {/* Partners Section */}
       <section className="section bg-white">

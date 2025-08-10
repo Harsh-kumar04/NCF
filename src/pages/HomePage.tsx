@@ -6,6 +6,7 @@ import Statistics from "../components/home/Statistics";
 import Testimonials from "../components/home/Testimonials";
 import PartnerCarousel from "../components/home/partner";
 import Awards from "../components/home/Awards";
+import VolunteersSlider from "../components/home/volunteers";
 
 const HomePage: React.FC = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const HomePage: React.FC = () => {
         </p>
       </div>
       <PartnerCarousel />
+      <VolunteersSlider />
     </div>
   );
 };
