@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGlobe } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6"; // X logo from react-icons
+import { FaXTwitter } from "react-icons/fa6";
 
 type Volunteer = {
   name: string;
@@ -15,15 +15,32 @@ const VolunteersMarquee: React.FC = () => {
   const getPlatformIcon = (platform: string) => {
     const lower = platform.toLowerCase();
     if (lower.includes("facebook"))
-      return <FaFacebook size={20} color="#1877F2" />; // Facebook Blue
+      return <FaFacebook size={18} color="#1877F2" className="volunteer-icon" />;
     if (lower.includes("instagram"))
-      return <FaInstagram size={20} color="#E4405F" />; // Instagram Pink/Red
+      return <FaInstagram size={18} color="#E4405F" className="volunteer-icon" />;
     if (lower.includes("twitter") || lower === "x")
-      return <FaXTwitter size={20} color="#000000" />; // X logo (black)
+      return <FaXTwitter size={17} color="#000000" className="volunteer-icon" />;
     if (lower.includes("linkedin"))
-      return <FaLinkedin size={20} color="#0A66C2" />; // LinkedIn Blue
-    return <FaGlobe size={20} color="#2F855A" />; // Default Globe Green
+      return <FaLinkedin size={18} color="#0A66C2" className="volunteer-icon" />;
+    return <FaGlobe size={18} color="#2F855A" className="volunteer-icon" />;
   };
+
+  useEffect(() => {
+    const style = document.createElement("style");
+    style.innerHTML = `
+      .volunteer-icon {
+        transition: transform 0.2s, filter 0.2s;
+      }
+      .volunteer-icon:hover {
+        transform: scale(1.2);
+        filter: brightness(1.2) drop-shadow(0 2px 6px #aaa);
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
 
   useEffect(() => {
     const endpoint =
@@ -40,9 +57,9 @@ const VolunteersMarquee: React.FC = () => {
             description: v.team || "Volunteer Team Name",
             social: v.socials
               ? v.socials.map((s: any) => ({
-                  platform: s.platform,
-                  url: s.url,
-                }))
+                platform: s.platform,
+                url: s.url,
+              }))
               : [],
           }));
           setVolunteers([...formatted, ...formatted]);
@@ -70,13 +87,27 @@ const VolunteersMarquee: React.FC = () => {
           Fetching volunteers...
         </div>
       ) : (
-        <div className="inline-flex animate-scroll-left">
+        <div className="marquee-container bg-white inline-flex animate-scroll-left">
           {volunteers.map((v, idx) => (
             <div
               key={idx}
-              className="min-w-[290px] mx-2 p-2 flex flex-col items-center text-center transition-transform duration-300 ease-in-out cursor-pointer hover:scale-105 hover:shadow-xl"
+              className="min-w-[200px] mx-1 py-3 flex flex-col items-center text-center  
+                         transition-transform duration-300 ease-in-out cursor-pointer 
+                         hover:scale-105 hover:shadow-xl"
+              onMouseEnter={() => {
+                const marquee = document.querySelector(
+                  ".marquee-container"
+                ) as HTMLElement;
+                marquee.style.animationPlayState = "paused";
+              }}
+              onMouseLeave={() => {
+                const marquee = document.querySelector(
+                  ".marquee-container"
+                ) as HTMLElement;
+                marquee.style.animationPlayState = "running";
+              }}
             >
-              <strong className="text-lg text-maroon-900">{v.name}</strong>
+              <strong className="text-sm text-maroon-900">{v.name}</strong>
               <p className="text-sm text-gray-600 mb-2.5 mt-1 leading-snug">
                 ({v.description})
               </p>
@@ -100,11 +131,12 @@ const VolunteersMarquee: React.FC = () => {
       <style>
         {`
           @keyframes scroll-left {
-            0% { transform: translateX(0); }
+            0% { transform: translateX(0%); }
             100% { transform: translateX(-50%); }
           }
           .animate-scroll-left {
-            animation: scroll-left 25s linear infinite;
+            animation: scroll-left 9s linear infinite;
+            animation-play-state: running;
           }
         `}
       </style>
