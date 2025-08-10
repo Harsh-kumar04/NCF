@@ -1,16 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import mainLogo from "../../assets/main_logo.webp";
+import { FaXTwitter, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa6"; // X logo from react-icons
+
 import {
-  Facebook,
-  Twitter,
-  Instagram,
   Linkedin,
   Mail,
   Phone,
   MapPin,
-  Youtube,
 } from "lucide-react";
 import Newsletter from "./Newsletter";
 
@@ -37,21 +34,21 @@ const Footer: React.FC = () => {
                 target="_blank"
                 className="text-blue-600 hover:text-primary-500 transition-colors"
               >
-                <Facebook size={20} />
+                <FaFacebook size={20} />
               </a>
-              <a
+                <a
                 href="https://twitter.com/Noblecitizenf?s=09"
                 target="_blank"
-                className="text-blue-400 hover:text-primary-500 transition-colors"
-              >
-                <Twitter size={20} />
-              </a>
+                className="text-gray-400 hover:text-primary-500 transition-colors"
+                >
+                  <FaXTwitter size={20} />
+                </a>
               <a
                 href="https://www.instagram.com/noblecitizenfoundation/"
                 target="_blank"
                 className="text-pink-400 hover:text-primary-500 transition-colors"
               >
-                <Instagram size={20} />
+                <FaInstagram size={20} />
               </a>
               <a
                 href="https://www.linkedin.com/company/noble-citizen-foundation/"
@@ -65,7 +62,7 @@ const Footer: React.FC = () => {
                 className="text-red-400 hover:text-primary-500 transition-colors"
                 target="_blank"
               >
-                <Youtube size={20} />
+                <FaYoutube size={20} />
               </a>
             </div>
           </div>
