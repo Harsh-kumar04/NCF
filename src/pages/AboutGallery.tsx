@@ -33,11 +33,11 @@ const AboutGallery: React.FC = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden bg-white pt-12 pb-2 mb-2 relative">
+    <div className="overflow-hidden bg-white mt-20 pb-2 mb-2 relative">
       <h2 className="text-center font-bold mb-6">
-        Impact in Action: Our Gallery
+        Impact in Action: Gallery
       </h2>
-      <p className="text-center text-gray-600 mb-6">
+      <p className="text-center text-lg text-gray-600 mb-6">
         A glimpse into our impactful work and the communities we serve.
       </p>
 
@@ -52,7 +52,7 @@ const AboutGallery: React.FC = () => {
           modifier: 2,
           slideShadows: false,
         }}
-        spaceBetween={30}
+        spaceBetween={35}
         slidesPerView={1}
         breakpoints={{
           640: { slidesPerView: 2 },
