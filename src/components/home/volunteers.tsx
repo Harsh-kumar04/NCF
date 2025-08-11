@@ -54,7 +54,7 @@ const VolunteersMarquee: React.FC = () => {
         } else {
           const formatted: Volunteer[] = data.map((v: any) => ({
             name: v.name,
-            description: v.team || "Volunteer Team Name",
+            description: v.team,
             social: v.socials
               ? v.socials.map((s: any) => ({
                 platform: s.platform,
@@ -109,7 +109,7 @@ const VolunteersMarquee: React.FC = () => {
             >
               <strong className="text-sm text-maroon-900">{v.name}</strong>
               <p className="text-sm text-gray-600 mb-2.5 mt-1 leading-snug">
-                ({v.description})
+                {v.description}
               </p>
               <div className="flex justify-center space-x-3">
                 {v.social.map((s) => (
