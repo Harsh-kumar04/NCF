@@ -1,6 +1,5 @@
 import React from "react";
-import VishvasImage from "../../assets/Vishvas.webp";
-import newz from "../../assets/newz.webp";
+import FeaturedPostsSection from "./FeaturedPosts";
 
 import {
   Target,
@@ -103,91 +102,8 @@ const Mission: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-20 bg-gray-50 rounded-2xl p-8 md:p-12">
-          <div className="text-center max-w-4xl mx-auto">
-            <h2
-              className="mb-6 text-3xl  font-semibold text-gray-800 tracking-tight"
-              style={{ color: "#7F1D1D" }}
-            >
-              Featured Posts
-            </h2>
-            <p className="text-gray-600 text-sm md:text-base">
-              Stay updated with the latest from Noble Citizen Foundation.
-            </p>
-          </div>
-
-          <div className="flex flex-col md:flex-row gap-10 justify-center items-stretch mt-10 ">
-            {/* Post 1 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden w-full  md:w-1/2 transition-transform hover:scale-105 duration-300">
-              <img
-                src={VishvasImage}
-                alt="Post 1"
-                className="w-full object-cover"
-              />
-
-              <div className="p-9 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center mb-3 space-x-2">
-                    <img
-                      src="https://mlosrx4qi7ys.i.optimole.com/cb:kUnT.1c293/w:100/h:34/q:mauto/ig:avif/https://noblecitizenfoundation.org/wp-content/uploads/elementor/thumbs/jagran-josh-logo-freelogovectors.net_-qxz4aaw1i46rg3s0t2ugqze7ysnc0vxwx3h1fre0r8.png"
-                      alt="Logo"
-                      className="w-19 h-6 object-contain"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                    Noble Citizen Foundation Organises Cyber Awareness Program
-                  </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    The Noble Citizen Foundation and Vishwas News organised a
-                    media literacy and cyber awareness program in collaboration
-                    with Hansraj College...
-                  </p>
-                </div>
-
-                <a
-                  href="https://www.thedailyjagran.com/india/noble-citizen-foundation-and-vishwas-news-organise-media-literacy-and-cyber-awareness-program-in-collaboration-with-hansraj-college-10200924"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-block text-sm text-blue-600 font-semibold hover:underline"
-                >
-                  Read More
-                </a>
-              </div>
-            </div>
-
-            {/* Post 2 */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden w-full md:w-1/2 transition-transform hover:scale-105 duration-300">
-              <img src={newz} alt="Post 1" className="w-full  object-cover" />
-              <div className="p-9 flex flex-col justify-between w-full">
-                <div>
-                  <div className="flex items-center mb-3 space-x-2">
-                    <img
-                      src="https://mlosrx4qi7ys.i.optimole.com/cb:kUnT.1c293/w:100/h:34/q:mauto/ig:avif/https://noblecitizenfoundation.org/wp-content/uploads/elementor/thumbs/jagran-josh-logo-freelogovectors.net_-qxz4aaw1i46rg3s0t2ugqze7ysnc0vxwx3h1fre0r8.png"
-                      alt="Logo"
-                      className="w-19 h-6 object-contain"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                    Noble Citizen Foundation Organises Tree Plantation Drive
-                  </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    The Noble Citizen Foundation organised a tree plantation
-                    drive at Smriti Vatika in Gurugram, encouraging
-                    environmental responsibility...
-                  </p>
-                </div>
-                <a
-                  href="https://www.thedailyjagran.com/india/noble-citizen-foundation-organises-tree-plantation-drive-at-smriti-vatika-in-gurugram-10222012"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-block text-sm text-blue-600 font-semibold hover:underline"
-                >
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Featured Posts Section */}
+        <FeaturedPostsSection />
 
         {/* Mission Statement Section */}
         <div className="mt-20 bg-gray-50 rounded-2xl p-8 md:p-12">
