@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Award, Heart, Clock, Target } from "lucide-react";
 import { teamMembers } from "../data/team";
 import Partner from "../components/home/partner";
-import VolunteersSlider from "../components/home/volunteers";
 
 
 const AboutPage: React.FC = () => {
@@ -371,8 +370,6 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Volunteers Section */}
-      <VolunteersSlider />
 
       {/* Partners Section */}
       <section className="section bg-white">

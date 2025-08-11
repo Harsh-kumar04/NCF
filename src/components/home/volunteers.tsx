@@ -44,7 +44,7 @@ const VolunteersMarquee: React.FC = () => {
 
   useEffect(() => {
     const endpoint =
-      "https://script.google.com/macros/s/AKfycbyLLj8Y-K-szgLmwHyvl-sUmCsom_I8lD3YJsCjzXco1mJaLjoserHupPU3pZh035Rz/exec";
+      "https://script.google.com/macros/s/AKfycbwExEPD7nWBRUFf2h-_eDyvL_55jjW0xAhuNpU2xRgW0o84oEqAMK-iXh85mOFPhbaG/exec";
 
     fetch(endpoint)
       .then((res) => res.json())
