@@ -42,10 +42,10 @@ const Hero: React.FC = () => {
               Donate Now
             </Link>
             <Link
-              to="/projects"
+              to="/Mentorship"
               className="btn-outline border-white text-white hover:bg-white/10"
             >
-              Explore Our Work
+              Mentorship Program
             </Link>
           </div>
         </div>

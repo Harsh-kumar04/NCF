@@ -1,18 +1,19 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/common/Layout';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ProjectsPage from './pages/ProjectsPage';
-import ProjectDetailPage from './pages/ProjectDetailPage';
-import AnnualReportsPage from './pages/AnnualReportsPage';
-import GetInvolvedPage from './pages/GetInvolvedPage';
-import BlogPage from './pages/BlogPage';
-import BlogPostPage from './pages/BlogPostPage';
-import ContactPage from './pages/ContactPage';
-import PrivacyPolicy from './pages/PrivacyPolicyPage';
-import RefundPolicy from './pages/RefundPolicyPage';
-import TermsOfUse from './pages/TermsOfUsePage';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/common/Layout";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import ProjectDetailPage from "./pages/ProjectDetailPage";
+import AnnualReportsPage from "./pages/AnnualReportsPage";
+import GetInvolvedPage from "./pages/GetInvolvedPage";
+import Mentorship from "./pages/Mentorship";
+import BlogPage from "./pages/BlogPage";
+import BlogPostPage from "./pages/BlogPostPage";
+import ContactPage from "./pages/ContactPage";
+import PrivacyPolicy from "./pages/PrivacyPolicyPage";
+import RefundPolicy from "./pages/RefundPolicyPage";
+import TermsOfUse from "./pages/TermsOfUsePage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
+          <Route path="/Mentorship" element={<Mentorship />} />
           {/* Add more routes as needed */}
         </Routes>
       </Layout>
