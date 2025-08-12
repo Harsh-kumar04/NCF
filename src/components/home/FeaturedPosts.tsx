@@ -95,7 +95,7 @@ const FeaturedPostsSection: React.FC = () => {
           spaceBetween={24}
           slidesPerView={1}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 2000, disableOnInteraction: false }}
+          autoplay={{ delay: 4800, disableOnInteraction: false }}
           breakpoints={{
             1024: { slidesPerView: 2 },
           }}
