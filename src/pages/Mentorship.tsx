@@ -150,13 +150,6 @@ function App() {
     },
   ];
 
-  const stats = [
-    { number: "500+", label: "NGOs Trained" },
-    { number: "₹50Cr+", label: "Funding Secured" },
-    { number: "95%", label: "Success Rate" },
-    { number: "50+", label: "Corporate Partners" },
-  ];
-
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans">
       {/* Hero Section */}

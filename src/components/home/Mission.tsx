@@ -148,8 +148,12 @@ const Mission: React.FC = () => {
                 {/* Funds Raised */}
                 <div className="w-full bg-gray-200 rounded-full overflow-hidden h-5 mb-4">
                   <div
-                    className="h-full animate-shine bg-gradient-to-r from-orange-500 via-orange-300 to-orange-500"
-                    style={{ width: "40%" }} // You can make this dynamic using props
+                    className="h-full bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600"
+                    style={{
+                      width: "40%",
+                      backgroundSize: "200% 100%",
+                      animation: "shine 2s linear infinite",
+                    }}
                   ></div>
                 </div>
                 <p className="text-base text-center mt-2 mb-10 font-medium text-black">
@@ -161,10 +165,10 @@ const Mission: React.FC = () => {
 
                 {/* People Reached */}
                 <div className="w-full bg-gray-200 rounded-full overflow-hidden h-5 mb-4">
-                    <div
-                    className="h-full animate-shine bg-gradient-to-r from-green-700 via-green-400 to-green-700"
+                  <div
+                    className="h-full animate-shine bg-gradient-to-r from-green-500 via-green-550 to-green-600"
                     style={{ width: "30%" }} // You can make this dynamic using props
-                    ></div>
+                  ></div>
                 </div>
                 <p className="text-base text-center mt-4 font-medium text-gray-800">
                   We are committed to impacting{" "}
