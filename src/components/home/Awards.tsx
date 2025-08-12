@@ -101,7 +101,7 @@ const Awards: React.FC = () => {
         <div className="bg-gray-50 rounded-2xl p-8 md:p-12">
           <div className="text-center max-w-8xl mx-auto">
             <div className="mb-8">
-              <h2 className="mb-15">Awards and Recognition</h2>
+              <h2 className="mb-16">Awards and Recognition</h2>
             </div>
 
             {/* Swiper Section */}

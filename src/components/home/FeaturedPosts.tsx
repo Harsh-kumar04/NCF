@@ -1,8 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
 
 import VishvasImage from "/feature-posts/vishvas.webp";
 import newz from "/feature-posts/newz.webp";
@@ -62,7 +65,7 @@ const FeaturedPostsSection: React.FC = () => {
     {
       image: nca,
       logo: "https://noblecitizenaward.in/wp-content/uploads/2023/08/mr-sahil-nobel-sitizen-award-600x585.png",
-      title: "Noble Citizen Foundation Organises Tree Plantation Drive",
+      title: "Noble Citizen Award 2023",
       description:
         "The Citizen Summit, convened by the Noble Citizen Foundation, represents a pivotal platform for collaboration and collective action. It celebrates outstanding individuals and addresses pressing societal issues, fostering inclusive development and positive change...",
       link: "https://noblecitizenaward.in/",
@@ -78,42 +81,34 @@ const FeaturedPostsSection: React.FC = () => {
   ];
 
   return (
-    <div className="mt-20 bg-gray-50 rounded-2xl p-8 md:p-12">
-      <div className="text-center max-w-4xl mx-auto mb-10">
-        <h2
-          className="mb-6 text-4xl font-semibold text-gray-800 tracking-tight"
-          style={{ color: "#7F1D1D" }}
-        >
-          Featured Posts
-        </h2>
-        <p className="text-gray-600 text-lg md:text-base">
-          Stay updated with the latest from Noble Citizen Foundation.
-        </p>
-      </div>
+    <section className="mt-20 bg-gray-50 rounded-2xl p-8 md:p-12">
+      <div className="container-custom">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="mb-3">Feature Posts</h2>
+          <p className="text-lg text-gray-600">
+            Stay updated with the latest from Noble Citizen Foundation.
+          </p>
+        </div>
 
-      <div className="mt-10">
         <Swiper
           modules={[Pagination, Autoplay]}
-          spaceBetween={20}
-          loop={true}
-          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          spaceBetween={18}
+          slidesPerView={3}
           pagination={{ clickable: true }}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
           breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            1024: { slidesPerView: 2 },
           }}
+          className="!pb-12"
         >
           {posts.map((post, index) => (
-            <SwiperSlide key={index} className="flex">
-              <div className="flex-1 h-full">
-                <FeaturePost {...post} />
-              </div>
+            <SwiperSlide key={index}>
+              <FeaturePost {...post} />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 };
 
