@@ -92,8 +92,8 @@ const FeaturedPostsSection: React.FC = () => {
 
         <Swiper
           modules={[Pagination, Autoplay]}
-          spaceBetween={18}
-          slidesPerView={3}
+          spaceBetween={24}
+          slidesPerView={1}
           pagination={{ clickable: true }}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           breakpoints={{
