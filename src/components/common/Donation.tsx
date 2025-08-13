@@ -7,10 +7,10 @@ type DonationFormProps = {
 
 const Donation: React.FC<DonationFormProps> = ({ razorpayUrl }) => {
   const images = [
-    "public/projects/1.webp",
-    "public/projects/2.webp",
-    "public/projects/3.webp",
-    "public/projects/4.webp",
+    "/projects/1.webp",
+    "/projects/2.webp",
+    "/projects/3.webp",
+    "/projects/4.webp",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
