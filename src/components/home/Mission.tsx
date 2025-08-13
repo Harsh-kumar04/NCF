@@ -1,5 +1,4 @@
 import React from "react";
-import FeaturedPostsSection from "./FeaturedPosts";
 
 import {
   Target,
@@ -103,7 +102,6 @@ const Mission: React.FC = () => {
         </div>
 
         {/* Featured Posts Section */}
-        <FeaturedPostsSection />
 
         {/* Mission Statement Section */}
         <div className="mt-20 bg-gray-50 rounded-2xl p-8 md:p-12">
