@@ -480,6 +480,9 @@ const GetInvolvedPage: React.FC = () => {
                     </p>
                   </div>
 
+
+                  
+
                   <div className="border-l-4 border-secondary-500 pl-4">
                     <h4 className="text-lg font-medium mb-2">
                       Global Volunteering

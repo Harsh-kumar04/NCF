@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import {
-  MapPin,
-  Calendar,
-  ArrowLeft,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
+import { MapPin, ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import { projects } from "../data/projects";
 
 const ProjectDetailPage: React.FC = () => {
