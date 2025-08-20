@@ -7,6 +7,7 @@ import Testimonials from "../components/home/Testimonials";
 import PartnerCarousel from "../components/home/partner";
 import Awards from "../components/home/Awards";
 import VolunteersSlider from "../components/home/volunteers";
+import FeaturedPostsSection from "../components/home/FeaturedPosts";
 
 const HomePage: React.FC = () => {
   useEffect(() => {
@@ -17,13 +18,14 @@ const HomePage: React.FC = () => {
     <div>
       <Hero />
       <Mission />
-      <Awards />
       <Projects />
-      <Statistics />
+      <Statistics />  
+      <Awards />
+      <FeaturedPostsSection />
       <Testimonials />
       <div className="text-center max-w-3xl mx-auto ">
-        <h2 className="mb-6">Our Partners</h2>
-        <p className="text-m text-gray-600 ">
+        <h2 className="mb-2">Our Partners</h2>
+        <p className="text-m text-gray-600 px-2 ">
           Thanks to our partners and supporters, we're turning dreams into
           reality. Join us in shaping a brighter future!
         </p>

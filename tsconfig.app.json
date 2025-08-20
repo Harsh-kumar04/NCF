@@ -20,5 +20,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "src/components/home/FeaturedPosts.tsx"]
+  "include": ["src", "src/components/home/FeaturedPosts.tsx", "src/data/projects.ts"]
 }

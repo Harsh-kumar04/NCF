@@ -62,6 +62,9 @@ const Statistics: React.FC = () => {
 
   return (
     <section className="py-16 bg-gray-900 text-white">
+      <div className="text-center max-w-3xl mx-auto mb-16">
+        <h3 className="mb-3 text-white">Our Journey in Numbers</h3>
+      </div>
       <div className="container-custom">
         <Swiper
           modules={[Autoplay]}

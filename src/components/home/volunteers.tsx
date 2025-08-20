@@ -15,13 +15,21 @@ const VolunteersMarquee: React.FC = () => {
   const getPlatformIcon = (platform: string) => {
     const lower = platform.toLowerCase();
     if (lower.includes("facebook"))
-      return <FaFacebook size={18} color="#1877F2" className="volunteer-icon" />;
+      return (
+        <FaFacebook size={18} color="#1877F2" className="volunteer-icon" />
+      );
     if (lower.includes("instagram"))
-      return <FaInstagram size={18} color="#E4405F" className="volunteer-icon" />;
+      return (
+        <FaInstagram size={18} color="#E4405F" className="volunteer-icon" />
+      );
     if (lower.includes("twitter") || lower === "x")
-      return <FaXTwitter size={17} color="#000000" className="volunteer-icon" />;
+      return (
+        <FaXTwitter size={17} color="#000000" className="volunteer-icon" />
+      );
     if (lower.includes("linkedin"))
-      return <FaLinkedin size={18} color="#0A66C2" className="volunteer-icon" />;
+      return (
+        <FaLinkedin size={18} color="#0A66C2" className="volunteer-icon" />
+      );
     return <FaGlobe size={18} color="#2F855A" className="volunteer-icon" />;
   };
 
@@ -57,9 +65,9 @@ const VolunteersMarquee: React.FC = () => {
             description: v.team,
             social: v.socials
               ? v.socials.map((s: any) => ({
-                platform: s.platform,
-                url: s.url,
-              }))
+                  platform: s.platform,
+                  url: s.url,
+                }))
               : [],
           }));
           setVolunteers([...formatted, ...formatted]);
@@ -75,7 +83,7 @@ const VolunteersMarquee: React.FC = () => {
   return (
     <div className="overflow-hidden bg-white pt-5 pb-2 mb-2 relative">
       <div className="text-center max-w-3xl mx-auto">
-        <h2 className="mb-6">Our Volunteers</h2>
+        <h2 className="mb-6">Elite Volunteers ⭐</h2>
         <p className="text-m text-gray-600 pb-5">
           We appreciate your time and support — together, we can inspire
           positive change!
