@@ -14,6 +14,7 @@ import ContactPage from "./pages/ContactPage";
 import PrivacyPolicy from "./pages/PrivacyPolicyPage";
 import RefundPolicy from "./pages/RefundPolicyPage";
 import TermsOfUse from "./pages/TermsOfUsePage";
+import VerifyCertificatesPage from "./pages/VerifyCertificatesPage";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/Mentorship" element={<Mentorship />} />
+          <Route path="/VerifyCertificatesPage" element={<VerifyCertificatesPage />} />
           {/* Add more routes as needed */}
         </Routes>
       </Layout>

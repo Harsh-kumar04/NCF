@@ -118,6 +118,14 @@ const Footer: React.FC = () => {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/VerifyCertificatesPage"
+                  className="text-gray-400 hover:text-primary-500 transition-colors"
+                >
+                  Verify Certificates
+                </Link>
+              </li>
             </ul>
           </div>
 
