@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Search, Award, Download } from "lucide-react";
 import html2canvas from "html2canvas";
 
@@ -151,6 +151,9 @@ const handleDownload = async () => {
             </p>
 
             <div className="space-y-5 text-gray-800 text-sm md:text-lg px-2 md:px-4">
+              <p className="flex justify-between border-b pb-2">
+                <strong>Certificate ID:</strong> {certId}
+              </p>
               <p className="flex justify-between border-b pb-2">
                 <strong>Name:</strong> {result.fullName}
               </p>
