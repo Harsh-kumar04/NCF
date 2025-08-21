@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
 
           {/* Call to Action Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/get-involved" className="btn-primary">
+            <Link to="/get-involved#get" className="btn-primary">
               Donate Now
             </Link>
             <Link

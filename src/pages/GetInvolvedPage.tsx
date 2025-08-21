@@ -177,7 +177,7 @@ const GetInvolvedPage: React.FC = () => {
       </section>
 
       {/* Ways to Get Involved */}
-      <section className="section bg-white">
+      <section id="get" className="section bg-white">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="mb-6">Ways to Make a Difference</h2>
@@ -200,7 +200,11 @@ const GetInvolvedPage: React.FC = () => {
                   initiatives that create lasting positive change in communities
                   worldwide.
                 </p>
-                <a href="#donate" className="btn-primary block text-center">
+                <a
+                  href="https://rzp.io/rzp/Um5oab3S"
+                  target="_blank"
+                  className="btn-primary block text-center"
+                >
                   Donate Now
                 </a>
               </div>
@@ -253,9 +257,7 @@ const GetInvolvedPage: React.FC = () => {
       {/* Donation Section */}
 
       <div>
-        {paymentStep === 1 && (
-          <Donation razorpayUrl="https://pages.razorpay.com/pl_QtbO4i9P4rNUAu/view" />
-        )}
+        <Donation />
       </div>
 
       {/* Volunteer Section */}
@@ -479,9 +481,6 @@ const GetInvolvedPage: React.FC = () => {
                       to home.
                     </p>
                   </div>
-
-
-                  
 
                   <div className="border-l-4 border-secondary-500 pl-4">
                     <h4 className="text-lg font-medium mb-2">

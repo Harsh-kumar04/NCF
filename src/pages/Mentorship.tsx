@@ -350,9 +350,14 @@ function App() {
                   Certification & Network Access
                 </li>
               </ul>
-              <button className="mt-8 bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-bold text-lg w-full transition duration-300">
+              <a
+                href="https://pages.razorpay.com/raz-pay"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-bold text-lg w-full transition duration-300 block text-center"
+              >
                 Pay ₹8,000 (Save ₹1,000)
-              </button>
+              </a>
             </div>
 
             {/* Option 2: Installments */}
@@ -385,9 +390,15 @@ function App() {
                   Certification & Network Access
                 </li>
               </ul>
-              <button className="mt-8 bg-slate-600 hover:bg-slate-700 text-white px-8 py-3 rounded-lg font-bold text-lg w-full transition duration-300">
+
+              <a
+                href="https://rzp.io/rzp/bj3R01S"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 bg-slate-600 hover:bg-slate-700 text-white px-8 py-3 rounded-lg font-bold text-lg w-full transition duration-300 block text-center"
+              >
                 Pay Installment of ₹4,500
-              </button>
+              </a>
             </div>
           </div>
           <div className="mt-10 max-w-4xl mx-auto bg-yellow-50 border-l-4 border-yellow-400 text-yellow-800 p-4 rounded-r-lg">

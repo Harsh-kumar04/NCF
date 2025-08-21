@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
       <Hero />
       <Mission />
       <Projects />
-      <Statistics />  
+      <Statistics />
       <Awards />
       <FeaturedPostsSection />
       <Testimonials />
@@ -32,6 +32,15 @@ const HomePage: React.FC = () => {
       </div>
       <PartnerCarousel />
       <VolunteersSlider />
+      <form>
+        <script
+          src="https://checkout.razorpay.com/v1/payment-button.js"
+          data-payment_button_id="pl_QtaybIYbfNUlrf"
+          async
+        >
+          {" "}
+        </script>{" "}
+      </form>
     </div>
   );
 };
