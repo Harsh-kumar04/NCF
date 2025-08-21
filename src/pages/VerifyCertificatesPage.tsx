@@ -58,25 +58,28 @@ export default function VerifyCertificatesPage() {
     setLoading(false);
   };
 
-// 📌 Download Certificate as PNG Image
-const handleDownload = async () => {
-  const certificateElement = document.getElementById("certificate");
-  if (!certificateElement) return;
+  // 📌 Download Certificate as PNG Image
+  const handleDownload = async () => {
+    const certificateElement = document.getElementById("certificate");
+    if (!certificateElement) return;
 
-  const canvas = await html2canvas(certificateElement, {
-    scale: 3, // higher scale = sharper image
-    useCORS: true, // fix for external images (logos, signatures, etc.)
-    backgroundColor: "transparent", // ensures white background (not transparent/faded)
-  });
+    const canvas = await html2canvas(certificateElement, { scale: 3,
+      
+      useCORS: true, // Fix for external images
+    logging: false, // Reduces console noise
+     });
+    const imgData = canvas.toDataURL("image/png");
 
-  const imgData = canvas.toDataURL("image/png", 1.0); // 1.0 = best quality
+    // Create <a> link and trigger download
+    const link = document.createElement("a");
+    link.href = imgData;
+    link.download = `${result?.fullName}_Certificate.png`;
+    link.click();
+  };
 
-  // Create <a> link and trigger download
-  const link = document.createElement("a");
-  link.href = imgData;
-  link.download = `${result?.fullName || "Certificate"}_Certificate.png`;
-  link.click();
-};
+
+
+
 
 
   return (
