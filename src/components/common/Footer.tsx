@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
             </div>
             <p className="text-gray-400 mb-4">
               Empowering communities through education, social development, and sustainable initiatives. <br /><br />
-              License No. – 120163<br />CIN – U85300DL2020NPL368668<br />12A,80G, NITI Aayog & CSR-1 Certificates are available.
+              License No. – 120163<br />CIN – U85300DL2020NPL368668<br />12A,80G, NITI Aayog & CSR-1 certificates are available.
             </p>
             <div className="flex space-x-4">
               <a
