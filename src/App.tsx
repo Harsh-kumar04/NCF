@@ -35,6 +35,7 @@ function App() {
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/Mentorship" element={<Mentorship />} />
           <Route path="/VerifyCertificatesPage" element={<VerifyCertificatesPage />} />
+          <Route path="/verify" element={<VerifyCertificatesPage />} />
           {/* Add more routes as needed */}
         </Routes>
       </Layout>

@@ -63,12 +63,12 @@ export default function VerifyCertificatesPage() {
     const certificateElement = document.getElementById("certificate");
     if (!certificateElement) return;
 
-    const canvas = await html2canvas(certificateElement, { 
-      scale: 3,
+    const canvas = await html2canvas(certificateElement, {
+      scale: 4,
       useCORS: true, // Fix for external images
       logging: false, // Reduces console noise
       backgroundColor: "#fff",
-     });
+    });
     const imgData = canvas.toDataURL("image/png");
 
     // Create <a> link and trigger download
@@ -77,11 +77,6 @@ export default function VerifyCertificatesPage() {
     link.download = `${result?.fullName}_Certificate.png`;
     link.click();
   };
-
-
-
-
-
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
@@ -147,7 +142,20 @@ export default function VerifyCertificatesPage() {
               <Award size={36} />
             </div>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-primary-700">
+            {/* Organization Logo */}
+            <div className="relative flex justify-center flex-col mb-3">
+              <img
+                src="/blog-posts/ncf-icon.png"   // 👉 replace with your logo
+                alt="Organization Logo"
+                className="h-16 object-contain mx-auto"
+              />
+              <p className="text-center text-primary-700 mb-3 text-sm md:text-base">
+                "SHAPING THE FUTURE BY PRESENT ACTION"
+              </p>
+            </div>
+
+
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-2 text-primary-700">
               Certificate of Verification
             </h2>
             <p className="text-center text-gray-600 mb-10 italic text-sm md:text-base">
@@ -165,7 +173,7 @@ export default function VerifyCertificatesPage() {
                 <strong>Email:</strong> {result.email}
               </p>
               <p className="flex justify-between border-b pb-2">
-                <strong>Volunteer Team:</strong> {result.volunteerTeam}
+                <strong> Position:</strong> {result.volunteerTeam}
               </p>
               <p className="flex justify-between">
                 <strong>Date of Joining:</strong>{" "}
@@ -174,33 +182,75 @@ export default function VerifyCertificatesPage() {
             </div>
 
             {/* Footer Signature */}
-            <div className="mt-12 flex flex-col md:flex-row justify-between items-center gap-6">
-              <div className=" md:text-center">
-                <p className="font-semibold text-center text-gray-500">
-                  Authorized By
-                </p>
-                <p className="text-gray-500 text-sm">Noble Citizen Foundation</p>
+            <div className="mt-12 flex flex-col gap-6">
+              {/* Stamp + Signature (side by side, centered) */}
+              <div className="flex flex-row justify-center items-center gap-5">
+                {/* Stamp */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="/blog-posts/ncf-stamp.png"
+                    alt="Stamp"
+                    className="h-24 w-24 object-contain"
+                  />
+                </div>
+
+                {/* Signature */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src="/blog-posts/ncf-authorty-sign.png"
+                    alt="Signature"
+                    className="h-16 object-contain"
+                  />
+                </div>
               </div>
-              <div className="h-16 w-32 border-b-2 border-gray-400 text-gray-500">
-                <img
-                  src="/blog-posts/ncf-icon.png"
-                  alt="Signature"
-                  className="h-full w-full object-contain py-1"
-                />
+
+              {/* Authority Info + Licence Info in 2-column layout */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                {/* Authority Info */}
+                <div className="text-center md:text-left">
+                  <p className="font-semibold text-black">Authorized Signatory</p>
+                  <p className="text-gray-500 text-sm">
+                    <strong>Jestin Anthony (Chairperson), <br />
+                    Noble Citizen Foundation</strong>
+                  </p>
+                </div>
+
+                {/* Licence Info */}
+                <div className="h-16 text-center md:text-right text-sm text-gray-500 border-b-2 border-gray-500">
+                  Licence No. - 120163 <br />
+                  CIN - U85300DL2020NPL368668
+                </div>
               </div>
             </div>
+
           </section>
         )}
 
-        {/* 📌 Download Button */}
+        {/* 📌 Download + Copy Link Buttons */}
         {result && (
-          <button
-            onClick={handleDownload}
-            className="mt-6 px-6 py-3 bg-green-600 text-white rounded-xl hover:bg-green-700 active:scale-95 transition flex items-center justify-center space-x-2 shadow-md"
-          >
-            <Download size={18} /> <span>Download as Image</span>
-          </button>
+          <div className="flex flex-col md:flex-row gap-4 mt-6">
+            {/* Download Button */}
+            <button
+              onClick={handleDownload}
+              className="px-6 py-3 bg-green-600 text-white rounded-xl hover:bg-green-700 active:scale-95 transition flex items-center justify-center space-x-2 shadow-md"
+            >
+              <Download size={18} /> <span>Download as Image</span>
+            </button>
+
+            {/* Copy Certificate Link */}
+            <button
+              onClick={() => {
+                const certLink = `${window.location.origin}/verify?certificateId=${certId}`;
+                navigator.clipboard.writeText(certLink);
+                alert("✅ Certificate link copied to clipboard!");
+              }}
+              className="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 active:scale-95 transition flex items-center justify-center space-x-2 shadow-md"
+            >
+              <span>🔗 Copy Certificate Link</span>
+            </button>
+          </div>
         )}
+
       </main>
 
       <style>{`
