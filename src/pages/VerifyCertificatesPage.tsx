@@ -63,10 +63,11 @@ export default function VerifyCertificatesPage() {
     const certificateElement = document.getElementById("certificate");
     if (!certificateElement) return;
 
-    const canvas = await html2canvas(certificateElement, { scale: 3,
-      
+    const canvas = await html2canvas(certificateElement, { 
+      scale: 3,
       useCORS: true, // Fix for external images
-    logging: false, // Reduces console noise
+      logging: false, // Reduces console noise
+      backgroundColor: "#fff",
      });
     const imgData = canvas.toDataURL("image/png");
 
