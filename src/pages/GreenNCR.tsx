@@ -110,7 +110,7 @@ function App() {
 
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
-          <span className="inline-block bg-green-500/20 border border-green-400/30 text-green-300 px-3 py-1 rounded-full text-xs font-medium mb-6 mt-2 ">
+          <span className="inline-block bg-green-500/20 border border-green-400/30 text-white-300 px-3 py-1 rounded-full text-xs font-medium mb-6 mt-2 ">
             🌱 Join the Green Revolution
           </span>
 
@@ -336,7 +336,7 @@ function App() {
               {
                 name: "Kachnar",
                 benefits: "Ornamental, edible flowers",
-                img: "public/plants/kachnar.webp",
+                img: "/public/plants/kachnar.webp",
               },
             ].map((tree, index) => (
               <div
