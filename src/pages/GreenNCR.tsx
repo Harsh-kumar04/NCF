@@ -311,22 +311,22 @@ function App() {
               {
                 name: "Neem",
                 benefits: "Air purifier, medicinal",
-                img: "public/plants/neem.webp",
+                img: "/plants/neem.webp",
               },
               {
                 name: "Jamun",
                 benefits: "Fruit bearing, wildlife",
-                img: "public/plants/jammun.webp",
+                img: "/plants/jammun.webp",
               },
               {
                 name: "Amaltas",
                 benefits: "Beautiful flowers, shade",
-                img: "public/plants/amltas.webp",
+                img: "/plants/amltas.webp",
               },
               {
                 name: "Peepal",
                 benefits: "Sacred, oxygen rich",
-                img: "public/plants/peepal.webp",
+                img: "/plants/peepal.webp",
               },
               {
                 name: "Arjun",
