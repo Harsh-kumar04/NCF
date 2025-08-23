@@ -64,7 +64,7 @@ export default function VerifyCertificatesPage() {
     if (!certificateElement) return;
 
     const canvas = await html2canvas(certificateElement, {
-      scale: 4,
+      scale: 3,
       useCORS: true, // Fix for external images
       logging: false, // Reduces console noise
       backgroundColor: "#fff",
@@ -145,7 +145,7 @@ export default function VerifyCertificatesPage() {
             {/* Organization Logo */}
             <div className="relative flex justify-center flex-col mb-3">
               <img
-                src="/blog-posts/ncf-icon.png"   // 👉 replace with your logo
+                src="/blog-posts/ncf-icon.png" // 👉 replace with your logo
                 alt="Organization Logo"
                 className="h-16 object-contain mx-auto"
               />
@@ -154,12 +154,12 @@ export default function VerifyCertificatesPage() {
               </p>
             </div>
 
-
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-2 text-primary-700">
               Certificate of Verification
             </h2>
             <p className="text-center text-gray-600 mb-10 italic text-sm md:text-base">
-              This certifies that the following details have been successfully verified.
+              This certifies that the following details have been successfully
+              verified.
             </p>
 
             <div className="space-y-5 text-gray-800 text-sm md:text-lg px-2 md:px-4">
@@ -208,10 +208,14 @@ export default function VerifyCertificatesPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
                 {/* Authority Info */}
                 <div className="text-center md:text-left">
-                  <p className="font-semibold text-black">Authorized Signatory</p>
+                  <p className="font-semibold text-black">
+                    Authorized Signatory
+                  </p>
                   <p className="text-gray-500 text-sm">
-                    <strong>Jestin Anthony (Chairperson), <br />
-                    Noble Citizen Foundation</strong>
+                    <strong>
+                      Jestin Anthony (Chairperson), <br />
+                      Noble Citizen Foundation
+                    </strong>
                   </p>
                 </div>
 
@@ -222,7 +226,6 @@ export default function VerifyCertificatesPage() {
                 </div>
               </div>
             </div>
-
           </section>
         )}
 
@@ -250,7 +253,6 @@ export default function VerifyCertificatesPage() {
             </button>
           </div>
         )}
-
       </main>
 
       <style>{`

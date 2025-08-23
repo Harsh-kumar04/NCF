@@ -8,6 +8,7 @@ import ProjectDetailPage from "./pages/ProjectDetailPage";
 import AnnualReportsPage from "./pages/AnnualReportsPage";
 import GetInvolvedPage from "./pages/GetInvolvedPage";
 import Mentorship from "./pages/Mentorship";
+import GreenNCR from "./pages/GreenNCR";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
 import ContactPage from "./pages/ContactPage";
@@ -34,7 +35,11 @@ function App() {
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/Mentorship" element={<Mentorship />} />
-          <Route path="/VerifyCertificatesPage" element={<VerifyCertificatesPage />} />
+          <Route path="/GreenNCR" element={<GreenNCR />} />
+          <Route
+            path="/VerifyCertificatesPage"
+            element={<VerifyCertificatesPage />}
+          />
           <Route path="/verify" element={<VerifyCertificatesPage />} />
           {/* Add more routes as needed */}
         </Routes>
