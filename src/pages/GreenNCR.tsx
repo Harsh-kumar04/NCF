@@ -331,12 +331,12 @@ function App() {
               {
                 name: "Arjun",
                 benefits: "Strong wood, medicinal",
-                img: "public/plants/arjuna.webp",
+                img: "/plants/arjuna.webp",
               },
               {
                 name: "Kachnar",
                 benefits: "Ornamental, edible flowers",
-                img: "/public/plants/kachnar.webp",
+                img: "/plants/kachnar.webp",
               },
             ].map((tree, index) => (
               <div
