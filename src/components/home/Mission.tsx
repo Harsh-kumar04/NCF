@@ -171,11 +171,11 @@ const Mission: React.FC = () => {
                   ></div>
                 </div>
                 <p className="text-base text-center mt-4 font-medium text-gray-800">
-                    Youth have been {" "}
+                    Committed to actively engaged {" "}
                   <strong className="text-green-600 font-semibold">
-                    actively engaged {" "}
+                    30,000 Youths by 2030
                   </strong>
-                  till this very moment.
+                  .
                 </p>
               </div>
             </section>
