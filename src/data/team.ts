@@ -42,7 +42,7 @@ export const founders: TeamMember[] = [
     id: 5,
     name: "Mr. Jestin Anthony",
     role: "Chairperson & Co-Founder",
-    bio: "",
+    bio: "Social change leader with 12 years in service and expertise in Emotional Intelligence coaching.",
     image: "/team/5.png",
   },
 ];

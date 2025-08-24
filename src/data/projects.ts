@@ -83,11 +83,11 @@ export const projects: Project[] = [
       "Reviving neglected land into green public spaces to foster environmental awareness and community recreation.",
     description:
       "Smriti Vatika is a park rejuvenation project transforming a former garbage dumping ground into a lush, accessible green space. The project, in partnership with SUEZ India and MCG, promotes environmental stewardship, community health, and sustainable urban development.",
-    image: "/projects/Park Restoration/4.png",
-    gallery: [
+      image: "/projects/Park Restoration/1.png",
+      gallery: [
+      "/projects/Park Restoration/4.png",      
       "/projects/Park Restoration/2.png",
       "/projects/Park Restoration/3.png",
-      "/projects/Park Restoration/1.png",
       "/projects/Park Restoration/5.png",
     ],
     goals: [
@@ -114,13 +114,14 @@ export const projects: Project[] = [
       "Spreading cyber security awareness among students and communities under Vivo CSR through training and workshops.",
     description:
       "As part of the “Give Back to Gurugram” initiative, Noble Citizen Foundation’s Cyber Awareness Program promotes digital safety and responsible online behavior, especially among youth. In collaboration with Gurugram Cyber Police, the program conducts interactive sessions, workshops, and campaigns to educate students, parents, and communities about cyber threats, privacy, and preventive practices. By simplifying complex cyber issues and encouraging safe digital habits, the initiative strengthens cyber hygiene and reduces vulnerability to online crimes. It also fosters a culture of digital responsibility, ensuring long-term behavioral change and community-wide awareness in an increasingly connected world.",
-    image: "/projects/Cyber Awareness Vivo/1.JPG",
+    image: "/projects/Cyber Awareness Vivo/8.JPG",
     gallery: ["/projects/Cyber Awareness Vivo/2.JPG",
       "/projects/Cyber Awareness Vivo/3.JPG",
       "/projects/Cyber Awareness Vivo/4.JPG",
       "/projects/Cyber Awareness Vivo/5.JPG",
       "/projects/Cyber Awareness Vivo/6.JPG",
-      "/projects/Cyber Awareness Vivo/7.JPG",],
+      "/projects/Cyber Awareness Vivo/7.JPG",
+    ],
     goals: [
       "Promote Cyber Hygiene",
       "Educate Youth and Citizens",
@@ -298,8 +299,11 @@ export const projects: Project[] = [
       "Engaging global citizens in meaningful volunteering to drive social change and cross-cultural collaboration.",
     description:
       "Noble Citizen Foundation’s Global Volunteerism initiative engages individuals from around the world in meaningful service across key areas like education, health, environment, and disaster relief. By offering both on-ground and virtual volunteering opportunities, the program fosters cross-cultural collaboration and global citizenship. Volunteers contribute their skills to real-world challenges, participating in structured programs and campaigns that promote empathy, shared responsibility, and sustainable impact. Through partnerships with international organizations, the initiative builds a diverse network of changemakers committed to social good, encouraging personal growth while advancing community development on a global scale.",
-    image: "/projects/global-volunteerism.webp",
-    gallery: [],
+    image: "/projects/global volunteerrism/1.jpg",
+    gallery: ["/projects/global volunteerrism/2.jpg",
+      "/projects/global volunteerrism/3.jpg",
+      "/projects/global volunteerrism/4.jpg",
+    ],
     goals: [
       "Promote Civic Engagement Across Borders",
       "Foster Cross-Cultural Exchange and Solidarity",
@@ -444,8 +448,13 @@ export const projects: Project[] = [
       "Mobilizing communities to keep public spaces clean and instill civic responsibility through cleanliness campaigns.",
     description:
       "Noble Citizen Foundation’s Cleanliness Drive initiative mobilizes communities to maintain hygiene and foster cleaner public spaces. Through organized drives, volunteers—especially youth—actively participate in cleaning streets, parks, and public areas, promoting environmental consciousness and civic responsibility. The initiative enhances public health, improves the local environment, and encourages long-term behavioral change. By involving schools, Colleges, local residents, and partner organizations, the project builds collective ownership and pride in maintaining cleanliness. It not only beautifies neighborhoods but also instills a strong sense of social responsibility, making cleanliness a shared community goal rather than an individual effort.",
-    image: "https://via.placeholder.com/600x400?text=Cleanliness+Drive+Image",
-    gallery: [],
+    image: "/projects/cleanliness/1.jpeg",
+    gallery: ["/projects/cleanliness/2.jpeg",
+      "/projects/cleanliness/3.jpeg",
+      "/projects/cleanliness/4.jpeg",
+      "/projects/cleanliness/5.jpeg",
+      "/projects/cleanliness/6.jpeg",
+    ],
     goals: [
       "Promote Sanitation and Hygiene",
       "Raise Civic Awareness",

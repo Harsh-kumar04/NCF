@@ -400,7 +400,7 @@ function GreenNCR() {
 
                 {/* Donate Button */}
                 <a
-                  href="https://noblecitizenfoundation.org/donate"
+                  href="https://rzp.io/rzp/Knku4Tz9"
                   rel="noopener noreferrer"
                   className="block w-full py-3 rounded-xl font-semibold bg-gradient-to-r from-green-500 to-emerald-600 text-white shadow-md hover:from-green-600 hover:to-emerald-700 transition-all hover:scale-105 active:scale-95 text-center"
                 >
