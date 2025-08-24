@@ -138,9 +138,10 @@ const Footer: React.FC = () => {
                   className="text-primary-500 mr-2 mt-1 flex-shrink-0"
                 />
                 <span className="text-gray-400">
-                  364, Prakash Mohalla, East of Kailash,
-                  <br /> New Delhi, India - 110065
-                </span>
+  Jestin Anthony, 226A, 3rd Floor, Prakash Mohalla, East of Kailash,
+  <br /> New Delhi, Delhi – 110065, India
+</span>
+
               </li>
               <li className="flex items-center">
                 <Phone
