@@ -35,7 +35,7 @@ function App() {
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/Mentorship" element={<Mentorship />} />
-          <Route path="/GreenNCR" element={<GreenNCR />} />
+          <Route path="/plant-a-tree" element={<GreenNCR />} />
           <Route
             path="/VerifyCertificatesPage"
             element={<VerifyCertificatesPage />}

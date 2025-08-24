@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Donation from "../components/common/Donation";
+import GreenNCR from "../pages/GreenNCR"
 
 import {
   Calendar,
@@ -288,7 +289,7 @@ const GetInvolvedPage: React.FC = () => {
 
             {/* Events */}
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg">
-              <div className="bg-accent-500 p-8 flex justify-center">
+              <div className="bg-primary-600 p-8 flex justify-center">
                 <Trees className="h-16 w-16 text-white" />
               </div>
               <div className="p-8">
@@ -297,9 +298,9 @@ const GetInvolvedPage: React.FC = () => {
                   Delhi-NCR faces critical environmental challenges that trees
                   can help solve
                 </p>
-                <a href="\GreenNCR" className="btn-accent block text-center">
+                <Link to={"/plant-a-tree"} className="btn-primary block text-center ">
                   Adopt a Tree
-                </a>
+                </Link>
               </div>
             </div>
           </div>

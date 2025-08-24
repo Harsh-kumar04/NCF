@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
           {/* Call to Action Buttons */}
           <div className="flex flex-wrap justify-center gap-4 ">
             <Link
-              to="/GreenNCR"
+              to="/plant-a-tree"
               className="bg-red-800 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold shadow-md transform transition-transform duration-300 hover:scale-105"
             >
               Adopt a Tree
