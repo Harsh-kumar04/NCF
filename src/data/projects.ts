@@ -16,36 +16,32 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // === EDUCATION ===
   {
-    id: "future-leaders-for-sustainability",
-    title: "Future Leaders for Sustainability",
+    id: "csr-ngo-impact-alliance",
+    title: "CSR-NGO Impact Alliance",
     category: "Education",
     location: "India",
     summary:
-      "Empowering youth to lead climate action through education, innovation, and hands-on sustainability initiatives in communities.",
+      "One-year mentorship program connecting grassroots NGOs with CSR leaders to build funding readiness and impact.",
     description:
-      "Future Leaders for Sustainability is a transformative youth leadership program by Noble Citizen Foundation aimed at empowering students to address environmental challenges through education, innovation, and action. Over 12 weeks, participants engage in expert-led workshops and hands-on initiatives that build leadership skills and environmental awareness. Guided by mentors, students identify local problems, develop sustainable solutions, and implement impactful community projects. The program fosters global perspectives, critical thinking, and a deep sense of responsibility. Active participants and institutions gain recognition, with opportunities to represent on national and international platforms, creating a network of young climate leaders driving real change.",
-    image: "/projects/Future Leaders/1.webp ",
-    gallery: [
-       "/projects/Future Leaders/3.webp", 
-       "/projects/Future Leaders/4.webp",
-       "/projects/Future Leaders/5.JPG",],
+      "The CSR-NGO Impact Alliance by Noble Citizen Foundation is a six months mentorship program designed to strengthen grassroots NGOs by connecting them with experienced CSR professionals. The initiative focuses on building organizational capacity in areas such as documentation, compliance, fundraising, and impact reporting. Through structured sessions and one-on-one mentorship from CSR leaders of the top companies, NGOs gain the tools and confidence needed to become fund-ready and sustainable. The program fosters collaboration, innovation, and trust between the social and corporate sectors, ultimately empowering NGOs to scale their impact and build long-term partnerships for meaningful community development.",
+    image: "/projects/Impact Alliance/1.jpg",
+    gallery: ["/projects/Impact Alliance/2.jpg",],
     goals: [
-      "Cultivate Environmental Awareness",
-      "Develop Leadership Skills",
-      "Promote Innovative Solutions",
-      "Build a Collaborative Network",
-      "Empower Participants through experiential learning",
+      "Build NGO Capacity",
+      "Strengthen CSR Collaborations",
+      "Promote Transparency and Compliance",
+      "Foster Long-Term Sustainability",
     ],
     impact: [
-      { label: "Youth Trained", value: "200+" },
-      { label: "Colleges Reached", value: "5" },
-      { label: "Workshops Organized", value: "8" },
-      { label: "Indirect Beneficiaries", value: "100000+" },
+      { label: "NGOs Onboarded", value: "32" },
+      { label: "CSR Mentors Engaged", value: "5+" },
+      { label: "Sessions Conducted", value: "20+" },
+      { label: "Indirect Beneficiaries", value: "500000+" },
     ],
     status: "ongoing",
   },
+  // === EDUCATION ===
 
   {
     id: "anganwadi-play-lab",
@@ -77,31 +73,99 @@ export const projects: Project[] = [
     status: "ongoing",
   },
 
+  //park restoration
   {
-    id: "csr-ngo-impact-alliance",
-    title: "CSR-NGO Impact Alliance",
-    category: "Education",
+    id: "park-restoration-smriti-vatika",
+    title: "Park Restoration (Smriti Vatika)",
+    category: "Environment",
     location: "India",
     summary:
-      "One-year mentorship program connecting grassroots NGOs with CSR leaders to build funding readiness and impact.",
+      "Reviving neglected land into green public spaces to foster environmental awareness and community recreation.",
     description:
-      "The CSR-NGO Impact Alliance by Noble Citizen Foundation is a six months mentorship program designed to strengthen grassroots NGOs by connecting them with experienced CSR professionals. The initiative focuses on building organizational capacity in areas such as documentation, compliance, fundraising, and impact reporting. Through structured sessions and one-on-one mentorship from CSR leaders of the top companies, NGOs gain the tools and confidence needed to become fund-ready and sustainable. The program fosters collaboration, innovation, and trust between the social and corporate sectors, ultimately empowering NGOs to scale their impact and build long-term partnerships for meaningful community development.",
-    image: "/projects/Impact Alliance/1.jpg",
-    gallery: ["/projects/Impact Alliance/2.jpg",],
+      "Smriti Vatika is a park rejuvenation project transforming a former garbage dumping ground into a lush, accessible green space. The project, in partnership with SUEZ India and MCG, promotes environmental stewardship, community health, and sustainable urban development.",
+    image: "/projects/Park Restoration/4.png",
+    gallery: [
+      "/projects/Park Restoration/2.png",
+      "/projects/Park Restoration/3.png",
+      "/projects/Park Restoration/1.png",
+      "/projects/Park Restoration/5.png",
+    ],
     goals: [
-      "Build NGO Capacity",
-      "Strengthen CSR Collaborations",
-      "Promote Transparency and Compliance",
-      "Foster Long-Term Sustainability",
+      "Reclaim Urban Wastelands",
+      "Promote Environmental Sustainability",
+      "Foster Community Engagement",
+      "Improve Public Health",
     ],
     impact: [
-      { label: "NGOs Onboarded", value: "32" },
-      { label: "CSR Mentors Engaged", value: "5+" },
-      { label: "Sessions Conducted", value: "20+" },
-      { label: "Indirect Beneficiaries", value: "500000+" },
+      { label: "Parks Restored", value: "1" },
+      { label: "Area Transformed", value: "3 acres" },
+      { label: "Population Impacted", value: "15,000+" },
+      { label: "Volunteers Engaged", value: "300+" },
     ],
     status: "ongoing",
   },
+  // === CYBER AWARENESS ===
+  {
+    id: "cyber-awareness-vivo",
+    title: "Cyber Awareness (Vivo)",
+    category: "Cyber Awareness",
+    location: "Gurugram, India",
+    summary:
+      "Spreading cyber security awareness among students and communities under Vivo CSR through training and workshops.",
+    description:
+      "As part of the “Give Back to Gurugram” initiative, Noble Citizen Foundation’s Cyber Awareness Program promotes digital safety and responsible online behavior, especially among youth. In collaboration with Gurugram Cyber Police, the program conducts interactive sessions, workshops, and campaigns to educate students, parents, and communities about cyber threats, privacy, and preventive practices. By simplifying complex cyber issues and encouraging safe digital habits, the initiative strengthens cyber hygiene and reduces vulnerability to online crimes. It also fosters a culture of digital responsibility, ensuring long-term behavioral change and community-wide awareness in an increasingly connected world.",
+    image: "/projects/Cyber Awareness Vivo/1.JPG",
+    gallery: ["/projects/Cyber Awareness Vivo/2.JPG",
+      "/projects/Cyber Awareness Vivo/3.JPG",
+      "/projects/Cyber Awareness Vivo/4.JPG",
+      "/projects/Cyber Awareness Vivo/5.JPG",
+      "/projects/Cyber Awareness Vivo/6.JPG",
+      "/projects/Cyber Awareness Vivo/7.JPG",],
+    goals: [
+      "Promote Cyber Hygiene",
+      "Educate Youth and Citizens",
+      "Reduce Cybercrime Risks",
+      "Encourage Responsible Digital Use",
+    ],
+    impact: [
+      { label: "Total Beneficiaries", value: "300000+" },
+      { label: "Workshops Conducted", value: "10+" },
+      { label: "Collaborations", value: "5+" },
+      { label: "Educational Material Distributed", value: "2,000+" },
+    ],
+    status: "completed",
+  },
+
+  {
+    id: "future-leaders-for-sustainability",
+    title: "Future Leaders for Sustainability",
+    category: "Education",
+    location: "India",
+    summary:
+      "Empowering youth to lead climate action through education, innovation, and hands-on sustainability initiatives in communities.",
+    description:
+      "Future Leaders for Sustainability is a transformative youth leadership program by Noble Citizen Foundation aimed at empowering students to address environmental challenges through education, innovation, and action. Over 12 weeks, participants engage in expert-led workshops and hands-on initiatives that build leadership skills and environmental awareness. Guided by mentors, students identify local problems, develop sustainable solutions, and implement impactful community projects. The program fosters global perspectives, critical thinking, and a deep sense of responsibility. Active participants and institutions gain recognition, with opportunities to represent on national and international platforms, creating a network of young climate leaders driving real change.",
+    image: "/projects/Future Leaders/1.webp ",
+    gallery: [
+      "/projects/Future Leaders/3.webp",
+      "/projects/Future Leaders/4.webp",
+      "/projects/Future Leaders/5.JPG",],
+    goals: [
+      "Cultivate Environmental Awareness",
+      "Develop Leadership Skills",
+      "Promote Innovative Solutions",
+      "Build a Collaborative Network",
+      "Empower Participants through experiential learning",
+    ],
+    impact: [
+      { label: "Youth Trained", value: "200+" },
+      { label: "Colleges Reached", value: "5" },
+      { label: "Workshops Organized", value: "8" },
+      { label: "Indirect Beneficiaries", value: "100000+" },
+    ],
+    status: "ongoing",
+  },
+
 
   {
     id: "digital-learning",
@@ -194,37 +258,6 @@ export const projects: Project[] = [
     status: "ongoing",
   },
 
-  // === CYBER AWARENESS ===
-  {
-    id: "cyber-awareness-vivo",
-    title: "Cyber Awareness (Vivo)",
-    category: "Cyber Awareness",
-    location: "Gurugram, India",
-    summary:
-      "Spreading cyber security awareness among students and communities under Vivo CSR through training and workshops.",
-    description:
-      "As part of the “Give Back to Gurugram” initiative, Noble Citizen Foundation’s Cyber Awareness Program promotes digital safety and responsible online behavior, especially among youth. In collaboration with Gurugram Cyber Police, the program conducts interactive sessions, workshops, and campaigns to educate students, parents, and communities about cyber threats, privacy, and preventive practices. By simplifying complex cyber issues and encouraging safe digital habits, the initiative strengthens cyber hygiene and reduces vulnerability to online crimes. It also fosters a culture of digital responsibility, ensuring long-term behavioral change and community-wide awareness in an increasingly connected world.",
-    image: "/projects/Cyber Awareness Vivo/1.JPG",
-    gallery: ["/projects/Cyber Awareness Vivo/2.JPG",
-      "/projects/Cyber Awareness Vivo/3.JPG",
-      "/projects/Cyber Awareness Vivo/4.JPG",
-      "/projects/Cyber Awareness Vivo/5.JPG",
-      "/projects/Cyber Awareness Vivo/6.JPG",
-      "/projects/Cyber Awareness Vivo/7.JPG",],
-    goals: [
-      "Promote Cyber Hygiene",
-      "Educate Youth and Citizens",
-      "Reduce Cybercrime Risks",
-      "Encourage Responsible Digital Use",
-    ],
-    impact: [
-      { label: "Total Beneficiaries", value: "300000+" },
-      { label: "Workshops Conducted", value: "10+" },
-      { label: "Collaborations", value: "5+" },
-      { label: "Educational Material Distributed", value: "2,000+" },
-    ],
-    status: "completed",
-  },
   {
     id: "cyber-awareness-paytm",
     title: "Cyber Awareness (Paytm)",
@@ -322,10 +355,10 @@ export const projects: Project[] = [
       "Mission Oxygen, launched during the second wave of COVID-19, was Noble Citizen Foundation’s urgent response to the national health crisis. The initiative swiftly delivered oxygen cylinders, concentrators, and essential medical supplies to critically ill patients across 14 states and 25 cities in India. With a dedicated team of volunteers and partners, support reached over 400 patients, often within an average response time of just 2.2 days. Mission Oxygen exemplified compassion-driven efficiency, saving lives and alleviating pressure on overwhelmed healthcare systems. The initiative reinforced the Foundation’s commitment to timely, life-saving intervention during public health emergencies.",
     image: "/projects/cov/cov-8.jpeg",
     gallery: ["/projects/cov/cov-9.jpeg",
-          "/projects/cov/cov-11.jpeg",
-          "/projects/cov/cov-14.jpeg",
+      "/projects/cov/cov-11.jpeg",
+      "/projects/cov/cov-14.jpeg",
 
-],
+    ],
     goals: [
       "Save Lives During Medical Emergencies",
       "Improve Response Efficiency",
@@ -350,10 +383,10 @@ export const projects: Project[] = [
     description:
       "During the 2023 Delhi floods, Noble Citizen Foundation launched a swift and coordinated relief response to support affected families. Emergency supplies—including food packets, hygiene kits, drinking water, and clothes—were distributed to over 500 households in flood-hit areas. The initiative prioritized timely intervention, reducing response time by 30%, and ensured the dignity and safety of displaced communities. Through collaboration with local authorities and volunteers, the Foundation not only addressed immediate needs but also laid the groundwork for long-term rehabilitation. The effort highlighted the importance of community resilience, preparedness, and compassionate action during natural disasters.",
     image: "/projects/Delhi Flood Relief/3.JPG",
-    gallery: [ "/projects/Delhi Flood Relief/2.JPG",
-       "/projects/Delhi Flood Relief/1.JPG",
-        "/projects/Delhi Flood Relief/4.JPG",
-         "/projects/Delhi Flood Relief/5.JPG",
+    gallery: ["/projects/Delhi Flood Relief/2.JPG",
+      "/projects/Delhi Flood Relief/1.JPG",
+      "/projects/Delhi Flood Relief/4.JPG",
+      "/projects/Delhi Flood Relief/5.JPG",
     ],
     goals: [
       "Offer Timely Disaster Relief",
@@ -371,36 +404,6 @@ export const projects: Project[] = [
   },
 
   // ---------------------------- ENVIRONMENT ----------------------------
-  {
-    id: "park-restoration-smriti-vatika",
-    title: "Park Restoration (Smriti Vatika)",
-    category: "Environment",
-    location: "India",
-    summary:
-      "Reviving neglected land into green public spaces to foster environmental awareness and community recreation.",
-    description:
-      "Smriti Vatika is a park rejuvenation project transforming a former garbage dumping ground into a lush, accessible green space. The project, in partnership with SUEZ India and MCG, promotes environmental stewardship, community health, and sustainable urban development.",
-    image: "/projects/Park Restoration/4.png",
-    gallery: [
-      "/projects/Park Restoration/2.png",
-      "/projects/Park Restoration/3.png",
-      "/projects/Park Restoration/1.png",
-      "/projects/Park Restoration/5.png",
-    ],
-    goals: [
-      "Reclaim Urban Wastelands",
-      "Promote Environmental Sustainability",
-      "Foster Community Engagement",
-      "Improve Public Health",
-    ],
-    impact: [
-      { label: "Parks Restored", value: "1" },
-      { label: "Area Transformed", value: "3 acres" },
-      { label: "Population Impacted", value: "15,000+" },
-      { label: "Volunteers Engaged", value: "300+" },
-    ],
-    status: "ongoing",
-  },
 
   {
     id: "cleanliness-drive",

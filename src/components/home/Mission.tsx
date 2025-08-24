@@ -104,18 +104,18 @@ const Mission: React.FC = () => {
         {/* Featured Posts Section */}
 
         {/* Mission Statement Section */}
-        <div className="mt-20 bg-gray-50 rounded-2xl p-8 md:p-12">
+        <div className="mt-20 bg-gray-50 my-20 rounded-2xl p-8 md:p-12">
           <div className="text-center max-w-4xl mx-auto">
             <div className="mb-8">
               <h2 className="mb-15">Our Mission & Vision</h2>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              <div className="text-left">
+              <div className="text-left transform transition-transform duration-300 hover:scale-105">
                 <h3 className="text-xl font-semibold mb-4 text-primary-600">
                   Our Mission
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed ">
                   To create a society that is empowered, healthy, and
                   future-ready through comprehensive programs addressing
                   education, youth development, environment, livelihood
@@ -124,7 +124,7 @@ const Mission: React.FC = () => {
                 </p>
               </div>
 
-              <div className="text-left">
+              <div className="text-left transform transition-transform duration-300 hover:scale-105">
                 <h3 className="text-xl font-semibold mb-4 text-primary-600">
                   Our Vision
                 </h3>
@@ -143,20 +143,39 @@ const Mission: React.FC = () => {
                 <h3 className="text-2xl font-semibold text-center mb-6 text-primary-600">
                   Our 2030 Commitment
                 </h3>
-                {/* People Reached */}
+                {/* Funds Raised */}
                 <div className="w-full bg-gray-200 rounded-full overflow-hidden h-5 mb-4">
                   <div
-                    className="h-full animate-shine rounded-full bg-gradient-to-r from-green-500 via-green-550 to-green-600"
-                    style={{ width: "30%" }} // You can make this dynamic using props
+                    className="h-full bg-gradient-to-tr rounded-full from-orange-600 via-orange-400 to-orange-500"
+                    style={{
+                      width: "40%",
+                      backgroundSize: "200% 100%",
+                      animation: "shine 2s linear infinite",
+                    }}
                   ></div>
                 </div>
                 <p className="text-base text-center mt-4 font-medium text-gray-800">
                   We are committed to impacting{" "}
-                  <strong className="text-primary-600 font-semibold">
+                  <strong className="text-orange-600 font-semibold">
                     5 million lives by 2030
                   </strong>
                   , creating lasting positive change and ensuring sustainable
                   development for communities worldwide.
+                </p>
+
+                {/* People Reached */}
+                <div className="w-full bg-gray-200 rounded-full mt-4 overflow-hidden h-5 mb-4">
+                  <div
+                    className="h-full animate-shine rounded-full bg-gradient-to-tr from-green-400 via-green-500 to-green-600"
+                    style={{ width: "30%" }} // You can make this dynamic using props
+                  ></div>
+                </div>
+                <p className="text-base text-center mt-4 font-medium text-gray-800">
+                    Youth have been {" "}
+                  <strong className="text-green-600 font-semibold">
+                    actively engaged {" "}
+                  </strong>
+                  till this very moment.
                 </p>
               </div>
             </section>

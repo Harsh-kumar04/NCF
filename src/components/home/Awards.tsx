@@ -36,12 +36,6 @@ const Awards: React.FC = () => {
     },
 
     {
-      id: 5,
-      title: "Best Innovation Award.",
-      description: "The Noble Citizen Foundation is proud to be accredited by the Summit for the Future, a global platform that fosters innovative solutions to contemporary challenges. This prestigious recognition highlights the foundation's commitment to empowering communities and shaping a sustainable future through its impactful initiatives.",
-      image: "/award-slides/real-summit-award.png",
-    },
-    {
       id: 6,
       title: "CIVIL20",
       description:
@@ -62,7 +56,7 @@ const Awards: React.FC = () => {
       title: "Democracy Award by the Ladli Foundation.",
       description:
         "Mr. Jestin Anthony, Chairperson of the Noble Citizen Foundation, has been honored with the Democracy Award by the Ladli Foundation for his outstanding contributions to social justice and democratic empowerment. This award recognizes his unwavering dedication to advocating for marginalized communities and promoting civic engagement.",
-      image: "/award-slides/ladli-award.jpg",
+      image: "/award-slides/ladli_Award.jpg",
     },
 
     {
@@ -70,7 +64,7 @@ const Awards: React.FC = () => {
       title: "Global Collaboration across the BRICS Nations.",
       description:
         "At the prestigious BRICS Forum, Russia, Mr. Jestin Anthony Chairperson, Noble Citizen delivered a powerful speech emphasizing the importance of civil society partnerships in shaping sustainable development. His address highlighted the pivotal role that grassroots organizations play in fostering innovation, social responsibility, and global collaboration across the BRICS nations.",
-      image: "/award-slides/brics-award.jpg",
+      image: "/award-slides/brics_image.jpg",
     },
 
     {
