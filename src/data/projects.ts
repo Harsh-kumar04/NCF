@@ -241,7 +241,7 @@ export const projects: Project[] = [
       "Empowering rural individuals in Madhya Pradesh through EV-based sustainable self-employment opportunities.",
     description:
       "The Livelihood Generation through Electric Vehicles project by Noble Citizen Foundation, supported by Betul Wind Farms Pvt. Ltd., empowers underprivileged individuals in Madhya Pradesh by providing 10 electric vehicles for commercial use. Implemented through a lease-to-own model, the initiative enables beneficiaries to earn a sustainable livelihood while promoting eco-friendly transportation. Comprehensive training in driving, EV maintenance, financial literacy, and customer service ensures effective and responsible use of the vehicles. This green mobility initiative not only fosters economic independence but also contributes to environmental sustainability and rural development through cleaner, more accessible transport solutions.",
-    image: "/projects/livelihood-ev.webp",
+    image: "/projects/livehood/1.jpg",
     gallery: [],
     goals: [
       "Create Sustainable Livelihoods through Self-Employment",
@@ -404,6 +404,36 @@ export const projects: Project[] = [
   },
 
   // ---------------------------- ENVIRONMENT ----------------------------
+  {
+    id: "park-restoration-smriti-vatika",
+    title: "Park Restoration (Smriti Vatika)",
+    category: "Environment",
+    location: "India",
+    summary:
+      "Reviving neglected land into green public spaces to foster environmental awareness and community recreation.",
+    description:
+      "Smriti Vatika is a park rejuvenation project transforming a former garbage dumping ground into a lush, accessible green space. The project, in partnership with SUEZ India and MCG, promotes environmental stewardship, community health, and sustainable urban development.",
+    image: "/projects/Park Restoration/4.png",
+    gallery: [
+      "/projects/Park Restoration/2.png",
+      "/projects/Park Restoration/3.png",
+      "/projects/Park Restoration/1.png",
+      "/projects/Park Restoration/5.png",
+    ],
+    goals: [
+      "Reclaim Urban Wastelands",
+      "Promote Environmental Sustainability",
+      "Foster Community Engagement",
+      "Improve Public Health",
+    ],
+    impact: [
+      { label: "Parks Restored", value: "1" },
+      { label: "Area Transformed", value: "3 acres" },
+      { label: "Population Impacted", value: "15,000+" },
+      { label: "Volunteers Engaged", value: "300+" },
+    ],
+    status: "ongoing",
+  },
 
   {
     id: "cleanliness-drive",

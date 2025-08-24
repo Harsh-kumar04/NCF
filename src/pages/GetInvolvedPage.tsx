@@ -2,7 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Donation from "../components/common/Donation";
 
-import { Calendar, IndianRupee, HandHeart, Check, MapPin } from "lucide-react";
+import {
+  Calendar,
+  IndianRupee,
+  HandHeart,
+  Check,
+  MapPin,
+  Trees,
+} from "lucide-react";
 
 const GetInvolvedPage: React.FC = () => {
   // Set page title
@@ -23,15 +30,24 @@ const GetInvolvedPage: React.FC = () => {
   });
 
   // State for volunteer form
-  const [volunteerFormData, setVolunteerFormData] = useState({
+  const [volunteerFormData, setVolunteerFormData] = useState<{
+    name: string;
+    email: string;
+    phone: string;
+    interests: string[]; // 👈 yaha clearly string[]
+    experience: string;
+    availability: string;
+    message: string;
+  }>({
     name: "",
     email: "",
     phone: "",
-    interests: [] as string[],
+    interests: [], // 👈 initial value empty array
     experience: "",
     availability: "",
     message: "",
   });
+
   const [isVolunteerSubmitted, setIsVolunteerSubmitted] = useState(false);
 
   const handleDonationAmountSelect = (amount: number) => {
@@ -67,18 +83,16 @@ const GetInvolvedPage: React.FC = () => {
     }));
   };
 
-  const handleInterestChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { value, checked } = e.target;
-    setVolunteerFormData((prev) => {
-      if (checked) {
-        return { ...prev, interests: [...prev.interests, value] };
-      } else {
-        return {
-          ...prev,
-          interests: prev.interests.filter((interest) => interest !== value),
-        };
-      }
-    });
+  const handleInterestChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
+    setVolunteerFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   const handleDonationSubmit = (e: React.FormEvent) => {
@@ -86,11 +100,49 @@ const GetInvolvedPage: React.FC = () => {
     setPaymentStep(paymentStep + 1);
   };
 
-  const handleVolunteerSubmit = (e: React.FormEvent) => {
+  const handleVolunteerSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // In a real app, this would submit to a backend
-    console.log("Volunteer form submitted:", volunteerFormData);
-    setIsVolunteerSubmitted(true);
+
+    const formData = {
+      access_key: "b81ab31c-0ddc-42eb-b1c8-6f4e2ac65cbe", // 👈 yaha tera key
+      name: volunteerFormData.name,
+      email: volunteerFormData.email,
+      phone: volunteerFormData.phone,
+      interests: volunteerFormData.interests.join(", "), // multiple select ka handle
+      experience: volunteerFormData.experience,
+      availability: volunteerFormData.availability,
+      message: volunteerFormData.message,
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setIsVolunteerSubmitted(true); // show success UI
+        // reset form bhi kar sakta hai
+        setVolunteerFormData({
+          name: "",
+          email: "",
+          phone: "",
+          interests: [],
+          experience: "",
+          availability: "",
+          message: "",
+        });
+      } else {
+        alert("❌ Something went wrong, please try again.");
+      }
+    } catch (error) {
+      alert("⚠️ Network error, please try later.");
+    }
   };
 
   // Mock upcoming events data
@@ -236,17 +288,16 @@ const GetInvolvedPage: React.FC = () => {
             {/* Events */}
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-lg">
               <div className="bg-accent-500 p-8 flex justify-center">
-                <Calendar className="h-16 w-16 text-white" />
+                <Trees className="h-16 w-16 text-white" />
               </div>
               <div className="p-8">
-                <h3 className="text-xl font-semibold mb-4">Attend an Event</h3>
+                <h3 className="text-xl font-semibold mb-4">Adopt a Tree</h3>
                 <p className="text-gray-600 mb-6">
-                  Join us at fundraising galas, community service days, or
-                  awareness campaigns. Our events are opportunities to connect
-                  and contribute.
+                  Delhi-NCR faces critical environmental challenges that trees
+                  can help solve
                 </p>
-                <a href="#events" className="btn-accent block text-center">
-                  View Upcoming Events
+                <a href="\GreenNCR" className="btn-accent block text-center">
+                  Adopt a Tree
                 </a>
               </div>
             </div>
@@ -336,41 +387,36 @@ const GetInvolvedPage: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="mb-6">
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Areas of Interest (select all that apply)
-                      </label>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                        {[
-                          "Education",
-                          "Health",
-                          "Environment",
-                          "Community Development",
-                          "Marketing/Communications",
-                          "Administration",
-                          "Event Planning",
-                          "Fundraising",
-                        ].map((interest) => (
-                          <label
-                            key={interest}
-                            className="inline-flex items-center"
-                          >
-                            <input
-                              type="checkbox"
-                              value={interest}
-                              checked={volunteerFormData.interests.includes(
-                                interest
-                              )}
-                              onChange={handleInterestChange}
-                              className="form-checkbox h-5 w-5 text-primary-600"
-                            />
-                            <span className="ml-2 text-gray-700">
-                              {interest}
-                            </span>
-                          </label>
-                        ))}
-                      </div>
-                    </div>
+                    <select
+                      multiple
+                      value={volunteerFormData.interests}
+                      onChange={(e) => {
+                        const selected = Array.from(
+                          e.target.selectedOptions,
+                          (option) => option.value
+                        );
+                        setVolunteerFormData((prev) => ({
+                          ...prev,
+                          interests: selected,
+                        }));
+                      }}
+                      className="w-full p-2 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500"
+                    >
+                      {[
+                        "Education",
+                        "Health",
+                        "Environment",
+                        "Community Development",
+                        "Marketing/Communications",
+                        "Administration",
+                        "Event Planning",
+                        "Fundraising",
+                      ].map((interest) => (
+                        <option key={interest} value={interest}>
+                          {interest}
+                        </option>
+                      ))}
+                    </select>
 
                     <div className="mb-6">
                       <label
@@ -484,17 +530,6 @@ const GetInvolvedPage: React.FC = () => {
 
                   <div className="border-l-4 border-secondary-500 pl-4">
                     <h4 className="text-lg font-medium mb-2">
-                      Global Volunteering
-                    </h4>
-                    <p className="text-gray-600">
-                      Travel to project sites around the world to contribute
-                      directly to our international initiatives. Both short-term
-                      and long-term placements available.
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-secondary-500 pl-4">
-                    <h4 className="text-lg font-medium mb-2">
                       Skills-Based Volunteering
                     </h4>
                     <p className="text-gray-600">
@@ -587,7 +622,7 @@ const GetInvolvedPage: React.FC = () => {
       </section>
 
       {/* Events Section */}
-      <section id="events" className="section bg-gray-50">
+      {/* <section id="events" className="section bg-gray-50">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="mb-6">Upcoming Events</h2>
@@ -626,7 +661,7 @@ const GetInvolvedPage: React.FC = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQs Section */}
       <section className="section bg-white">
@@ -670,7 +705,7 @@ const GetInvolvedPage: React.FC = () => {
             for all.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="#donate" className="btn-accent">
+            <a href="#get" className="btn-accent">
               Donate Now
             </a>
             <a
