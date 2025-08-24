@@ -146,7 +146,7 @@ const Mission: React.FC = () => {
                 {/* Funds Raised */}
                 <div className="w-full bg-gray-200 rounded-full overflow-hidden h-5 mb-4">
                   <div
-                    className="h-full bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600"
+                    className="h-full bg-gradient-to-r rounded-full from-orange-500 via-orange-400 to-orange-600"
                     style={{
                       width: "40%",
                       backgroundSize: "200% 100%",
@@ -164,7 +164,7 @@ const Mission: React.FC = () => {
                 {/* People Reached */}
                 <div className="w-full bg-gray-200 rounded-full overflow-hidden h-5 mb-4">
                   <div
-                    className="h-full animate-shine bg-gradient-to-r from-green-500 via-green-550 to-green-600"
+                    className="h-full animate-shine rounded-full bg-gradient-to-r from-green-500 via-green-550 to-green-600"
                     style={{ width: "30%" }} // You can make this dynamic using props
                   ></div>
                 </div>
