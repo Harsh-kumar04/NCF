@@ -8,6 +8,7 @@ const ProjectsPage: React.FC = () => {
   // Set page title
   useEffect(() => {
     document.title = "Our Projects | Noble Citizen Foundation";
+    window.scrollTo(0, 0);   
   }, []);
 
   // State for filtering and search

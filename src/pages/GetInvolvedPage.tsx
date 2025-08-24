@@ -15,6 +15,7 @@ const GetInvolvedPage: React.FC = () => {
   // Set page title
   useEffect(() => {
     document.title = "Get Involved | Noble Citizen Foundation";
+    window.scrollTo(0, 0);   
   }, []);
 
   // State for donation form

@@ -165,7 +165,7 @@ const ProjectDetailPage: React.FC = () => {
                 <ul className="space-y-2">
                   {project.goals.map((goal, index) => (
                     <li key={index} className="flex items-start">
-                      <span className="inline-block w-6 h-6 rounded-full bg-primary-600 text-white flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">
+                      <span className="w-6 h-6 rounded-full bg-primary-600 text-white flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">
                         {index + 1}
                       </span>
                       {goal}

@@ -369,7 +369,7 @@ const ContactPage: React.FC = () => {
             Follow our social channels to stay updated with our latest projects,
             events, and impact stories.
           </p>
-          <div className="flex justify-center space-x-2">
+          <div className="flex justify-center space-x-8">
             <a
               href="https://www.facebook.com/noblecitizenfoundation/"
               className="bg-white p-3 rounded-full text-primary-600 hover:text-primary-700 transition-colors"
