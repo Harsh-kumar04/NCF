@@ -1,166 +1,106 @@
-import React from "react";
+import React, { useState } from "react";
+import { treeSpecies, timeline, packagePlans } from "../../utils/constant";
 import {
-  TreePine,
-  Leaf,
   Heart,
   Users,
-  Target,
   Calendar,
   CheckCircle,
   ArrowRight,
-  Globe,
   Shield,
-  Droplets,
-  Sun,
-  MapPin,
   Clock,
-  Star,
-  UserPlus,
   Trees,
   Wind,
   Bird,
   Award,
   Camera,
 } from "lucide-react";
+import { FaRegHeart } from "react-icons/fa6";
+import { FaHeart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-function App() {
-  const treeSpecies = [
-    {
-      name: "Native Oak",
-      scientificName: "Quercus robur",
-      impact: "50kg CO² absorbed/year",
-      image:
-        "https://images.pexels.com/photos/567540/pexels-photo-567540.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-    {
-      name: "Red Maple",
-      scientificName: "Acer rubrum",
-      impact: "40kg CO² absorbed/year",
-      image:
-        "https://images.pexels.com/photos/1496373/pexels-photo-1496373.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-    {
-      name: "White Pine",
-      scientificName: "Pinus strobus",
-      impact: "35kg CO² absorbed/year",
-      image:
-        "https://images.pexels.com/photos/1578662/pexels-photo-1578662.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-    {
-      name: "Silver Birch",
-      scientificName: "Betula pendula",
-      impact: "30kg CO² absorbed/year",
-      image:
-        "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=400",
-    },
-  ];
-
-  const timeline = [
-    {
-      phase: "Q1 2024",
-      title: "Site Preparation",
-      description: "Land survey and soil analysis",
-      status: "completed",
-    },
-    {
-      phase: "Q2 2024",
-      title: "Community Outreach",
-      description: "Local engagement and education",
-      status: "completed",
-    },
-    {
-      phase: "Q3 2024",
-      title: "Seedling Procurement",
-      description: "Sourcing native species",
-      status: "current",
-    },
-    {
-      phase: "Q4 2024",
-      title: "Mass Plantation",
-      description: "10,000 trees planting drive",
-      status: "upcoming",
-    },
-    {
-      phase: "Q1 2025",
-      title: "Maintenance Phase",
-      description: "Ongoing care and monitoring",
-      status: "upcoming",
-    },
-    {
-      phase: "Q2 2025",
-      title: "Community Forest",
-      description: "Established ecosystem",
-      status: "upcoming",
-    },
-  ];
+function GreenNCR() {
+  const [onHover, setOnHover] = useState(false);
 
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center">
+      <section className="relative min-h-[60vh] sm:min-h-[80vh] flex items-center justify-center py-12 sm:py-20">
         {/* Background overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+        backgroundImage:
+          "url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1600')",
           }}
         ></div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
-          <span className="inline-block bg-green-500/20 border border-green-400/30 text-white-300 px-3 py-1 rounded-full text-xs font-medium mb-6 mt-2 ">
-            🌱 Join the Green Revolution
+        <div className="relative z-10 w-full max-w-4xl mx-auto px-4 mt-6 text-center text-white">
+          <span className="inline-block bg-green-500/20 border border-green-400/30 text-white-300 px-3 py-1 rounded-full text-xs font-medium mb-4 sm:mb-6 mt-2">
+        🌱 Join the Green Revolution
           </span>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-snug text-white">
-            Adopt a Tree,{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-emerald-400">
-              Grow Hope
-            </span>
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 leading-snug text-white">
+        Adopt a Tree,{" "}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-emerald-400">
+          Grow Hope
+        </span>
           </h1>
 
-          <p className="text-base md:text-lg mb-8 text-gray-100 max-w-2xl mx-auto leading-relaxed">
-            Help us plant{" "}
-            <span className="text-green-300 font-medium">10,000 trees</span> 🌳.
-            Every adoption fights climate change and supports local ecosystems.
+          <p className="text-sm xs:text-base md:text-lg mb-6 sm:mb-8 text-gray-100 max-w-2xl mx-auto leading-relaxed">
+        Help us plant{" "}
+        <span className="text-green-300 font-medium">10,000 trees</span> 🌳.
+        Every adoption fights climate change and supports local ecosystems.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-            <button className="group bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl text-base font-semibold transition-all flex items-center gap-2 shadow-lg hover:shadow-green-500/30">
-              <Heart className="h-4 w-4" />
-              Adopt a Tree - $25
-              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="group bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl text-base font-semibold transition-all border border-white/30 flex items-center gap-2">
-              <Users className="h-4 w-4" />
-              Join Community
-              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-10 w-full">
+        <button
+          onMouseEnter={() => setOnHover(true)}
+          onMouseLeave={() => setOnHover(false)}
+          className="group bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl text-sm sm:text-base font-semibold transition-all flex items-center gap-2 shadow-lg hover:shadow-green-500/30 w-full sm:w-auto justify-center"
+          onClick={() => window.open("https://rzp.io/rzp/Knku4Tz9", "_blank")}
+        >
+          <span
+            className={`!text-red-500 transition-transform duration-200 ease-out inline-block ${onHover ? "scale-125" : "scale-100"
+          }`}
+          >
+            {onHover ? <FaHeart size={16} /> : <FaRegHeart size={16} />}
+          </span>
+          Adopt a Tree - ₹250
+          <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+        </button>
+        <Link
+          className="group bg-white/10 hover:bg-white/20 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl text-sm sm:text-base font-semibold transition-all border border-white/30 flex items-center gap-2 w-full sm:w-auto justify-center"
+          to="https://whatsapp.com/channel/0029VaG6oUJDOQIVSIN54J1M"
+        >
+          <Users className="h-4 w-4" />
+          Join Community
+          <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+        </Link>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-            <div className="bg-white/10 p-5 rounded-xl border border-white/20">
-              <div className="text-2xl font-bold text-green-300">2,847</div>
-              <p className="text-sm text-gray-200">Trees Adopted</p>
-            </div>
-            <div className="bg-white/10 p-5 rounded-xl border border-white/20">
-              <div className="text-2xl font-bold text-green-300">142,350kg</div>
-              <p className="text-sm text-gray-200">CO² Absorbed</p>
-            </div>
-            <div className="bg-white/10 p-5 rounded-xl border border-white/20">
-              <div className="text-2xl font-bold text-green-300">1,250+</div>
-              <p className="text-sm text-gray-200">Community Members</p>
-            </div>
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 text-center w-full max-w-2xl mx-auto">
+        <div className="bg-white/10 p-4 sm:p-5 rounded-xl border border-white/20">
+          <div className="text-xl sm:text-2xl font-bold text-green-300">0+</div>
+          <p className="text-xs sm:text-sm text-gray-200">Trees Adopted</p>
+        </div>
+        <div className="bg-white/10 p-4 sm:p-5 rounded-xl border border-white/20">
+          <div className="text-xl sm:text-2xl font-bold text-green-300">0kg</div>
+          <p className="text-xs sm:text-sm text-gray-200">CO² Absorbed</p>
+        </div>
+        <div className="bg-white/10 p-4 sm:p-5 rounded-xl border border-white/20">
+          <div className="text-xl sm:text-2xl font-bold text-green-300">0+</div>
+          <p className="text-xs sm:text-sm text-gray-200">Community Members</p>
+        </div>
           </div>
         </div>
       </section>
 
       {/* Why It Matters Section */}
-      <section className="py-20 px-6 bg-gray-50">
+      <section className="py-20 px-6 bg-gray-50" id="why-it-matters">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
@@ -216,7 +156,7 @@ function App() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-white" id="how-it-works">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
@@ -307,38 +247,7 @@ function App() {
 
           {/* Plant Grid */}
           <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {[
-              {
-                name: "Neem",
-                benefits: "Air purifier, medicinal",
-                img: "/plants/neem.webp",
-              },
-              {
-                name: "Jamun",
-                benefits: "Fruit bearing, wildlife",
-                img: "/plants/jammun.webp",
-              },
-              {
-                name: "Amaltas",
-                benefits: "Beautiful flowers, shade",
-                img: "/plants/amltas.webp",
-              },
-              {
-                name: "Peepal",
-                benefits: "Sacred, oxygen rich",
-                img: "/plants/peepal.webp",
-              },
-              {
-                name: "Arjun",
-                benefits: "Strong wood, medicinal",
-                img: "/plants/arjuna.webp",
-              },
-              {
-                name: "Kachnar",
-                benefits: "Ornamental, edible flowers",
-                img: "/plants/kachnar.webp",
-              },
-            ].map((tree, index) => (
+            {treeSpecies.map((tree, index) => (
               <div
                 key={index}
                 className="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center"
@@ -378,18 +287,15 @@ function App() {
 
           <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200"></div>
-
             {timeline.map((item, index) => (
               <div
                 key={index}
-                className={`relative flex items-center mb-12 ${
-                  index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-                }`}
+                className={`relative flex items-center mb-12 ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                  }`}
               >
                 <div
-                  className={`flex-1 ${
-                    index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
-                  }`}
+                  className={`flex-1 ${index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
+                    }`}
                 >
                   <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-800">
                     <div className="flex items-center justify-between mb-2">
@@ -437,112 +343,74 @@ function App() {
           </div>
 
           {/* Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                title: "Individual Adopter",
-                price: "$25",
-                description: "Adopt one tree and receive personalized updates",
-                features: [
-                  "Digital certificate",
-                  "Quarterly updates",
-                  "GPS location",
-                  "Growth photos",
-                ],
-                icon: Heart,
-                gradient: "from-pink-500 to-red-500",
-              },
-              {
-                title: "Family Package",
-                price: "$75",
-                description: "Perfect for families - adopt 3 trees together",
-                features: [
-                  "Family certificate",
-                  "Monthly updates",
-                  "Site visit invitation",
-                  "Educational materials",
-                ],
-                icon: Users,
-                gradient: "from-blue-500 to-indigo-500",
-                popular: true,
-              },
-              {
-                title: "Corporate Sponsor",
-                price: "$500",
-                description: "Businesses can sponsor 20+ trees with branding",
-                features: [
-                  "Company recognition",
-                  "CSR certificate",
-                  "Team visit",
-                  "Social media features",
-                ],
-                icon: Star,
-                gradient: "from-green-500 to-emerald-500",
-              },
-              {
-                title: "Community Leader",
-                price: "$1,000",
-                description: "Lead a community initiative with 50+ trees",
-                features: [
-                  "Leadership recognition",
-                  "Community event",
-                  "Media coverage",
-                  "Legacy plaque",
-                ],
-                icon: UserPlus,
-                gradient: "from-orange-500 to-amber-500",
-              },
-            ].map((plan, index) => (
-              <div
-                key={index}
-                className={`bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative ${
-                  plan.popular ? "border-4 border-green-400 scale-105" : ""
-                }`}
-              >
-                {/* Popular Tag */}
-                {plan.popular && (
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-md">
-                    Most Popular
-                  </div>
-                )}
+          <div className="flex justify-center items-center min-h-screen p-6">
+            <div className="max-w-sm w-full bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+              {/* Top Image */}
+              <div className="relative">
+                <img
+                  src="/blog-posts/tree-donate.jpeg" // Replace with plant image
+                  alt="Plantation Drive"
+                  className="w-full h-48.5 object-cover"
+                />
+                <div className="absolute top-3 left-3 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
+                  🌿 Eco Benefit
+                </div>
+              </div>
 
-                {/* Icon */}
-                <div className="flex justify-center mb-6">
-                  <div
-                    className={`bg-gradient-to-r ${plan.gradient} w-16 h-16 rounded-full flex items-center justify-center shadow-md`}
-                  >
-                    <plan.icon className="w-8 h-8 text-white" />
-                  </div>
+              {/* Content */}
+              <div className="p-5">
+                {/* Title */}
+                <h3 className="text-lg font-bold text-gray-800 mb-1">
+                  Support Plantation to Save Earth
+                </h3>
+
+                {/* By Organization */}
+                <div className="flex items-center text-sm text-gray-500 mb-3">
+                  <img
+                    src="/blog-posts/logo.png"
+                    alt="Org Logo"
+                    className="w-6 h-6 rounded-full mr-2"
+                  />
+                  by <span className="ml-1 font-medium text-gray-700">Noble Citizen Foundation</span>
                 </div>
 
-                {/* Title & Price */}
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">
-                    {plan.title}
-                  </h3>
-                  <div className="text-3xl font-bold text-gray-900 mb-2">
-                    {plan.price}
-                  </div>
-                  <p className="text-gray-600 text-sm">{plan.description}</p>
+                {/* Plan Title & Price */}
+                <div className="mb-4">
+                  <h4 className="text-xl font-bold text-green-700">Individual Adopter</h4>
+                  <p className="text-lg font-semibold text-gray-800">₹250</p>
+                  <p className="text-sm text-gray-600 italic">
+                    Adopt one tree and receive personalized updates
+                  </p>
                 </div>
 
                 {/* Features */}
-                <ul className="space-y-3 mb-8">
-                  {plan.features.map((feature, idx) => (
+                <ul className="space-y-2 mb-5">
+                  {[
+                    "Tree Adoption certificate",
+                    "Quarterly updates",
+                    "Growth photos",
+                  ].map((feature, idx) => (
                     <li key={idx} className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
                       <span className="text-sm text-gray-700">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
-                {/* Button */}
-                <button className="w-full py-3 rounded-lg font-semibold bg-gradient-to-r from-green-500 to-emerald-600 text-white shadow-md hover:from-green-600 hover:to-emerald-700 transition-all">
-                  Choose Plan
-                </button>
+
+                {/* Donate Button */}
+                <a
+                  href="https://noblecitizenfoundation.org/donate"
+                  rel="noopener noreferrer"
+                  className="block w-full py-3 rounded-xl font-semibold bg-gradient-to-r from-green-500 to-emerald-600 text-white shadow-md hover:from-green-600 hover:to-emerald-700 transition-all hover:scale-105 active:scale-95 text-center"
+                >
+                  🌱 Donate Now
+                </a>
+
               </div>
-            ))}
+            </div>
           </div>
+
         </div>
       </section>
 
@@ -558,11 +426,27 @@ function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all transform hover:scale-105 flex items-center gap-2 shadow-lg">
+            <button
+              className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all transform hover:scale-105 flex items-center gap-2 shadow-lg"
+              onClick={() => {
+                const section = document.getElementById("why-it-matters");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               <Heart className="h-5 w-5" />
               Start Your Impact Today
             </button>
-            <button className="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all backdrop-blur-sm border border-white/30">
+            <button
+              className="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all backdrop-blur-sm border border-white/30"
+              onClick={() => {
+                const section = document.getElementById("how-it-works");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               Learn More About Our Mission
             </button>
           </div>
@@ -574,7 +458,7 @@ function App() {
                 href="mailto:hello@greenfuture.org"
                 className="text-green-400 hover:text-green-300"
               >
-                hello@greenfuture.org
+                admin@noblecitizenfoundation.org
               </a>
             </p>
           </div>
@@ -584,4 +468,4 @@ function App() {
   );
 }
 
-export default App;
+export default GreenNCR;

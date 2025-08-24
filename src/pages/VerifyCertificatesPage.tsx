@@ -82,9 +82,9 @@ export default function VerifyCertificatesPage() {
     <div className="min-h-screen bg-gray-100 flex flex-col">
       {/* ===== Header ===== */}
       <header className="bg-primary-700 text-white py-3 shadow-lg mt-14">
-        <h1 className="text-center text-3xl md:text-4xl font-extrabold tracking-wide">
+        <h3 className="text-center text-3xl text-white md:text-4xl font-extrabold tracking-wide">
           Your Certificate Verification
-        </h1>
+        </h3>
         <p className="text-center text-gray-200 my-2 text-base md:text-lg">
           Instantly verify the authenticity of your certificate
         </p>

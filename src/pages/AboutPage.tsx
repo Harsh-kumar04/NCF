@@ -10,6 +10,7 @@ const AboutPage: React.FC = () => {
   // Set page title
   useEffect(() => {
     document.title = "About Us | Noble Citizen Foundation";
+    window.scrollTo(0, 0);   
   }, []);
 
   // Core values data

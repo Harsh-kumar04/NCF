@@ -12,6 +12,7 @@ import FeaturedPostsSection from "../components/home/FeaturedPosts";
 const HomePage: React.FC = () => {
   useEffect(() => {
     document.title = "Noble Citizen Foundation - Empowering Communities";
+    window.scrollTo(0, 0);        
   }, []);
 
   return (
