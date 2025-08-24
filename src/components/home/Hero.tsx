@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
               to="/plant-a-tree"
               className="bg-red-800 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold shadow-md transform transition-transform duration-300 hover:scale-105"
             >
-              Adopt a Tree
+              Adopt Trees 🌱
             </Link>
 
             <Link
