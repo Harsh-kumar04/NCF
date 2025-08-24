@@ -143,24 +143,6 @@ const Mission: React.FC = () => {
                 <h3 className="text-2xl font-semibold text-center mb-6 text-primary-600">
                   Our 2030 Commitment
                 </h3>
-                {/* Funds Raised */}
-                <div className="w-full bg-gray-200 rounded-full overflow-hidden h-5 mb-4">
-                  <div
-                    className="h-full bg-gradient-to-r rounded-full from-orange-500 via-orange-400 to-orange-600"
-                    style={{
-                      width: "40%",
-                      backgroundSize: "200% 100%",
-                      animation: "shine 2s linear infinite",
-                    }}
-                  ></div>
-                </div>
-                <p className="text-base text-center mt-2 mb-10 font-medium text-black">
-                  <strong className="text-green-800  font-semibold">
-                    1,800 KG of 5,000 KG garbage{" "}
-                  </strong>{" "}
-                  collected towards our clean-up goal
-                </p>
-
                 {/* People Reached */}
                 <div className="w-full bg-gray-200 rounded-full overflow-hidden h-5 mb-4">
                   <div
