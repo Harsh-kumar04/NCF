@@ -120,15 +120,15 @@ const ContactPage: React.FC = () => {
                   <div className="bg-primary-100 rounded-full p-3 mr-4">
                     <MapPin className="h-6 w-6 text-primary-600" />
                   </div>
-                  <div>
-                    <h3 className="text-lg font-medium mb-1">Address</h3>
-                    <p className="text-gray-600">
-                      364 First Floor, Prakash Mohalla, East of Kailash
-                      <br />
-                      New Delhi, Delhi <br />
-                      110065, India 🇮🇳
-                    </p>
-                  </div>
+                 <div>
+  <h3 className="text-lg font-medium mb-1">Address</h3>
+  <p className="text-gray-600">
+    Jestin Anthony <br />
+    226A, 3rd Floor, Prakash Mohalla, East of Kailash <br />
+    New Delhi, Delhi – 110065, India 🇮🇳
+  </p>
+</div>
+
                 </div>
                 <div className="flex items-start">
                   <div className="bg-primary-100 rounded-full p-3 mr-4">
