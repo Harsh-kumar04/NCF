@@ -5,7 +5,6 @@ import { teamMembers } from "../data/team";
 import Partner from "../components/home/partner";
 import AboutGallery from "./AboutGallery";
 
-
 const AboutPage: React.FC = () => {
   // Set page title
   useEffect(() => {
@@ -40,7 +39,6 @@ const AboutPage: React.FC = () => {
     },
   ];
 
- 
   return (
     <div>
       {/* Hero Section */}
@@ -169,78 +167,48 @@ const AboutPage: React.FC = () => {
 
             {/* Timeline Items */}
             <div className="space-y-12">
-              {/* 2010 */}
+              {/* 2020 - Foundation & COVID-19 Relief */}
               <div className="relative flex flex-col md:flex-row items-center">
                 <div className="flex-1 md:text-right md:pr-12 mb-6 md:mb-0">
                   <h3 className="text-2xl font-semibold text-primary-600 mb-2">
-                    2010
+                    2020
                   </h3>
                   <h4 className="text-xl font-medium mb-2">
-                    Foundation Established
+                    Foundation Established & COVID-19 Relief
                   </h4>
-                  <p className="text-gray-600">
-                    Dr. Eleanor Wright establishes Noble Citizen Foundation with
-                    a focus on education in urban communities.
-                  </p>
+                  <ul className="text-gray-600 space-y-3">
+                    <li className="leading-relaxed">
+                      • Mr. Sahil Kaushar & Mr. Jestin Anthony established Noble
+                      Citizen Foundation with a focus on A Noble Society That Is
+                      Empowered, Healthy and Future Ready.
+                    </li>
+                    <li className="leading-relaxed">
+                      • Served 60,000+ meals to migrant laborers during the 1st
+                      wave of COVID-19.
+                    </li>
+                  </ul>
                 </div>
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-primary-600 z-10"></div>
                 <div className="flex-1 md:pl-12"></div>
               </div>
 
-              {/* 2013 */}
+              {/* 2021 */}
               <div className="relative flex flex-col md:flex-row items-center">
                 <div className="flex-1 md:pr-12 md:text-right hidden md:block"></div>
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-primary-600 z-10"></div>
                 <div className="flex-1 md:pl-12">
                   <h3 className="text-2xl font-semibold text-primary-600 mb-2">
-                    2013
+                    2021
                   </h3>
                   <h4 className="text-xl font-medium mb-2">
-                    International Expansion
+                    COVID-19 Relief - Oxygen
                   </h4>
-                  <p className="text-gray-600">
-                    The Foundation expands operations to include health
-                    initiatives in East Africa, establishing our first
-                    international office in Kenya.
-                  </p>
-                </div>
-              </div>
-
-              {/* 2016 */}
-              <div className="relative flex flex-col md:flex-row items-center">
-                <div className="flex-1 md:text-right md:pr-12 mb-6 md:mb-0">
-                  <h3 className="text-2xl font-semibold text-primary-600 mb-2">
-                    2016
-                  </h3>
-                  <h4 className="text-xl font-medium mb-2">
-                    Environmental Focus
-                  </h4>
-                  <p className="text-gray-600">
-                    Launch of our first environmental sustainability programs,
-                    recognizing the interconnection between environmental health
-                    and community wellbeing.
-                  </p>
-                </div>
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-primary-600 z-10"></div>
-                <div className="flex-1 md:pl-12"></div>
-              </div>
-
-              {/* 2019 */}
-              <div className="relative flex flex-col md:flex-row items-center">
-                <div className="flex-1 md:pr-12 md:text-right hidden md:block"></div>
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-primary-600 z-10"></div>
-                <div className="flex-1 md:pl-12">
-                  <h3 className="text-2xl font-semibold text-primary-600 mb-2">
-                    2019
-                  </h3>
-                  <h4 className="text-xl font-medium mb-2">
-                    Digital Transformation
-                  </h4>
-                  <p className="text-gray-600">
-                    Implementation of technology-based solutions across all
-                    programs, significantly expanding our reach and
-                    effectiveness.
-                  </p>
+                  <ul className="text-gray-600 space-y-3">
+                    <li className="leading-relaxed">
+                      • Saved 500+ lives during 2nd wave of COVID-19 by
+                      providing Oxygen Cylinders and Concentrators.
+                    </li>
+                  </ul>
                 </div>
               </div>
 
@@ -251,12 +219,69 @@ const AboutPage: React.FC = () => {
                     2022
                   </h3>
                   <h4 className="text-xl font-medium mb-2">
-                    Global Impact Award
+                    Digital Education Access
                   </h4>
-                  <p className="text-gray-600">
-                    Recognition with the prestigious Global Impact Award for our
-                    innovative approach to community development.
-                  </p>
+                  <ul className="text-gray-600 space-y-3">
+                    <li className="leading-relaxed">
+                      • Provided free e-learning access to 1,100 underprivileged
+                      students to bridge the digital divide in education.
+                    </li>
+                  </ul>
+                </div>
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-primary-600 z-10"></div>
+                <div className="flex-1 md:pl-12"></div>
+              </div>
+
+              {/* 2023 */}
+              <div className="relative flex flex-col md:flex-row items-center">
+                <div className="flex-1 md:pr-12 md:text-right hidden md:block"></div>
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-primary-600 z-10"></div>
+                <div className="flex-1 md:pl-12">
+                  <h3 className="text-2xl font-semibold text-primary-600 mb-2">
+                    2023
+                  </h3>
+                  <h4 className="text-xl font-medium mb-2">
+                    G20 C20 Committee Member
+                  </h4>
+                  <ul className="text-gray-600 space-y-3">
+                    <li className="leading-relaxed">
+                      • As an Official Organizing Committee Member of the G20
+                      (C20), the Noble Citizen Foundation played a crucial role
+                      in facilitating dialogue between civil society
+                      organizations and global leaders.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* 2024 */}
+              <div className="relative flex flex-col md:flex-row items-center">
+                <div className="flex-1 md:text-right md:pr-12 mb-6 md:mb-0">
+                  <h3 className="text-2xl font-semibold text-primary-600 mb-2">
+                    2024
+                  </h3>
+                  <h4 className="text-xl font-medium mb-2">
+                    Major Initiatives & Recognition
+                  </h4>
+                  <ul className="text-gray-600 space-y-3">
+                    <li className="leading-relaxed">
+                      • Provided cybersecurity awareness among 20,000 students
+                      and community members under Vivo CSR initiatives through
+                      training and workshops in Gurugram, Haryana.
+                    </li>
+                    <li className="leading-relaxed">
+                      • Launched two successful projects: Future Leaders for
+                      Sustainability and CSR-NGO Impact Alliance, impacting
+                      1,000+ students and 34 NGOs with the capacity of impacting
+                      millions of lives.
+                    </li>
+                    <li className="leading-relaxed">
+                      • 15 Youth Volunteers from Future Leaders for
+                      Sustainability project were selected to represent India
+                      and Noble Citizen Foundation at World Youth Festival
+                      Russia under fully funded category.
+                    </li>
+                  </ul>
                 </div>
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-primary-600 z-10"></div>
                 <div className="flex-1 md:pl-12"></div>
@@ -271,11 +296,25 @@ const AboutPage: React.FC = () => {
                     2025
                   </h3>
                   <h4 className="text-xl font-medium mb-2">Present Day</h4>
-                  <p className="text-gray-600">
-                    Operating in 35+ countries with a focus on integrated
-                    development solutions that address interconnected community
-                    challenges.
-                  </p>
+                  <ul className="text-gray-600 space-y-3">
+                    <li className="leading-relaxed">
+                      • Park Restoration (Smriti Vatika-Gurugram): Revived
+                      neglected land into green public space to foster
+                      environmental awareness and community recreation under
+                      SUEZ CSR initiatives.
+                    </li>
+                    <li className="leading-relaxed">
+                      • Livelihood Generation through Electric Vehicles:
+                      Empowered 10 rural individuals in Betul, Madhya Pradesh
+                      through EV-based sustainable self-employment opportunities
+                      under Betul Wind Farms Pvt. Ltd. CSR initiatives.
+                    </li>
+                    <li className="leading-relaxed">
+                      • Provided cybersecurity awareness among 5,000+ students
+                      and community members under Paytm CSR initiatives through
+                      training and workshops in Gurugram, Haryana.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -295,7 +334,7 @@ const AboutPage: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.slice(0, 8).map((member) => (
+            {teamMembers.slice(0, 10).map((member) => (
               <div
                 key={member.id}
                 className="bg-white rounded-lg shadow-md overflow-hidden group"
@@ -314,7 +353,7 @@ const AboutPage: React.FC = () => {
                     {member.bio}
                   </p>
 
-                  {member.socialLinks && (
+                  {/* {member.socialLinks && (
                     <div className="flex space-x-4 pt-4 border-t border-gray-100">
                       {member.socialLinks.email && (
                         <a
@@ -363,7 +402,7 @@ const AboutPage: React.FC = () => {
                         </a>
                       )}
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
             ))}
@@ -373,7 +412,6 @@ const AboutPage: React.FC = () => {
 
       {/* Gallery-Swipper */}
       <AboutGallery />
-
 
       {/* Partners Section */}
       <section className="section bg-white">
