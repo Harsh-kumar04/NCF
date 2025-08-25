@@ -343,7 +343,7 @@ const AboutPage: React.FC = () => {
           </style>
 
           {/* Advisors Grid */}
-          <div className="flex flex-wrap justify-center gap-x-4 mb-20 max-w-5xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-9 mb-20 max-w-5xl mx-auto">
             {advisors.map((member) => (
               <div
                 key={member.id}
@@ -383,7 +383,7 @@ const AboutPage: React.FC = () => {
             <h2 className="mb-6">Our Founders</h2>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-x-4 mb-20 max-w-3xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-9 mb-20 max-w-3xl mx-auto">
             {founders.map((member) => (
               <div
                 key={member.id}
