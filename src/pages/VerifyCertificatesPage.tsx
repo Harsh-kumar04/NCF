@@ -7,6 +7,7 @@ interface Volunteer {
   email: string;
   volunteerTeam: string;
   dateOfJoining: string;
+  tenureDuration: string;
 }
 
 export default function VerifyCertificatesPage() {
@@ -17,7 +18,7 @@ export default function VerifyCertificatesPage() {
   const [error, setError] = useState<string>("");
 
   const API_URL =
-    "https://script.google.com/macros/s/AKfycbxklejyDchDjPqnE2fTMMGOR6ViafHB2DOKguj51x-maBbaqAF81d0U3vutSJvf2U7Xtg/exec";
+    "https://script.google.com/macros/s/AKfycbxLLNG2JhHbcsURDf7nM1uXmQsGllA2fKJWi35sgpwQJuF5A_7jLQ9GXaW365UZ3S0rEQ/exec";
   const SECRET_KEY = "MY_SECRET_KEY_123";
 
   const handleSearch = async () => {
@@ -48,6 +49,7 @@ export default function VerifyCertificatesPage() {
           email: data.email,
           volunteerTeam: data.volunteerTeam,
           dateOfJoining: data.dateOfJoining,
+          tenureDuration: data.tenureDuration,
         });
       }
     } catch (err) {
@@ -175,9 +177,13 @@ export default function VerifyCertificatesPage() {
               <p className="flex justify-between border-b pb-2">
                 <strong> Position:</strong> {result.volunteerTeam}
               </p>
-              <p className="flex justify-between">
+              <p className="flex justify-between border-b pb-2">
                 <strong>Date of Joining:</strong>{" "}
                 {new Date(result.dateOfJoining).toISOString().split("T")[0]}
+              </p>
+              <p className="flex justify-between border-b pb-2">
+                <strong>Duration of Tenure:</strong>
+                {result.tenureDuration}
               </p>
             </div>
 
