@@ -342,7 +342,6 @@ export const projects: Project[] = [
     ],
     impact: [
       { label: "Food Packets Distributed", value: "65,000" },
-      { label: "Beneficiaries Reached", value: "100,000+" },
       { label: "Distribution Drives", value: "20+" },
       { label: "Volunteers Engaged", value: "200+" },
     ],

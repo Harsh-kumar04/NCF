@@ -35,14 +35,14 @@ export const founders: TeamMember[] = [
     id: 4,
     name: "Mr. Sahil Kaushar",
     role: "CEO & Co-Founder",
-    bio: "Youth Peace Ambassador, Government of Maldives & Social Innovation Leader",
+    bio: " ",
     image: "/team/4.jpg",
   },
   {
     id: 5,
     name: "Mr. Jestin Anthony",
     role: "Chairperson & Co-Founder",
-    bio: "Social change leader with 12 years in service and expertise in Emotional Intelligence coaching.",
+    bio: "",
     image: "/team/5.png",
   },
 ];
