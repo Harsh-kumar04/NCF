@@ -125,7 +125,7 @@ function App() {
       icon: TrendingUp,
       title: "Proven Success Rate",
       description:
-        "95% of participants secure funding partnerships within 12 months.",
+        "Many participants go on to secure funding partnerships within a year.",
     },
     {
       icon: Award,
@@ -146,7 +146,7 @@ function App() {
     {
       icon: Globe,
       title: "Powerful Network",
-      description: "Connect with 500+ CSR professionals and NGO leaders.",
+      description: "Connect with CSR professionals and NGO leaders.",
     },
   ];
 
@@ -163,13 +163,11 @@ function App() {
             <h2 className="mt-2 text-2xl md:text-3xl font-semibold text-red-200">
               CSR-NGO MENTORSHIP PROGRAM
             </h2>
-            <p className="mt-6 text-lg md:text-xl text-red-100 leading-relaxed">
-              Transform your NGO with direct mentorship from India's top CSR
-              leaders. Join the elite program that has helped{" "}
-              <span className="font-bold text-white">500+ NGOs</span> secure{" "}
-              <span className="font-bold text-white">₹50+ Crores</span> in
-              funding.
-            </p>
+           <p className="mt-6 text-lg md:text-xl text-red-100 leading-relaxed">
+  Transform your NGO with direct mentorship from India's top CSR leaders. 
+  Join the elite program now.
+</p>
+
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#pricing"
