@@ -405,14 +405,13 @@ const GetInvolvedPage: React.FC = () => {
                       className="w-full p-2 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500"
                     >
                       {[
-                        "Education",
-                        "Health",
-                        "Environment",
-                        "Community Development",
-                        "Marketing/Communications",
-                        "Administration",
-                        "Event Planning",
+                        "Website",
+                        "Social Media",
+                        "Marketing",
                         "Fundraising",
+                        "Event Management",
+                        "Research & Development",
+                        "Impact Alliance",
                       ].map((interest) => (
                         <option key={interest} value={interest}>
                           {interest}
