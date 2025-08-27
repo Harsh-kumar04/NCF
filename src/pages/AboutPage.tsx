@@ -380,7 +380,7 @@ const AboutPage: React.FC = () => {
 
           {/* Founders Section */}
           <div className="text-center max-w-3xl mx-auto mb-8">
-            <h2 className="mb-6">Our Founders</h2>
+            <h2 className="mb-6">NCF Team</h2>
           </div>
 
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-9 mb-20 max-w-3xl mx-auto">
@@ -420,7 +420,7 @@ const AboutPage: React.FC = () => {
 
           {/* NCF Team Section */}
           <div className="text-center max-w-3xl mx-auto mb-8">
-            <h2 className="mb-6">NCF Team</h2>
+            <h2 className="mb-6"></h2>
           </div>
 
           <div className="flex flex-wrap justify-center gap-8">
