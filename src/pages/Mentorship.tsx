@@ -309,7 +309,7 @@ function App() {
           <div className="text-center mb-10">
             <p className="text-lg text-slate-600">
               New Batch Starts:{" "}
-              <span className="font-bold text-red-600">23rd September 2025</span>
+              <span className="font-bold text-red-600">28th September 2025</span>
             </p>
             <p className="text-slate-500">
               Weekly Online Classes: Held on weekends (1–2 hours per session)

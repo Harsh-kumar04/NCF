@@ -7,6 +7,12 @@ import {
   Heart,
   Shield,
   BookOpen,
+  TreePine,
+  Users,
+  Award,
+  Package,
+  Trash2,
+  Bike,
 } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -15,49 +21,83 @@ import { Autoplay } from "swiper/modules";
 
 const Statistics: React.FC = () => {
   const stats = [
-    {
-      icon: <Megaphone className="h-8 w-8 text-white" />,
-      value: "300,000+",
-      label: "Cyber Awareness",
-      subLabel: "Metro Hoardings",
-    },
+   {
+  icon: <Shield className="h-8 w-8 text-white" />,
+  value: "500+",
+  label: "Lives Saved",
+  subLabel: "Oxygen support during COVID-19",
+},
 
-    {
-      icon: <School className="h-8 w-8 text-white" />,
-      value: "2,000+",
-      label: "Cyber Training",
-      subLabel: "Students Enrolled",
-    },
-    {
-      icon: <Globe className="h-8 w-8 text-white" />,
-      value: "1,900+ KG",
-      label: "Clothes Distributed",
-      subLabel: "Community Drives",
-    },
-    {
-      icon: <Home className="h-8 w-8 text-white" />,
-      value: "400+",
-      label: "Digital Learning",
-      subLabel: "Students enrolled",
-    },
-    {
-      icon: <Heart className="h-8 w-8 text-white" />,
-      value: "460+",
-      label: "Mission Oxygen",
-      subLabel: "Patients outreached",
-    },
-    {
-      icon: <Shield className="h-8 w-8 text-white" />,
-      value: "60,000+",
-      label: "Food Distribution",
-      subLabel: "Meals Served",
-    },
-    {
-      icon: <BookOpen className="h-8 w-8 text-white" />,
-      value: "2,000+",
-      label: "Book Drive",
-      subLabel: "Students Benefited",
-    },
+{
+  icon: <School className="h-8 w-8 text-white" />,
+  value: "2500+",
+  label: "Students Trained",
+  subLabel: "Cyber safety & online awareness",
+},
+
+{
+  icon: <TreePine className="h-8 w-8 text-white" />,
+  value: "13,000+",
+  label: "Trees Planted",
+  subLabel: "Greener & healthier cities",
+},
+
+{
+  icon: <Users className="h-8 w-8 text-white" />,
+  value: "5000+",
+  label: "Volunteers Engaged",
+  subLabel: "Youth-led development across India",
+},
+
+{
+  icon: <Heart className="h-8 w-8 text-white" />,
+  value: "60,000+",
+  label: "Meals Served",
+  subLabel: "Food support to vulnerable communities",
+},
+
+{
+  icon: <Home className="h-8 w-8 text-white" />,
+  value: "1",
+  label: "Community Park Restored",
+  subLabel: "Clean & green public space",
+},
+
+{
+  icon: <Award className="h-8 w-8 text-white" />,
+  value: "15+",
+  label: "Awards Won",
+  subLabel: "National & international recognition",
+},
+
+{
+  icon: <Globe className="h-8 w-8 text-white" />,
+  value: "17",
+  label: "Represented India",
+  subLabel: "At climate forums & policy negotiations",
+},
+
+{
+  icon: <Package className="h-8 w-8 text-white" />,
+  value: "2000+ KG",
+  label: "Clothes & Essentials",
+  subLabel: "Distributed to underserved families",
+},
+
+{
+  icon: <Trash2 className="h-8 w-8 text-white" />,
+  value: "1960+ KG",
+  label: "Solid Waste Collected",
+  subLabel: "Through multiple cleanliness drives",
+},
+
+{
+  icon: <Bike className="h-8 w-8 text-white" />,
+  value: "10",
+  label: "Families Supported",
+  subLabel: "Livelihood via EV bike distribution",
+},
+
   ];
 
   return (
