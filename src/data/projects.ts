@@ -194,7 +194,7 @@ export const projects: Project[] = [
       { label: "Students Enrolled", value: "1,100" },
       { label: "States Covered", value: "4" },
       { label: "Learning Licenses Distributed", value: "1,100" },
-      { label: "Indirect Beneficiaries", value: "5000+" },
+      // { label: "Indirect Beneficiaries", value: "5000+" },
     ],
     status: "completed",
   },
