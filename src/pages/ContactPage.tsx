@@ -123,10 +123,9 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-medium mb-1">Address</h3>
                     <p className="text-gray-600">
-                      364 First Floor, Prakash Mohalla, East of Kailash
-                      <br />
-                      New Delhi, Delhi <br />
-                      110065, India 🇮🇳
+                      Jestin Anthony, 226A, 3rd Floor, Prakash Mohalla, <br />
+                      East of Kailash, New Delhi, Delhi <br />
+                      110065, India
                     </p>
                   </div>
                 </div>

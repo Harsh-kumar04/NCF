@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Donation from "../components/common/Donation";
-import GreenNCR from "../pages/GreenNCR"
+import GreenNCR from "../pages/GreenNCR";
 
 import {
   Calendar,
@@ -16,7 +16,7 @@ const GetInvolvedPage: React.FC = () => {
   // Set page title
   useEffect(() => {
     document.title = "Get Involved | Noble Citizen Foundation";
-    window.scrollTo(0, 0);   
+    window.scrollTo(0, 0);
   }, []);
 
   // State for donation form
@@ -298,7 +298,10 @@ const GetInvolvedPage: React.FC = () => {
                   Delhi-NCR faces critical environmental challenges that trees
                   can help solve
                 </p>
-                <Link to={"/plant-a-tree"} className="btn-primary block text-center ">
+                <Link
+                  to={"/plant-a-tree"}
+                  className="btn-primary block text-center "
+                >
                   Adopt a Tree
                 </Link>
               </div>
@@ -513,7 +516,7 @@ const GetInvolvedPage: React.FC = () => {
             {/* Volunteer Info */}
             <div>
               <div className="bg-white rounded-lg shadow-md p-8">
-                <h3 className="text-2xl font-semibold mb-6">
+                <h3 className="text-2xl font-semibold mb-16">
                   Volunteer Opportunities
                 </h3>
 
@@ -590,31 +593,26 @@ const GetInvolvedPage: React.FC = () => {
                         change
                       </span>
                     </li>
+                    {/* ✅ Added 3 more points */}
+                    <li className="flex items-start">
+                      <Check className="h-5 w-5 text-secondary-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <span>
+                        Access mentorship and guidance from experienced leaders
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="h-5 w-5 text-secondary-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <span>
+                        Showcase your contributions and build a strong portfolio
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="h-5 w-5 text-secondary-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <span>
+                        Gain recognition for your efforts in making an impact
+                      </span>
+                    </li>
                   </ul>
-                </div>
-
-                <div>
-                  <h4 className="text-lg font-medium mb-3">
-                    Volunteer Stories
-                  </h4>
-                  <div className="bg-gray-50 p-4 rounded-md italic text-gray-600 mb-4">
-                    "Volunteering with Noble Citizen Foundation was a
-                    life-changing experience. I spent three months working on
-                    water projects in Kenya and witnessed firsthand the profound
-                    impact of clean water access on communities."
-                    <div className="mt-2 text-gray-800 font-medium not-italic">
-                      - Michael T., Water Engineer
-                    </div>
-                  </div>
-                  <div className="bg-gray-50 p-4 rounded-md italic text-gray-600">
-                    "As a remote volunteer translator, I\'ve been able to
-                    contribute to the mission while balancing my full-time job.
-                    It\'s rewarding to know that my language skills are helping
-                    bridge communication gaps for important projects."
-                    <div className="mt-2 text-gray-800 font-medium not-italic">
-                      - Sofia G., Translator
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
