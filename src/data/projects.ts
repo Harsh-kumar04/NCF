@@ -398,9 +398,9 @@ export const projects: Project[] = [
       "Foster Community Resilience",
     ],
     impact: [
-      { label: "Families Reached", value: "500+" },
-      { label: "Relief Kits Distributed", value: "1,000+" },
-      { label: "Total Beneficiaries", value: "25,000+" },
+      { label: "Families Reached", value: "200" },
+      { label: "Relief Kits Distributed", value: "500" },
+      // { label: "Total Beneficiaries", value: "25,000+" },
       { label: "Response Time Reduction", value: "30%" },
     ],
     status: "completed",
