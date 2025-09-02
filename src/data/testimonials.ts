@@ -56,8 +56,9 @@ export const testimonials: Testimonial[] = [
   name: 'Mr. Sumit Kumar',
   role: 'Joint Commissioner, Municipal Corporation Gurugram (MCG)',
   avatar: '/award-slides/local_DP.jpg',
-  text: "I am truly impressed by the commendable efforts of the Noble Citizen Foundation and their young volunteers in transforming Smriti Vatika. What was once a neglected park is now emerging as a vibrant, green, and people-friendly space. It is heartening to see the spirit of youth-led environmental stewardship in action. The dedication shown through community engagement, cleanliness drives, and sustainable restoration practices is inspiring. MCG is proud to support such initiatives and assures continued cooperation in making Gurugram a greener and healthier city."
+  text: "I am truly impressed by the commendable efforts of the Noble Citizen Foundation and their young volunteers in transforming Smriti Vatika. What was once a neglected park is now emerging as a vibrant, green, and people-friendly space. It is heartening to see the spirit of youth-led environmental stewardship in action."
 }
 
 
 ];
+//  The dedication shown through community engagement, cleanliness drives, and sustainable restoration practices is inspiring. MCG is proud to support such initiatives and assures continued cooperation in making Gurugram a greener and healthier city.

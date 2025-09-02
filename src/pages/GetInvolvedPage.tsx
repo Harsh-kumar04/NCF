@@ -663,7 +663,7 @@ const GetInvolvedPage: React.FC = () => {
       </section> */}
 
       {/* FAQs Section */}
-      <section className="section bg-white">
+      {/* <section className="section bg-white">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="mb-6">Frequently Asked Questions</h2>
@@ -693,7 +693,7 @@ const GetInvolvedPage: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="bg-primary-700 py-16 text-white">

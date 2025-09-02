@@ -64,43 +64,36 @@ function App() {
 
   const programStructure = [
     {
-      title: "Program Launch & Orientation",
+      title: "Program Launch & Orientation:",
       description:
         "Meet mentors and peers, understand program goals, and set expectations for impactful learning and collaboration.",
-    },
-    {
-      title: "CSR Laws & Partnership Essentials",
-      description:
+      title2: "CSR Laws & Partnership Essentials",
+      description2:
         "Learn about the CSR legal framework (Companies Act, FCRA), recent trends, and the role of strategic NGO-corporate partnerships.",
     },
     {
       title: "Proposal Writing & Budget Planning",
       description:
         "Master the art of crafting CSR proposals, budgeting for transparency, and aligning with corporate focus areas.",
-    },
-    {
-      title: "Corporate Insights & Pitching Skills",
-      description:
+      title2: "Corporate Insights & Pitching Skills",
+      description2:
         "Hear directly from CSR heads on what they look for, and refine your pitch to create compelling value propositions.",
     },
     {
       title: "Strengthening NGO Systems",
       description:
         "Improve governance, operational capacity, impact measurement, and digital tools for effective CSR reporting.",
-    },
-    {
-      title: "Impact Reporting & Audit Readiness",
-      description:
+      title2: "Impact Reporting & Audit Readiness",
+      description2:
         "Build frameworks for CSR reporting, prepare for legal and financial audits, and ensure organizational compliance.",
     },
+
     {
       title: "Mid-Program Review & Mentorship",
       description:
         "Present your progress, receive feedback from mentors, and refine your CSR proposals and operational approach.",
-    },
-    {
-      title: "Sustaining Long-Term Partnerships",
-      description:
+      title2: "Sustaining Long-Term Partnerships",
+      description2:
         "Learn to manage crises, maintain corporate relationships, and build trust for continued support.",
     },
     {
@@ -130,7 +123,7 @@ function App() {
     {
       icon: Award,
       title: "Industry Recognition",
-      description: "Certification recognized by leading CSR departments.",
+      description: "Certification recognized by esteemed mentors.",
     },
     {
       icon: BookOpen,
@@ -161,12 +154,13 @@ function App() {
               IMPACT ALLIANCE
             </h1>
             <h2 className="mt-2 text-2xl md:text-3xl font-semibold text-red-200">
-              CSR-NGO MENTORSHIP PROGRAM
+              CSR MENTORSHIP PROGRAM
             </h2>
-           <p className="mt-6 text-lg md:text-xl text-red-100 leading-relaxed">
-  Transform your NGO with direct mentorship from India's top CSR leaders. 
-  Join the elite program now.
-</p>
+            <p className="mt-6 text-lg md:text-xl text-red-100 leading-relaxed">
+              Six months transformative course for development professionals (Online)
+              {/* Transform your NGO with direct mentorship from India's top CSR leaders. 
+  Join the elite program now. */}
+            </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -204,6 +198,33 @@ function App() {
           </div>
         </div>
       </section> */}
+      {/* Mentors Section */}
+      <section className="py-16 sm:py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <SectionHeader
+            title="Meet Your Mentors"
+            subtitle="Learn from the best. Our mentors are senior leaders from India's most respected corporate houses and foundations."
+          />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+            {mentors.map((mentor, index) => (
+              <div
+                key={index}
+                className="text-center group flex flex-col items-center"
+              >
+                <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg ring-4 ring-white group-hover:ring-red-200 transition-all duration-300">
+                  <img
+                    src={mentor.image}
+                    alt={mentor.name}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                </div>
+                <h5 className="mt-4 font-bold text-slate-800">{mentor.name}</h5>
+                <p className="text-sm text-slate-500">{mentor.position}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose Us / Benefits Section */}
       <section id="learn-more" className="py-16 sm:py-24 bg-slate-50">
@@ -234,39 +255,13 @@ function App() {
         </div>
       </section>
 
-      {/* Mentors Section */}
-      <section className="py-16 sm:py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <SectionHeader
-            title="Meet Your Mentors"
-            subtitle="Learn from the best. Our mentors are senior leaders from India's most respected corporate houses and foundations."
-          />
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
-            {mentors.map((mentor, index) => (
-              <div
-                key={index}
-                className="text-center group flex flex-col items-center"
-              >
-                <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg ring-4 ring-white group-hover:ring-red-200 transition-all duration-300">
-                  <img
-                    src={mentor.image}
-                    alt={mentor.name}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                </div>
-                <h5 className="mt-4 font-bold text-slate-800">{mentor.name}</h5>
-                <p className="text-sm text-slate-500">{mentor.position}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Program Structure - Redesigned as a Timeline */}
       <section className="py-16 sm:py-24 bg-slate-50">
         <div className="container mx-auto px-6">
           <SectionHeader
-            title="Your 10-Module Success Framework"
+            title="Your 6-Months Success Framework"
             subtitle="A step-by-step journey from fundamentals to securing long-term corporate partnerships, designed by industry experts."
           />
           <div className="max-w-3xl mx-auto">
@@ -285,17 +280,30 @@ function App() {
                   {/* The content */}
                   <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-100">
                     <p className="text-sm font-semibold text-red-600 mb-1">
-                      MODULE {index + 1}
+                      MONTH {index + 1}
                     </p>
                     <h3 className="text-xl font-bold text-slate-900">
                       {module.title}
                     </h3>
-                    <p className="mt-2 text-slate-600">{module.description}</p>
+                    <p className="mt-2 text-slate-600 mb-4">{module.description}</p>
+                    <h3 className="text-xl font-bold text-slate-900">
+                      {module.title2}
+                    </h3>
+                    <p className="mt-2 text-slate-600">{module.description2}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
+        </div>
+      </section>
+      {/* who can join  */}
+      <section className="py-16 sm:py-0 bg-slate-50">
+        <div className="container mx-auto px-6">
+          <SectionHeader
+            title="Who Can Join?"
+            subtitle="NGO leaders, students (MSW/BSW/DSW), development professionals, and anyone aspiring for CSR careers."
+          />
         </div>
       </section>
 
@@ -309,7 +317,7 @@ function App() {
           <div className="text-center mb-10">
             <p className="text-lg text-slate-600">
               New Batch Starts:{" "}
-              <span className="font-bold text-red-600">28th September 2025</span>
+              <span className="font-bold text-red-600">10th September 2025</span>
             </p>
             <p className="text-slate-500">
               Weekly Online Classes: Held on weekends (1–2 hours per session)
