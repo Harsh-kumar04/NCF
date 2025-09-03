@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Main heading */}
-          <h1 className="text-white font-light  mb-4 leading-snug text-2xl md:text-3xl lg:text-4xl tracking-wide">
+          <h1 className="text-white font-light  mb-4 leading-snug text-lg md:text-3xl lg:text-4xl tracking-wide">
             A Noble Society That Is Empowered, <br />
             Healthy and Future Ready.
           </h1>
