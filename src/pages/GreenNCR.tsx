@@ -18,6 +18,32 @@ import { FaRegHeart } from "react-icons/fa6";
 import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+// 🔥 Hook for animated counter
+function useCountUp(target, duration = 2000) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const increment = target / (duration / 16); // ~60fps
+    let frame;
+
+    function updateCounter() {
+      start += increment;
+      if (start < target) {
+        setCount(Math.floor(start));
+        frame = requestAnimationFrame(updateCounter);
+      } else {
+        setCount(target); // final exact value
+      }
+    }
+
+    frame = requestAnimationFrame(updateCounter);
+    return () => cancelAnimationFrame(frame);
+  }, [target, duration]);
+
+  return count;
+}
+
 function GreenNCR() {
   const [onHover, setOnHover] = useState(false);
 
@@ -35,6 +61,12 @@ function GreenNCR() {
       })
       .catch((err) => console.error("Error fetching stats:", err));
   }, []);
+
+
+  // Animated values
+  const trees = useCountUp(stats.total_trees_adopted, 1000);
+  const members = useCountUp(stats.total_contributors, 1000);
+  const co2 = useCountUp(stats.total_trees_adopted * 21, 1000); // 21kg/tree/year
 
   return (
     <div className="min-h-screen bg-white">
@@ -75,7 +107,9 @@ function GreenNCR() {
               onMouseEnter={() => setOnHover(true)}
               onMouseLeave={() => setOnHover(false)}
               className="group bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl text-sm sm:text-base font-semibold transition-all flex items-center gap-2 shadow-lg hover:shadow-green-500/30 w-full sm:w-auto justify-center"
-              onClick={() => window.open("https://rzp.io/rzp/Knku4Tz9", "_blank")}
+              onClick={() =>
+                window.open("https://rzp.io/rzp/Knku4Tz9", "_blank")
+              }
             >
               <span
                 className={`!text-red-500 transition-transform duration-200 ease-out inline-block ${onHover ? "scale-125" : "scale-100"
@@ -99,16 +133,24 @@ function GreenNCR() {
           {/* Stats */}
           <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 text-center w-full max-w-2xl mx-auto">
             <div className="bg-white/10 p-4 sm:p-5 rounded-xl border border-white/20">
-              <div className="text-xl sm:text-2xl font-bold text-green-300"><span>{stats.total_trees_adopted}</span>+</div>
+              <div className="text-xl sm:text-2xl font-bold text-green-300">
+                {trees}+
+              </div>
               <p className="text-xs sm:text-sm text-gray-200">Trees Adopted</p>
             </div>
             <div className="bg-white/10 p-4 sm:p-5 rounded-xl border border-white/20">
-              <div className="text-xl sm:text-2xl font-bold text-green-300"><span>{(stats.total_trees_adopted * 21).toLocaleString()}</span>kg/year</div>
+              <div className="text-xl sm:text-2xl font-bold text-green-300">
+                {co2.toLocaleString()}kg/year
+              </div>
               <p className="text-xs sm:text-sm text-gray-200">CO² Absorbed</p>
             </div>
             <div className="bg-white/10 p-4 sm:p-5 rounded-xl border border-white/20">
-              <div className="text-xl sm:text-2xl font-bold text-green-300"><span>{stats.total_contributors}</span>+</div>
-              <p className="text-xs sm:text-sm text-gray-200">Community Members</p>
+              <div className="text-xl sm:text-2xl font-bold text-green-300">
+                {members}+
+              </div>
+              <p className="text-xs sm:text-sm text-gray-200">
+                Community Members
+              </p>
             </div>
           </div>
         </div>
@@ -350,7 +392,7 @@ function GreenNCR() {
           {/* Heading */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              How You Can Join
+              How You Can Join?
             </h2>
             <p className="text-xl text-gray-600">
               Multiple ways to participate in our tree adoption campaign
@@ -358,7 +400,7 @@ function GreenNCR() {
           </div>
 
           {/* Cards */}
-          <div className="flex justify-center items-center min-h-screen p-6">
+          <div className="flex justify-center items-center">
             <div className="max-w-sm w-full bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
               {/* Top Image */}
               <div className="relative">
