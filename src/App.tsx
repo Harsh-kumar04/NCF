@@ -17,6 +17,10 @@ import RefundPolicy from "./pages/RefundPolicyPage";
 import TermsOfUse from "./pages/TermsOfUsePage";
 import VerifyCertificatesPage from "./pages/VerifyCertificatesPage";
 
+// for google cache clear--
+import leadership from "./pages/Mentorship";
+
+
 function App() {
   return (
     <Router>
@@ -36,12 +40,15 @@ function App() {
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/Mentorship" element={<Mentorship />} />
           <Route path="/plant-a-tree" element={<GreenNCR />} />
-          <Route
-            path="/VerifyCertificatesPage"
-            element={<VerifyCertificatesPage />}
-          />
+          <Route path="/VerifyCertificatesPage" element={<VerifyCertificatesPage />} />
           <Route path="/verify" element={<VerifyCertificatesPage />} />
-          {/* Add more routes as needed */}
+
+          {/* Added more routes for seo */}
+          <Route path="/leadership" element={<AboutPage />} />
+          <Route path="/donate-now" element={<GreenNCR />} />
+          <Route path="/programmes" element={<ProjectsPage />} />
+          <Route path="/csr-projects" element={<Mentorship />} />
+          
         </Routes>
       </Layout>
     </Router>

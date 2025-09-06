@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { treeSpecies, timeline, packagePlans } from "../../utils/constant";
 import {
   Heart,
@@ -21,6 +21,21 @@ import { Link } from "react-router-dom";
 function GreenNCR() {
   const [onHover, setOnHover] = useState(false);
 
+  const [stats, setStats] = useState({
+    total_contributors: 0,
+    total_trees_adopted: 0,
+  });
+
+  // Fetch data from Script Web App
+  useEffect(() => {
+    fetch("https://script.google.com/macros/s/AKfycbxSUShb111k7ZWGU6q8KZarHmQQ6e4yne_rTxep0wZuiDYmyNYZzk96FR1xN1WewcSZag/exec")
+      .then((res) => res.json())
+      .then((data) => {
+        setStats(data);
+      })
+      .catch((err) => console.error("Error fetching stats:", err));
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -30,71 +45,71 @@ function GreenNCR() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-        backgroundImage:
-          "url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+            backgroundImage:
+              "url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1600')",
           }}
         ></div>
 
         {/* Content */}
         <div className="relative z-10 w-full max-w-4xl mx-auto px-4 mt-6 text-center text-white">
           <span className="inline-block bg-green-500/20 border border-green-400/30 text-white-300 px-3 py-1 rounded-full text-xs font-medium mb-4 sm:mb-6 mt-2">
-        🌱 Join the Green Revolution
+            🌱 Join the Green Revolution
           </span>
 
           <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 leading-snug text-white">
-        Adopt a Tree,{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-emerald-400">
-          Grow Hope
-        </span>
+            Adopt a Tree,{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-emerald-400">
+              Adopt a Future
+            </span>
           </h1>
 
           <p className="text-sm xs:text-base md:text-lg mb-6 sm:mb-8 text-gray-100 max-w-2xl mx-auto leading-relaxed">
-        Help us plant{" "}
-        <span className="text-green-300 font-medium">10,000 trees</span> 🌳.
-        Every adoption fights climate change and supports local ecosystems.
+            Help us plant{" "}
+            <span className="text-green-300 font-medium">10,000 trees</span> 🌳.
+            Every adoption fights climate change and supports local ecosystems.
           </p>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-10 w-full">
-        <button
-          onMouseEnter={() => setOnHover(true)}
-          onMouseLeave={() => setOnHover(false)}
-          className="group bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl text-sm sm:text-base font-semibold transition-all flex items-center gap-2 shadow-lg hover:shadow-green-500/30 w-full sm:w-auto justify-center"
-          onClick={() => window.open("https://rzp.io/rzp/Knku4Tz9", "_blank")}
-        >
-          <span
-            className={`!text-red-500 transition-transform duration-200 ease-out inline-block ${onHover ? "scale-125" : "scale-100"
-          }`}
-          >
-            {onHover ? <FaHeart size={16} /> : <FaRegHeart size={16} />}
-          </span>
-          Adopt a Tree - ₹250
-          <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-        </button>
-        <Link
-          className="group bg-white/10 hover:bg-white/20 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl text-sm sm:text-base font-semibold transition-all border border-white/30 flex items-center gap-2 w-full sm:w-auto justify-center"
-          to="https://whatsapp.com/channel/0029VaG6oUJDOQIVSIN54J1M"
-        >
-          <Users className="h-4 w-4" />
-          Join Community
-          <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-        </Link>
+            <button
+              onMouseEnter={() => setOnHover(true)}
+              onMouseLeave={() => setOnHover(false)}
+              className="group bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl text-sm sm:text-base font-semibold transition-all flex items-center gap-2 shadow-lg hover:shadow-green-500/30 w-full sm:w-auto justify-center"
+              onClick={() => window.open("https://rzp.io/rzp/Knku4Tz9", "_blank")}
+            >
+              <span
+                className={`!text-red-500 transition-transform duration-200 ease-out inline-block ${onHover ? "scale-125" : "scale-100"
+                  }`}
+              >
+                {onHover ? <FaHeart size={16} /> : <FaRegHeart size={16} />}
+              </span>
+              Adopt a Tree - ₹250
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </button>
+            <Link
+              className="group bg-white/10 hover:bg-white/20 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-xl text-sm sm:text-base font-semibold transition-all border border-white/30 flex items-center gap-2 w-full sm:w-auto justify-center"
+              to="https://whatsapp.com/channel/0029VaG6oUJDOQIVSIN54J1M"
+            >
+              <Users className="h-4 w-4" />
+              Join Community
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 text-center w-full max-w-2xl mx-auto">
-        <div className="bg-white/10 p-4 sm:p-5 rounded-xl border border-white/20">
-          <div className="text-xl sm:text-2xl font-bold text-green-300">0+</div>
-          <p className="text-xs sm:text-sm text-gray-200">Trees Adopted</p>
-        </div>
-        <div className="bg-white/10 p-4 sm:p-5 rounded-xl border border-white/20">
-          <div className="text-xl sm:text-2xl font-bold text-green-300">0kg</div>
-          <p className="text-xs sm:text-sm text-gray-200">CO² Absorbed</p>
-        </div>
-        <div className="bg-white/10 p-4 sm:p-5 rounded-xl border border-white/20">
-          <div className="text-xl sm:text-2xl font-bold text-green-300">0+</div>
-          <p className="text-xs sm:text-sm text-gray-200">Community Members</p>
-        </div>
+            <div className="bg-white/10 p-4 sm:p-5 rounded-xl border border-white/20">
+              <div className="text-xl sm:text-2xl font-bold text-green-300"><span>{stats.total_trees_adopted}</span>+</div>
+              <p className="text-xs sm:text-sm text-gray-200">Trees Adopted</p>
+            </div>
+            <div className="bg-white/10 p-4 sm:p-5 rounded-xl border border-white/20">
+              <div className="text-xl sm:text-2xl font-bold text-green-300"><span>{(stats.total_trees_adopted * 21).toLocaleString()}</span>kg/year</div>
+              <p className="text-xs sm:text-sm text-gray-200">CO² Absorbed</p>
+            </div>
+            <div className="bg-white/10 p-4 sm:p-5 rounded-xl border border-white/20">
+              <div className="text-xl sm:text-2xl font-bold text-green-300"><span>{stats.total_contributors}</span>+</div>
+              <p className="text-xs sm:text-sm text-gray-200">Community Members</p>
+            </div>
           </div>
         </div>
       </section>
